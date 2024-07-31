@@ -4,6 +4,12 @@ data/**
 # Mac-specific files
 .DS_Store
 
+# Outputs should not be committed
+out/
+
+# In-house config files
+*.mipha*
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -7,7 +7,7 @@ import pandas as pd
 from mipha.framework import DataSource
 from sklearn.model_selection import train_test_split
 
-from code.datasets.mimic_dataset import MimicDataset
+from src.datasets.mimic_dataset import MimicDataset
 
 
 class Stage5CkdData:

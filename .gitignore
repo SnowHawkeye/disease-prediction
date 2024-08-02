@@ -1,5 +1,5 @@
 # Data directories should not be committed
-data/**
+data/
 
 # Mac-specific files
 .DS_Store
@@ -9,6 +9,9 @@ out/
 
 # In-house config files
 *.mipha*
+
+# Playground
+playground/
 
 
 # Byte-compiled / optimized / DLL files
@@ -96,7 +99,7 @@ profile_default/
 ipython_config.py
 
 # pyenv
-#   For a library or package, you might want to ignore these files since the code is
+#   For a library or package, you might want to ignore these files since the src is
 #   intended to run in multiple environments; otherwise, check them in:
 # .python-version
 

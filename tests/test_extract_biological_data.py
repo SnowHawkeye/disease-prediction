@@ -8,7 +8,7 @@ import pytest
 
 from src.features.mimic.extract_lab_records import extract_lab_records, save_patient_records_to_parquet_archive, \
     load_patient_records_from_pickle, \
-    save_patient_records_to_pickle, load_patient_records_from_parquet_archive
+    save_patient_records_to_pickle, load_patient_records_from_parquet_archive, filter_lab_records
 
 
 @pytest.fixture
@@ -67,6 +67,52 @@ def test_extract_biological_data(mock_data, column_mapping):
 
     assert 2 in result
     assert result[2].to_numpy().all() == expected_patient_2.to_numpy().all()
+
+
+# Filtering
+# Sample DataFrames for testing
+patient_lab_records = {
+    'patient1': pd.DataFrame({'A': [1, 2], 'B': [3, 4], 'C': [5, 6]}),
+    'patient2': pd.DataFrame({'A': [7, 8], 'D': [9, 10]}),
+    'patient3': pd.DataFrame({'B': [11, 12], 'C': [13, 14]})
+}
+
+analyses_ids = ['A', 'B', 'E']
+
+
+def test_filter_lab_records_basic_functionality():
+    filtered = filter_lab_records(patient_lab_records, analyses_ids)
+    assert 'A' in filtered['patient1'].columns
+    assert 'B' in filtered['patient1'].columns
+    assert 'E' in filtered['patient1'].columns
+    assert pd.isna(filtered['patient1']['E']).all()  # 'E' should be NaN-filled
+
+
+def test_filter_lab_records_missing_columns():
+    filtered = filter_lab_records(patient_lab_records, analyses_ids)
+    assert pd.isna(filtered['patient2']['E']).all()
+    assert pd.isna(filtered['patient3']['A']).all()
+
+
+def test_filter_lab_records_no_common_columns():
+    filtered = filter_lab_records(patient_lab_records, ['X', 'Y'])
+    for df in filtered.values():
+        assert pd.isna(df).all().all()  # All values should be NaN
+
+
+def test_filter_lab_records_empty_input():
+    empty_records = {}
+    filtered = filter_lab_records(empty_records, analyses_ids)
+    assert filtered == {}
+
+
+def test_filter_lab_records_mixed_presence():
+    filtered = filter_lab_records(patient_lab_records, ['B', 'D', 'E'])
+    assert 'B' in filtered['patient1'].columns
+    assert 'D' in filtered['patient1'].columns  # Should be NaN-filled
+    assert pd.isna(filtered['patient1']['D']).all()
+    assert 'E' in filtered['patient2'].columns  # Should be NaN-filled
+    assert pd.isna(filtered['patient2']['E']).all()
 
 
 # Save and load functions

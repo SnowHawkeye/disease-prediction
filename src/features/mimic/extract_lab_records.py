@@ -19,7 +19,7 @@ def extract_lab_records(analyses, cols):
 
     :param analyses: DataFrame containing all analyses.
     :param cols: Mapping of column names to "normalized" names.
-    :return: A dict with patient IDs as keys and a DataFrame of biological data as values.
+    :return: A dict with patient IDs as keys and a DataFrame of laboratory data as values.
     """
     print("Extracting patient laboratory records...")
 
@@ -43,6 +43,21 @@ def extract_lab_records(analyses, cols):
 
     print(f"{len(patient_dataframes)} non-empty patient records extracted")
     return patient_dataframes
+
+
+def filter_lab_records(patient_lab_records, analyses_ids):
+    """
+    For each patient record in the given dict, keep only the analyses columns corresponding to the given in analyses_ids.
+    If the columns do not exist, create new columns filled with NaNs.
+    :param patient_lab_records: A dict with patient IDs as keys and a DataFrame of laboratory data as values.
+    :param analyses_ids: The analyses to keep.
+    :return: The filtered laboratory records, with news nan-filled columns when needed.
+    """
+    filtered_dict = {
+        key: df.reindex(columns=analyses_ids, fill_value=np.nan)
+        for key, df in tqdm(patient_lab_records.items())
+    }
+    return filtered_dict
 
 
 def save_patient_records_to_pickle(dataframes, filename):

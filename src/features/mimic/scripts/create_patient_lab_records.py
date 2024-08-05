@@ -12,7 +12,12 @@ def main():
     analyses = dataset.get_analyses()
     print("Analyses table loaded!")
 
-    patient_dataframes = extract_lab_records(analyses=analyses, cols=columns)
+    patient_dataframes = extract_lab_records(
+        analyses=analyses,
+        cols=columns,
+        freq='h',
+        aggfunc='mean'
+    )
 
     save_patient_records_to_pickle(patient_dataframes, "data/patient_lab_records.pkl")
 

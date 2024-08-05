@@ -12,13 +12,15 @@ import pandas as pd
 pd.options.mode.copy_on_write = True
 
 
-def extract_lab_records(analyses, cols):
+def extract_lab_records(analyses, cols, freq='h', aggfunc='mean'):
     """
     Extracts laboratory records for each patient and returns a dictionary where
     keys are patient IDs and values are DataFrames with pivoted laboratory records.
 
     :param analyses: DataFrame containing all analyses.
     :param cols: Mapping of column names to "normalized" names.
+    :param freq: Frequency of the laboratory records (cf. https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases)
+    :param aggfunc: Function used to aggregate values. Refer to https://pandas.pydata.org/docs/reference/api/pandas.pivot_table.html
     :return: A dict with patient IDs as keys and a DataFrame of laboratory data as values.
     """
     print("Extracting patient laboratory records...")
@@ -33,10 +35,10 @@ def extract_lab_records(analyses, cols):
 
     for patient_id, group_data in tqdm(grouped, desc="Extracting patient data"):
         pivot_data = group_data.pivot_table(
-            index=pd.Grouper(key=cols["analysis_time"], freq='h'),  # Group analyses by hour
+            index=pd.Grouper(key=cols["analysis_time"], freq=freq),  # Group analyses by hour
             columns=cols["analysis_id"],  # Use analysis_id as columns
             values=cols["analysis_value"],  # Values to aggregate
-            aggfunc='mean'  # Aggregate function
+            aggfunc=aggfunc  # Aggregate function
         )
         if not pivot_data.empty:
             patient_dataframes[int(patient_id)] = pivot_data

@@ -62,6 +62,69 @@ def filter_lab_records(patient_lab_records, analyses_ids):
     return filtered_dict
 
 
+def make_rolling_records(patient_lab_records, time_unit: str, backward_window: int):
+    """
+    Processes a dictionary of patient lab records creating sub-DataFrames for each time point (observation date),
+    containing data from the previous `backward_window` units of time.
+    Observation dates correspond to each record date, after resampling at the frequency given by `time_unit`.
+
+    Parameters:
+        :param patient_lab_records: A dictionary where keys are identifiers and values are DataFrames.
+        :param time_unit: Base time unit for the output's indexes. Possible values are: {'day', 'week', 'month', 'year'}
+        :param backward_window: Number of units to look back for each time point.
+
+    Returns:
+        dict: A dictionary of dictionaries, where each inner dictionary contains sub-DataFrames for each observation date.
+    """
+    offsets = {  # pandas offset aliases
+        'day': 'D',
+        'week': 'W',
+        'month': 'ME',
+        'year': 'YE',
+    }
+
+    deltas = {  # pandas offset aliases
+        'day': '1 days',
+        'week': '7 days',
+        'month': '31 days',
+        'year': '366 days',
+        # months and years are set to their upper bounds to fix inconsistencies when creating backwards windows
+    }
+
+    result = {}
+
+    for key, df in patient_lab_records.items():
+        # Resample the dataframe according to the specified frequency
+        resampled = df.resample(offsets[time_unit]).mean().asfreq(offsets[time_unit]).dropna(how='all')
+
+        # Create a dictionary to store sub-DataFrames for each time point
+        sub_dfs = {}
+
+        # Iterate over the resampled index
+        for date in resampled.index:
+            # Calculate the start date for the window
+            one_time_unit = pd.Timedelta(deltas[time_unit])
+            start_date = date - one_time_unit * backward_window
+
+            # Filter the original DataFrame for the given window
+            sub_df = resampled[(resampled.index > start_date) & (resampled.index <= date)].copy()
+
+            # Create entries for time units with missing data
+            # +1 unit on start date to have B elements in the dataframe
+            complete_date_range = pd.date_range(start=start_date + one_time_unit, end=date, freq=offsets[time_unit])
+
+            full_df = pd.DataFrame(index=complete_date_range)
+            full_df = full_df.merge(sub_df, left_index=True, right_index=True, how='left')
+
+            # Add the sub-DataFrame to the dictionary
+            sub_dfs[date] = full_df
+
+        # Store the dictionary of sub-DataFrames in the result dictionary
+        result[key] = sub_dfs
+
+    return result
+
+
 def save_patient_records_to_pickle(dataframes, filename):
     """
     :param dataframes: provided as a dictionary where keys are patient IDs

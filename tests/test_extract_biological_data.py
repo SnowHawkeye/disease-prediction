@@ -3,12 +3,13 @@ import pickle
 import tempfile
 from unittest import mock
 
+import numpy as np
 import pandas as pd
 import pytest
 
 from src.features.mimic.extract_lab_records import extract_lab_records, save_patient_records_to_parquet_archive, \
     load_patient_records_from_pickle, \
-    save_patient_records_to_pickle, load_patient_records_from_parquet_archive, filter_lab_records
+    save_patient_records_to_pickle, load_patient_records_from_parquet_archive, filter_lab_records, make_rolling_records
 
 
 @pytest.fixture
@@ -113,6 +114,125 @@ def test_filter_lab_records_mixed_presence():
     assert pd.isna(filtered['patient1']['D']).all()
     assert 'E' in filtered['patient2'].columns  # Should be NaN-filled
     assert pd.isna(filtered['patient2']['E']).all()
+
+
+# Making rolling records
+
+def test_make_rolling_records_day():
+    # Test with time_unit='day' and backward_window=3
+    data = {
+        'patient_1': pd.DataFrame({
+            'value': [1, 2, 3, 4],
+        }, index=pd.to_datetime(['2023-01-01', '2023-01-02', '2023-01-03', '2023-01-04'])),
+        'patient_2': pd.DataFrame({
+            'value': [1, 2, 3, 4],
+        }, index=pd.to_datetime(['2023-01-01', '2023-01-02', '2023-01-03', '2023-01-04']))
+    }
+    expected = {
+        'patient_1': {
+            pd.Timestamp('2023-01-01'): pd.DataFrame({'value': [np.nan, np.nan, 1]},
+                                                     index=pd.to_datetime(['2022-12-30', '2022-12-31', '2023-01-01'])),
+            pd.Timestamp('2023-01-02'): pd.DataFrame({'value': [np.nan, 1, 2]},
+                                                     index=pd.to_datetime(['2022-12-31', '2023-01-01', '2023-01-02'])),
+            pd.Timestamp('2023-01-03'): pd.DataFrame({'value': [1, 2, 3]},
+                                                     index=pd.to_datetime(['2023-01-01', '2023-01-02', '2023-01-03'])),
+            pd.Timestamp('2023-01-04'): pd.DataFrame({'value': [2, 3, 4]},
+                                                     index=pd.to_datetime(['2023-01-02', '2023-01-03', '2023-01-04'])),
+
+        },
+        'patient_2': {
+            pd.Timestamp('2023-01-01'): pd.DataFrame({'value': [np.nan, np.nan, 1]},
+                                                     index=pd.to_datetime(['2022-12-30', '2022-12-31', '2023-01-01'])),
+            pd.Timestamp('2023-01-02'): pd.DataFrame({'value': [np.nan, 1, 2]},
+                                                     index=pd.to_datetime(['2022-12-31', '2023-01-01', '2023-01-02'])),
+            pd.Timestamp('2023-01-03'): pd.DataFrame({'value': [1, 2, 3]},
+                                                     index=pd.to_datetime(['2023-01-01', '2023-01-02', '2023-01-03'])),
+            pd.Timestamp('2023-01-04'): pd.DataFrame({'value': [2, 3, 4]},
+                                                     index=pd.to_datetime(['2023-01-02', '2023-01-03', '2023-01-04'])),
+
+        }
+    }
+    result = make_rolling_records(data, 'day', 3)
+    for patient_id in result:
+        for date in result[patient_id]:
+            pd.testing.assert_frame_equal(result[patient_id][date], expected[patient_id][date],
+                                          check_dtype=False, check_freq=False)
+
+
+def test_make_rolling_records_week():
+    # Test with time_unit='week' and backward_window=2
+    data = {
+        'patient_1': pd.DataFrame({
+            'value': [1, 2],
+        }, index=pd.to_datetime(['2023-01-08', '2023-01-15']))
+    }
+    expected = {
+        'patient_1': {
+            pd.Timestamp('2023-01-08'): pd.DataFrame({'value': [np.nan, 1]},
+                                                     index=pd.to_datetime(['2023-01-01', '2023-01-08'])),
+            pd.Timestamp('2023-01-15'): pd.DataFrame({'value': [1, 2]},
+                                                     index=pd.to_datetime(['2023-01-08', '2023-01-15'])),
+        }
+    }
+    result = make_rolling_records(data, 'week', 2)
+    for patient_id in result:
+        for date in result[patient_id]:
+            pd.testing.assert_frame_equal(result[patient_id][date], expected[patient_id][date],
+                                          check_dtype=False, check_freq=False)
+
+
+def test_make_rolling_records_month():
+    # Test with time_unit='month' and backward_window=2
+    data = {
+        'patient_1': pd.DataFrame({
+            'value': [1, 2, 3, 4],
+        }, index=pd.to_datetime(['2023-01-08', '2023-02-14', '2023-04-24', '2023-08-12']))
+    }
+    expected = {
+        'patient_1': {
+            pd.Timestamp('2023-01-31'): pd.DataFrame({'value': [np.nan, 1]},
+                                                     index=pd.to_datetime(['2022-12-31', '2023-01-31'])),
+            pd.Timestamp('2023-02-28'): pd.DataFrame({'value': [1, 2]},
+                                                     index=pd.to_datetime(['2023-01-31', '2023-02-28'])),
+            pd.Timestamp('2023-04-30'): pd.DataFrame({'value': [np.nan, 3]},
+                                                     index=pd.to_datetime(['2023-03-31', '2023-04-30'])),
+            pd.Timestamp('2023-08-31'): pd.DataFrame({'value': [np.nan, 4]},
+                                                     index=pd.to_datetime(['2023-07-31', '2023-08-31'])),
+
+        }
+    }
+    result = make_rolling_records(data, 'month', 2)
+    for patient_id in result:
+        for date in result[patient_id]:
+            pd.testing.assert_frame_equal(result[patient_id][date], expected[patient_id][date],
+                                          check_dtype=False, check_freq=False)
+
+
+def test_make_rolling_records_year():
+    # Test with time_unit='year' and backward_window=2
+    data = {
+        'patient_1': pd.DataFrame({
+            'value': [1, 2, 3, 4],
+        }, index=pd.to_datetime(['2023-01-08', '2024-02-14', '2027-04-24', '2029-08-12']))
+    }
+    expected = {
+        'patient_1': {
+            pd.Timestamp('2023-12-31'): pd.DataFrame({'value': [np.nan, 1]},
+                                                     index=pd.to_datetime(['2022-12-31', '2023-12-31'])),
+            pd.Timestamp('2024-12-31'): pd.DataFrame({'value': [1, 2]},
+                                                     index=pd.to_datetime(['2023-12-31', '2024-12-31'])),
+            pd.Timestamp('2027-12-31'): pd.DataFrame({'value': [np.nan, 3]},
+                                                     index=pd.to_datetime(['2026-12-31', '2027-12-31'])),
+            pd.Timestamp('2029-12-31'): pd.DataFrame({'value': [np.nan, 4]},
+                                                     index=pd.to_datetime(['2028-12-31', '2029-12-31'])),
+
+        }
+    }
+    result = make_rolling_records(data, 'year', 2)
+    for patient_id in result:
+        for date in result[patient_id]:
+            pd.testing.assert_frame_equal(result[patient_id][date], expected[patient_id][date],
+                                          check_dtype=False, check_freq=False)
 
 
 # Save and load functions

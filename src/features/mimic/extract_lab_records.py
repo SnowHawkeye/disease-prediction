@@ -12,13 +12,12 @@ import pandas as pd
 pd.options.mode.copy_on_write = True
 
 
-def extract_lab_records(analyses, cols, freq='h', aggfunc='mean'):
+def extract_lab_records(analyses, freq='h', aggfunc='mean'):
     """
     Extracts laboratory records for each patient and returns a dictionary where
     keys are patient IDs and values are DataFrames with pivoted laboratory records.
 
     :param analyses: DataFrame containing all analyses.
-    :param cols: Mapping of column names to "normalized" names.
     :param freq: Frequency of the laboratory records (cf. https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases)
     :param aggfunc: Function used to aggregate values. Refer to https://pandas.pydata.org/docs/reference/api/pandas.pivot_table.html
     :return: A dict with patient IDs as keys and a DataFrame of laboratory data as values.
@@ -26,18 +25,18 @@ def extract_lab_records(analyses, cols, freq='h', aggfunc='mean'):
     print("Extracting patient laboratory records...")
 
     # Clean and prepare the data
-    analyses_clean = analyses.dropna(subset=[cols["analysis_time"]])  # Remove rows with missing time
-    analyses_clean[cols["analysis_time"]] = pd.to_datetime(analyses_clean[cols["analysis_time"]])  # Convert to datetime
+    analyses_clean = analyses.dropna(subset=["analysis_time"])  # Remove rows with missing time
+    analyses_clean["analysis_time"] = pd.to_datetime(analyses_clean["analysis_time"])  # Convert to datetime
 
     # Group by patient ID and process each group
     patient_dataframes = {}
-    grouped = analyses_clean.groupby(cols["patient_id"])
+    grouped = analyses_clean.groupby("patient_id")
 
     for patient_id, group_data in tqdm(grouped, desc="Extracting patient data"):
         pivot_data = group_data.pivot_table(
-            index=pd.Grouper(key=cols["analysis_time"], freq=freq),  # Group analyses by hour
-            columns=cols["analysis_id"],  # Use analysis_id as columns
-            values=cols["analysis_value"],  # Values to aggregate
+            index=pd.Grouper(key="analysis_time", freq=freq),  # Group analyses by hour
+            columns="analysis_id",  # Use analysis_id as columns
+            values="analysis_value",  # Values to aggregate
             aggfunc=aggfunc  # Aggregate function
         )
         if not pivot_data.empty:

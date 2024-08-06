@@ -20,17 +20,16 @@ class MimicDataset:
         # keys are the "normalized" names, values are the corresponding names in the database
         # utility to find columns more easily
         column_aliases = {
-            'diagnosis_code': 'icd_code',
-            'admission_id': 'hadm_id',
-            'patient_id': 'subject_id',
-            'analysis_id': 'itemid',
-            'specimen_id': 'specimen_id',
-            'admission_time': 'admittime',
-            'age': 'anchor_age',
-            'diagnosis_time': 'diagnosis_time',
-            'analysis_time': 'storetime',
-            'analysis_name': 'label',
-            'analysis_value': 'valuenum',
+            'icd_code': 'diagnosis_code',
+            'hadm_id': 'admission_id',
+            'subject_id': 'patient_id',
+            'itemid': 'analysis_id',
+            'admittime': 'admission_time',
+            'dischtime': 'discharge_time',
+            'anchor_age': 'age',
+            'storetime': 'analysis_time',
+            'label': 'analysis_name',
+            'valuenum': 'analysis_value',
         }
 
         tables = {
@@ -38,7 +37,8 @@ class MimicDataset:
             "diagnoses_lookup": "d_icd_diagnoses.csv.gz",
             "patients": "patients.csv.gz",
             "diagnoses": "diagnoses_icd.csv.gz",
-            "analyses": "labevents.csv.gz"
+            "analyses": "labevents.csv.gz",
+            "admissions": "admissions.csv.gz",
         }
 
         modules = {
@@ -67,13 +67,17 @@ class MimicDataset:
         """
         table_path = path.join(self.database_path, self.modules[module], self.tables[table])
         # noinspection PyTypeChecker
-        return pd.read_csv(table_path, delimiter=self.delimiter, encoding=self.encoding)
+        return (pd.read_csv(table_path, delimiter=self.delimiter, encoding=self.encoding)
+                .rename(self.column_aliases, axis='columns'))
 
     def get_analyses(self):
         return self.get_table("hospital", "analyses")
 
     def get_patients(self):
         return self.get_table("hospital", "patients")
+
+    def get_admissions(self):
+        return self.get_table("hospital", "admissions")
 
     def get_diagnoses(self):
         return self.get_table("hospital", "diagnoses")

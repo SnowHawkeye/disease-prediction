@@ -16,38 +16,27 @@ from src.features.mimic.extract_lab_records import extract_lab_records, save_pat
 def mock_data():
     # Mock data setup
     data = {
-        'patient_id_col': [1, 1, 2, 2, 3, 3, None],
-        'analysis_time_col': ['2022-01-01 10:00', '2022-01-01 11:00', '2022-01-02 10:00', None, '2022-01-03 10:00',
-                              '2022-01-03 11:00', '2022-01-04 10:00'],
-        'analysis_id_col': ['A', 'B', 'A', 'B', 'A', 'B', 'A'],
-        'analysis_value_col': [10, 15, 20, 25, 30, 35, 40]
+        'patient_id': [1, 1, 2, 2, 3, 3, None],
+        'analysis_time': ['2022-01-01 10:00', '2022-01-01 11:00', '2022-01-02 10:00', None, '2022-01-03 10:00',
+                          '2022-01-03 11:00', '2022-01-04 10:00'],
+        'analysis_id': ['A', 'B', 'A', 'B', 'A', 'B', 'A'],
+        'analysis_value': [10, 15, 20, 25, 30, 35, 40]
     }
     df = pd.DataFrame(data)
-    df['analysis_time_col'] = pd.to_datetime(df['analysis_time_col'], errors='coerce')  # Convert to datetime
+    df['analysis_time'] = pd.to_datetime(df['analysis_time'], errors='coerce')  # Convert to datetime
     return df
 
 
-@pytest.fixture
-def column_mapping():
-    # Mock column mapping
-    return {
-        "patient_id": "patient_id_col",
-        "analysis_time": "analysis_time_col",
-        "analysis_id": "analysis_id_col",
-        "analysis_value": "analysis_value_col"
-    }
-
-
-def test_extract_biological_data(mock_data, column_mapping):
-    result = extract_lab_records(mock_data, column_mapping)
+def test_extract_biological_data(mock_data):
+    result = extract_lab_records(mock_data)
 
     # Expected results for patient 1 and patient 3 (patient 2 has NaN analysis_time and should be ignored)
     expected_patient_1 = pd.DataFrame({
         'A': [10, None],
         'B': [None, 15]
     }, index=pd.to_datetime(['2022-01-01 10:00', '2022-01-01 11:00']))
-    expected_patient_1.index.name = 'analysis_time_col'
-    expected_patient_1.rename_axis('analysis_id_col', axis='columns', inplace=True)
+    expected_patient_1.index.name = 'analysis_time'
+    expected_patient_1.rename_axis('analysis_id', axis='columns', inplace=True)
 
     expected_patient_2 = pd.DataFrame({
         'A': [20],
@@ -57,8 +46,8 @@ def test_extract_biological_data(mock_data, column_mapping):
         'A': [30, None],
         'B': [None, 35]
     }, index=pd.to_datetime(['2022-01-03 10:00', '2022-01-03 11:00']))
-    expected_patient_3.index.name = 'analysis_time_col'
-    expected_patient_3.rename_axis('analysis_id_col', axis='columns', inplace=True)
+    expected_patient_3.index.name = 'analysis_time'
+    expected_patient_3.rename_axis('analysis_id', axis='columns', inplace=True)
 
     assert 1 in result
     assert result[1].to_numpy().all() == expected_patient_1.to_numpy().all()

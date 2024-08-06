@@ -10,7 +10,6 @@ def get_sample_analyses():
 
 def main():
     dataset = MimicDataset.from_config_file("config/mimic_dataset.mipha.json")
-    columns = dataset.column_aliases
 
     print("Loading analyses table...")
     dataset.get_analyses = get_sample_analyses
@@ -19,7 +18,6 @@ def main():
 
     patient_dataframes = extract_lab_records(
         analyses=analyses,
-        cols=columns,
         freq='h',
         aggfunc='mean'
     )

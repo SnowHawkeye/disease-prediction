@@ -92,7 +92,7 @@ def make_rolling_records(patient_lab_records, time_unit: str, backward_window: i
 
     result = {}
 
-    for key, df in patient_lab_records.items():
+    for key, df in tqdm(patient_lab_records.items(), desc="Creating rolling records for patients"):
         # Resample the dataframe according to the specified frequency
         resampled = df.resample(offsets[time_unit]).mean().asfreq(offsets[time_unit]).dropna(how='all')
 
@@ -122,6 +122,57 @@ def make_rolling_records(patient_lab_records, time_unit: str, backward_window: i
         result[key] = sub_dfs
 
     return result
+
+
+def label_lab_records(patient_rolling_lab_records, gap_days, prediction_window_days, positive_diagnoses,
+                      diagnoses_table,
+                      admissions_table):
+    labels = {}
+
+    print("Converting times to timestamps...")
+    admissions_copy = admissions_table.copy()
+    admissions_copy["discharge_time"] = pd.to_datetime(admissions_copy["discharge_time"], errors='coerce')
+    admissions_copy.dropna(subset="discharge_time", inplace=True)
+
+    print("Preparing tables...")
+    grouped_diagnoses = diagnoses_table.groupby("patient_id")
+    grouped_admissions = admissions_copy.groupby("patient_id")
+
+    gap_delta = pd.Timedelta(f"{gap_days} days")
+    prediction_window_delta = pd.Timedelta(f"{prediction_window_days} days")
+
+    patient_not_found_count = 0
+
+    for patient_id, rolling_records in tqdm(patient_rolling_lab_records.items(), desc="Labeling tables for patients"):
+        if patient_id not in grouped_diagnoses.groups:
+            patient_not_found_count += 1
+            continue
+
+        labels_for_patient = {}
+        for observation_date, df in rolling_records.items():
+            prediction_window_start = observation_date + gap_delta
+            prediction_window_end = observation_date + gap_delta + prediction_window_delta
+
+            # discharge_time is used as diagnosis time
+            timed_diagnoses = (grouped_diagnoses.get_group(patient_id)
+                               .merge(grouped_admissions.get_group(patient_id), on="admission_id"))
+
+            diagnoses_in_window = timed_diagnoses[
+                (prediction_window_start <= timed_diagnoses["discharge_time"]) &
+                (timed_diagnoses["discharge_time"] <= prediction_window_end)
+                ]
+
+            label = 1 if diagnoses_in_window["diagnosis_code"].isin(positive_diagnoses).any() else 0
+
+            labels_for_patient[observation_date] = label
+
+        labels[patient_id] = labels_for_patient
+
+    print(
+        f"Records for {len(labels)} patients labeled. {patient_not_found_count} patients not found in diagnoses table."
+    )
+
+    return labels
 
 
 def save_patient_records_to_pickle(dataframes, filename):

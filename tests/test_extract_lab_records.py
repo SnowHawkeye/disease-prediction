@@ -6,10 +6,12 @@ from unittest import mock
 import numpy as np
 import pandas as pd
 import pytest
+from datetime import datetime
 
 from src.features.mimic.extract_lab_records import extract_lab_records, save_patient_records_to_parquet_archive, \
     load_patient_records_from_pickle, \
-    save_patient_records_to_pickle, load_patient_records_from_parquet_archive, filter_lab_records, make_rolling_records
+    save_patient_records_to_pickle, load_patient_records_from_parquet_archive, filter_lab_records, make_rolling_records, \
+    label_lab_records
 
 
 @pytest.fixture
@@ -222,6 +224,152 @@ def test_make_rolling_records_year():
         for date in result[patient_id]:
             pd.testing.assert_frame_equal(result[patient_id][date], expected[patient_id][date],
                                           check_dtype=False, check_freq=False)
+
+
+# Labeling function
+
+def test_label_lab_records():
+    # Sample input data
+    patient_rolling_lab_records = {
+        1: {
+            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [1, 2, 3]}),
+            datetime(2021, 2, 1): pd.DataFrame({"lab_result": [4, 5, 6]})
+        },
+        2: {
+            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [7, 8, 9]})
+        }
+    }
+
+    gap_days = 1
+    prediction_window_days = 10
+    positive_diagnoses = ['D1', 'D2']
+
+    diagnoses_data = {
+        'patient_id': [1, 1, 2],
+        'admission_id': [100, 101, 200],
+        'diagnosis_code': ['D1', 'D3', 'D2']
+    }
+    diagnoses_table = pd.DataFrame(diagnoses_data)
+
+    admissions_data = {
+        'patient_id': [1, 1, 2],
+        'admission_id': [100, 101, 200],
+        'discharge_time': ['2021-01-05', '2021-02-05', '2021-01-15']
+    }
+    admissions_table = pd.DataFrame(admissions_data)
+    admissions_table["discharge_time"] = pd.to_datetime(admissions_table["discharge_time"])
+
+    expected_output = {
+        1: {
+            datetime(2021, 1, 1): 1,
+            datetime(2021, 2, 1): 0
+        },
+        2: {
+            datetime(2021, 1, 1): 0
+        }
+    }
+
+    # Function call
+    result = label_lab_records(patient_rolling_lab_records, gap_days, prediction_window_days, positive_diagnoses,
+                               diagnoses_table, admissions_table)
+
+    # Assert
+    assert result == expected_output
+
+
+def test_label_lab_records_no_diagnoses():
+    # Sample input data
+    patient_rolling_lab_records = {
+        1: {
+            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [1, 2, 3]}),
+            datetime(2021, 2, 1): pd.DataFrame({"lab_result": [4, 5, 6]})
+        },
+        2: {
+            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [7, 8, 9]})
+        }
+    }
+
+    gap_days = 1
+    prediction_window_days = 10
+    positive_diagnoses = ['D1', 'D2']
+
+    diagnoses_data = {
+        'patient_id': [1, 2],
+        'admission_id': [300, 400],
+        'diagnosis_code': ['D3', 'D4']
+    }
+    diagnoses_table = pd.DataFrame(diagnoses_data)
+
+    admissions_data = {
+        'patient_id': [1,2],
+        'admission_id': [300, 400],
+        'discharge_time': ['2021-01-05', '2021-02-05']
+    }
+    admissions_table = pd.DataFrame(admissions_data)
+    admissions_table["discharge_time"] = pd.to_datetime(admissions_table["discharge_time"])
+
+    expected_output = {
+        1: {
+            datetime(2021, 1, 1): 0,
+            datetime(2021, 2, 1): 0
+        },
+        2: {
+            datetime(2021, 1, 1): 0
+        }
+    }
+
+    # Function call
+    result = label_lab_records(patient_rolling_lab_records, gap_days, prediction_window_days, positive_diagnoses,
+                               diagnoses_table, admissions_table)
+
+    # Assert
+    assert result == expected_output
+
+
+def test_label_lab_records_missing_patients():
+    # Sample input data
+    patient_rolling_lab_records = {
+        1: {
+            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [1, 2, 3]}),
+            datetime(2021, 2, 1): pd.DataFrame({"lab_result": [4, 5, 6]})
+        },
+        2: {
+            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [7, 8, 9]})
+        }
+    }
+
+    gap_days = 1
+    prediction_window_days = 10
+    positive_diagnoses = ['D1', 'D2']
+
+    diagnoses_data = {
+        'patient_id': [1],
+        'admission_id': [100],
+        'diagnosis_code': ['D1']
+    }
+    diagnoses_table = pd.DataFrame(diagnoses_data)
+
+    admissions_data = {
+        'patient_id': [1],
+        'admission_id': [100],
+        'discharge_time': ['2021-01-05']
+    }
+    admissions_table = pd.DataFrame(admissions_data)
+    admissions_table["discharge_time"] = pd.to_datetime(admissions_table["discharge_time"])
+
+    expected_output = {
+        1: {
+            datetime(2021, 1, 1): 1,
+            datetime(2021, 2, 1): 0
+        }
+    }
+
+    # Function call
+    result = label_lab_records(patient_rolling_lab_records, gap_days, prediction_window_days, positive_diagnoses,
+                               diagnoses_table, admissions_table)
+
+    # Assert
+    assert result == expected_output
 
 
 # Save and load functions

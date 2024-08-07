@@ -1,0 +1,7 @@
+{
+  "lab_records": "data/ckd_stage_5/lab_records.pkl",
+  "filtered_analyses": "data/ckd_stage_5/filtered_analyses.pkl",
+  "filtered_lab_records": "data/ckd_stage_5/filtered_lab_records.pkl",
+  "rolling_lab_records": "data/ckd_stage_5/rolling_lab_records.pkl",
+  "labeled_lab_records": "data/ckd_stage_5/labeled_lab_records.pkl"
+}

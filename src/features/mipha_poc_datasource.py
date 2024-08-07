@@ -7,7 +7,7 @@ import pandas as pd
 from mipha.framework import DataSource
 from sklearn.model_selection import train_test_split
 
-from code.datasets.mimic_dataset import MimicDataset
+from src.datasets.mimic_dataset import MimicDataset
 
 
 class Stage5CkdData:
@@ -16,7 +16,6 @@ class Stage5CkdData:
         :param dataset: The dataset to fetch data from.
         """
         self.dataset = dataset
-        self.cols = dataset.column_aliases
         self.processed_data_root = processed_data_root
 
     def _split_data(self, x, y, meta, test_size=0.2, random_state=None):
@@ -24,9 +23,7 @@ class Stage5CkdData:
         Split data between train and test set based on the patients' IDs.
         :return: x_train, x_test, y_train, y_test, meta_train, meta_test
         """
-        patient_id = self.cols["patient_id"]
-
-        df_id = pd.DataFrame([t[patient_id] for t in meta])
+        df_id = pd.DataFrame([t["patient_id"] for t in meta])
 
         train, test = train_test_split(df_id.drop_duplicates(), test_size=test_size, random_state=random_state)
         indices_train = pd.merge(df_id.reset_index(), train, on=0)["index"]
@@ -49,14 +46,11 @@ class Stage5CkdData:
         Does not account for exact birthdate, but a +/-1 year difference is accepted"""
         # FIXME we assume the id is effectively in the patients table
 
-        patient_id = self.cols["patient_id"]
-        analysis_time = self.cols["analysis_time"]
-
-        row = patients_table[patients_table[patient_id] == analysis_metadata[patient_id]].iloc[0][
+        row = patients_table[patients_table["patient_id"] == analysis_metadata["patient_id"]].iloc[0][
             ["gender", "anchor_age", "anchor_year"]]
         current_age = (
                 row["anchor_age"] +  # age used as reference
-                pd.to_datetime(analysis_metadata[analysis_time]).year -  # year when the analysis was performed
+                pd.to_datetime(analysis_metadata["analysis_time"]).year -  # year when the analysis was performed
                 pd.to_datetime(row["anchor_year"], format="%Y").year  # year used as reference
         )
         return {"gender": row["gender"], "age": current_age}

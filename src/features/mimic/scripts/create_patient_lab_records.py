@@ -1,5 +1,5 @@
 from datasets.mimic_dataset import MimicDataset
-from features.mimic.extract_lab_records import extract_lab_records, save_patient_records_to_pickle
+from features.mimic.extract_lab_records import extract_lab_records, save_pickle
 
 
 def main():
@@ -15,7 +15,7 @@ def main():
         aggfunc='mean'
     )
 
-    save_patient_records_to_pickle(patient_dataframes, "data/patient_lab_records.pkl")
+    save_pickle(patient_dataframes, "data/patient_lab_records.pkl")
 
 
 if __name__ == '__main__':

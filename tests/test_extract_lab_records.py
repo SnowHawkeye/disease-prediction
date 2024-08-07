@@ -9,8 +9,8 @@ import pytest
 from datetime import datetime
 
 from src.features.mimic.extract_lab_records import extract_lab_records, save_patient_records_to_parquet_archive, \
-    load_patient_records_from_pickle, \
-    save_patient_records_to_pickle, load_patient_records_from_parquet_archive, filter_lab_records, make_rolling_records, \
+    load_pickle, \
+    save_pickle, load_patient_records_from_parquet_archive, filter_lab_records, make_rolling_records, \
     label_lab_records
 
 
@@ -386,7 +386,7 @@ def test_save_patient_records_to_pickle(sample_dataframes):
         filename = temp_file.name
 
     try:
-        save_patient_records_to_pickle(sample_dataframes, filename)
+        save_pickle(sample_dataframes, filename)
 
         with open(filename, 'rb') as handle:
             loaded_data = pickle.load(handle)
@@ -406,7 +406,7 @@ def test_load_patient_records_from_pickle(sample_dataframes):
         with open(filename, 'wb') as handle:
             pickle.dump(sample_dataframes, handle)
 
-        loaded_data = load_patient_records_from_pickle(filename)
+        loaded_data = load_pickle(filename)
 
         for key in sample_dataframes:
             assert key in loaded_data

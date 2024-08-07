@@ -1,0 +1,9 @@
+{
+    "selected_analyses_ids": [50912],
+    "positive_diagnoses": ["5855", "N185"],
+    "lab_records_frequency": "h",
+    "backward_window_time_unit": "month",
+    "backward_window_value": 1,
+    "gap_days": 15,
+    "prediction_window_days": 90
+}

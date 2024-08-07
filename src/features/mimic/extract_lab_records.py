@@ -175,23 +175,26 @@ def label_lab_records(patient_rolling_lab_records, gap_days, prediction_window_d
     return labels
 
 
-def save_patient_records_to_pickle(dataframes, filename):
+def save_pickle(dataframes, filename):
     """
     :param dataframes: provided as a dictionary where keys are patient IDs
     :param filename: file to save to
     """
-    print(f"Saving patient records to {filename}...")
+    print(f"Saving data to {filename}...")
     with open(filename, "wb") as handle:
         pickle.dump(dataframes, handle)
-    print(f"Patient records successfully saved to {filename}")
+    print(f"Data successfully saved to {filename}")
 
 
-def load_patient_records_from_pickle(filename):
+def load_pickle(filename):
     """
     :param filename: file to load data from
     """
+    print(f"Loading data from {filename}...")
     with open(filename, "rb") as file:
-        return pickle.load(file)
+        result = pickle.load(file)
+        print(f"Data successfully loaded from {filename}")
+        return result
 
 
 def save_patient_records_to_parquet_archive(data, archive_name='data.zip'):

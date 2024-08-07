@@ -1,0 +1,7 @@
+{
+  "lab_records": "data/test_extraction/lab_records.pkl",
+  "filtered_analyses": "data/test_extraction/filtered_analyses.pkl",
+  "filtered_lab_records": "data/test_extraction/filtered_lab_records.pkl",
+  "rolling_lab_records": "data/test_extraction/rolling_lab_records.pkl",
+  "labeled_lab_records": "data/test_extraction/labeled_lab_records.pkl"
+}

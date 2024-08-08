@@ -231,23 +231,26 @@ def test_make_rolling_records_year():
 def test_label_lab_records():
     # Sample input data
     patient_rolling_lab_records = {
-        1: {
-            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [1, 2, 3]}),
-            datetime(2021, 2, 1): pd.DataFrame({"lab_result": [4, 5, 6]})
+        1: {  # positive patient
+            datetime(2020, 1, 1): pd.DataFrame({"lab_result": [1, 2, 3]}),  # too long before the diagnosis
+            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [1, 2, 3]}),  # labeled positive
+            datetime(2021, 1, 4): pd.DataFrame({"lab_result": [4, 5, 6]}),  # after the first diagnosis, will not appear
+            datetime(2021, 3, 1): pd.DataFrame({"lab_result": [4, 5, 6]}),  # after the first diagnosis, will not appear
         },
-        2: {
-            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [7, 8, 9]})
+        2: {  # negative patient
+            datetime(2021, 1, 1): pd.DataFrame({"lab_result": [7, 8, 9]}),  # labeled negative
+            datetime(2022, 1, 1): pd.DataFrame({"lab_result": [7, 8, 9]})  # labeled negative
         }
     }
 
-    gap_days = 1
+    gap_days = 2
     prediction_window_days = 10
     positive_diagnoses = ['D1', 'D2']
 
     diagnoses_data = {
         'patient_id': [1, 1, 2],
         'admission_id': [100, 101, 200],
-        'diagnosis_code': ['D1', 'D3', 'D2']
+        'diagnosis_code': ['D1', 'D3', 'D3']
     }
     diagnoses_table = pd.DataFrame(diagnoses_data)
 
@@ -261,11 +264,12 @@ def test_label_lab_records():
 
     expected_output = {
         1: {
+            datetime(2020, 1, 1): 0,
             datetime(2021, 1, 1): 1,
-            datetime(2021, 2, 1): 0
         },
         2: {
-            datetime(2021, 1, 1): 0
+            datetime(2021, 1, 1): 0,
+            datetime(2022, 1, 1): 0,
         }
     }
 
@@ -301,7 +305,7 @@ def test_label_lab_records_no_diagnoses():
     diagnoses_table = pd.DataFrame(diagnoses_data)
 
     admissions_data = {
-        'patient_id': [1,2],
+        'patient_id': [1, 2],
         'admission_id': [300, 400],
         'discharge_time': ['2021-01-05', '2021-02-05']
     }
@@ -360,7 +364,6 @@ def test_label_lab_records_missing_patients():
     expected_output = {
         1: {
             datetime(2021, 1, 1): 1,
-            datetime(2021, 2, 1): 0
         }
     }
 

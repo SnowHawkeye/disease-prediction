@@ -148,21 +148,28 @@ def label_lab_records(patient_rolling_lab_records, gap_days, prediction_window_d
             patient_not_found_count += 1
             continue
 
-        labels_for_patient = {}
+        labels_for_patient = {}  # dictionary containing the labels for each observation date
+        timed_diagnoses = (grouped_diagnoses.get_group(patient_id)  # merging to include discharge_time = diagnosis time
+                           .merge(grouped_admissions.get_group(patient_id), on="admission_id"))
+
+        # finding the earliest diagnosis of interest, if it exists
+        filtered_timed_diagnoses = timed_diagnoses[timed_diagnoses["diagnosis_code"].isin(positive_diagnoses)]
+        earliest_date = filtered_timed_diagnoses["discharge_time"].min()  # NaT if no such date exists
+
         for observation_date, df in rolling_records.items():
-            prediction_window_start = observation_date + gap_delta
-            prediction_window_end = observation_date + gap_delta + prediction_window_delta
+            if pd.isna(earliest_date):  # if the patient is negative
+                label = 0  # the label will always be 0
 
-            # discharge_time is used as diagnosis time
-            timed_diagnoses = (grouped_diagnoses.get_group(patient_id)
-                               .merge(grouped_admissions.get_group(patient_id), on="admission_id"))
+            else:  # if the patient is positive
+                # if the observation date is later than the earliest diagnosis
+                # observation_date + gap = "effective" observation date
+                if observation_date + gap_delta> earliest_date:
+                    continue  # skip this observation date, do not add a label
+                else:  # the observation date is before the earliest diagnosis
+                    prediction_window_start = observation_date + gap_delta
+                    prediction_window_end = observation_date + gap_delta + prediction_window_delta
 
-            diagnoses_in_window = timed_diagnoses[
-                (prediction_window_start <= timed_diagnoses["discharge_time"]) &
-                (timed_diagnoses["discharge_time"] <= prediction_window_end)
-                ]
-
-            label = 1 if diagnoses_in_window["diagnosis_code"].isin(positive_diagnoses).any() else 0
+                    label = 1 if prediction_window_start <= earliest_date <= prediction_window_end else 0
 
             labels_for_patient[observation_date] = label
 

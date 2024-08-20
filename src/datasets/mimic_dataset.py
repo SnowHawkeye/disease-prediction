@@ -30,6 +30,7 @@ class MimicDataset:
             'storetime': 'analysis_time',
             'label': 'analysis_name',
             'valuenum': 'analysis_value',
+            'ecg_time': 'ecg_time',
         }
 
         tables = {
@@ -39,10 +40,12 @@ class MimicDataset:
             "diagnoses": "diagnoses_icd.csv.gz",
             "analyses": "labevents.csv.gz",
             "admissions": "admissions.csv.gz",
+            "ecg_machine_measurements": "machine_measurements.csv",
         }
 
         modules = {
             "hospital": "hosp",
+            "ecg": "ecg",
         }
 
         load_params = {
@@ -87,6 +90,9 @@ class MimicDataset:
 
     def get_analyses_lookup(self):
         return self.get_table("hospital", "analyses_lookup")
+
+    def get_ecg_machine_measurements(self):
+        return self.get_table("ecg", "ecg_machine_measurements")
 
     @staticmethod
     def create_config_file(config_path):

@@ -2,20 +2,20 @@ import os
 from os import path
 
 from datasets.mimic_dataset import MimicDataset
-from features.mimic.extract_lab_records import extract_lab_records, load_pickle, save_pickle, filter_lab_records, \
-    make_rolling_records, label_lab_records
-from features.mimic.scripts.labeled_lab_data_extraction_config import Config
+from features.mimic.extract_lab_records import extract_lab_records, load_pickle, save_pickle, filter_lab_records
+from features.mimic.process_records import make_rolling_records, label_records
+from features.mimic.scripts.data_extraction_config import Config
 
 
 def extract_data(extraction_config_file_path, paths_config_filepath, dataset_config_file_path):
     """
     Extract data according to parameters given in the config files.
     The script automatically advances to the furthest step for which a result has been provided
-    (i.e. a file already exists at the path where the step's result has to be saved)
+    (i.e. a file already exists at the path where the step's result has to be saved).
+    Make sure no file exists for the last step (labeled_lab_records).
     :param extraction_config_file_path: Config file for extraction parameters
     :param paths_config_filepath: Config file for save and load paths
     :param dataset_config_file_path: Config file for dataset
-    :return:
     """
 
     # Load config
@@ -109,7 +109,7 @@ def make_filtered_lab_records(cfg, lab_records, paths):
 
 def make_rolling_lab_records(cfg, filtered_lab_records, paths):
     rolling_lab_records = make_rolling_records(
-        patient_lab_records=filtered_lab_records,
+        patient_records=filtered_lab_records,
         time_unit=cfg.backward_window_time_unit,
         backward_window=cfg.backward_window_value
     )
@@ -122,8 +122,8 @@ def make_rolling_lab_records(cfg, filtered_lab_records, paths):
 def label_rolling_lab_records(cfg, dataset, rolling_lab_records, paths):
     diagnoses_table = dataset.get_diagnoses()
     admissions_table = dataset.get_admissions()
-    labeled_lab_records = label_lab_records(
-        patient_rolling_lab_records=rolling_lab_records,
+    labeled_lab_records = label_records(
+        patient_rolling_records=rolling_lab_records,
         gap_days=cfg.gap_days,
         prediction_window_days=cfg.prediction_window_days,
         positive_diagnoses=cfg.positive_diagnoses,

@@ -193,6 +193,9 @@ def test_make_rolling_records_month_set_observation_dates():
     data = {
         'patient_1': pd.DataFrame({
             'value': [1, 2, 3, 4],
+        }, index=pd.to_datetime(['2023-01-08', '2023-02-14', '2023-04-24', '2023-08-12'])),
+        'patient_2': pd.DataFrame({
+            'value': [1, 2, 3, 4],
         }, index=pd.to_datetime(['2023-01-08', '2023-02-14', '2023-04-24', '2023-08-12']))
     }
     expected = {

@@ -4,18 +4,18 @@ from os import path
 from datasets.mimic_dataset import MimicDataset
 from features.mimic.extract_lab_records import extract_lab_records, load_pickle, save_pickle, filter_lab_records
 from features.mimic.process_records import make_rolling_records, label_records
-from features.mimic.scripts.labeled_lab_data_extraction_config import Config
+from features.mimic.scripts.data_extraction_config import Config
 
 
 def extract_data(extraction_config_file_path, paths_config_filepath, dataset_config_file_path):
     """
     Extract data according to parameters given in the config files.
     The script automatically advances to the furthest step for which a result has been provided
-    (i.e. a file already exists at the path where the step's result has to be saved)
+    (i.e. a file already exists at the path where the step's result has to be saved).
+    Make sure no file exists for the last step (labeled_lab_records).
     :param extraction_config_file_path: Config file for extraction parameters
     :param paths_config_filepath: Config file for save and load paths
     :param dataset_config_file_path: Config file for dataset
-    :return:
     """
 
     # Load config

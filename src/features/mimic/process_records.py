@@ -52,7 +52,10 @@ def make_rolling_records(patient_records, time_unit: str, backward_window: int, 
         if observation_dates is None:
             observation_dates_for_patient = resampled.index
         else:
-            observation_dates_for_patient = observation_dates[patient_id]
+            try:
+                observation_dates_for_patient = observation_dates[patient_id]
+            except KeyError:  # skip patient if it is not in the given observation dates
+                continue
 
         for observation_date in observation_dates_for_patient:
             # Normalize date

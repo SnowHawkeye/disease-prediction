@@ -123,6 +123,122 @@ def test_make_rolling_records_year():
                                           check_dtype=False, check_freq=False)
 
 
+def test_make_rolling_records_day_set_observation_date():
+    # Test with time_unit='day' and backward_window=3
+    observations_dates = {
+        "patient_1": [
+            pd.Timestamp('2023-01-04'),
+            pd.Timestamp('2023-01-06'),
+        ]
+    }
+
+    data = {
+        'patient_1': pd.DataFrame({
+            'value': [1, 2, 3, 4],
+        }, index=pd.to_datetime(['2023-01-01', '2023-01-02', '2023-01-03', '2023-01-04'])),
+    }
+    expected = {
+        'patient_1': {
+            pd.Timestamp('2023-01-04'): pd.DataFrame({'value': [2, 3, 4]},
+                                                     index=pd.to_datetime(['2023-01-02', '2023-01-03', '2023-01-04'])),
+            pd.Timestamp('2023-01-06'): pd.DataFrame({'value': [4, np.nan, np.nan]},
+                                                     index=pd.to_datetime(['2023-01-04', '2023-01-05', '2023-01-06'])),
+        },
+    }
+    result = make_rolling_records(data, 'day', 3, observations_dates)
+    for patient_id in result:
+        for date in result[patient_id]:
+            pd.testing.assert_frame_equal(result[patient_id][date], expected[patient_id][date],
+                                          check_dtype=False, check_freq=False)
+
+
+def test_make_rolling_records_week_set_observation_date():
+    # Test with time_unit='week' and backward_window=2
+    observations_dates = {
+        "patient_1": [
+            pd.Timestamp('2023-01-05'),
+            pd.Timestamp('2024-05-28'),
+        ]
+    }
+
+    data = {
+        'patient_1': pd.DataFrame({
+            'value': [1, 2],
+        }, index=pd.to_datetime(['2023-01-08', '2023-01-15']))
+    }
+    expected = {
+        'patient_1': {
+            pd.Timestamp('2023-01-05'): pd.DataFrame({'value': [np.nan, 1]},
+                                                     index=pd.to_datetime(['2023-01-01', '2023-01-08'])),
+            pd.Timestamp('2024-05-28'): pd.DataFrame({'value': [np.nan, np.nan]},
+                                                     index=pd.to_datetime(['2024-05-26', '2024-06-02'])),
+        }
+    }
+    result = make_rolling_records(data, 'week', 2, observations_dates)
+    for patient_id in result:
+        for date in result[patient_id]:
+            pd.testing.assert_frame_equal(result[patient_id][date], expected[patient_id][date],
+                                          check_dtype=False, check_freq=False)
+
+
+def test_make_rolling_records_month_set_observation_dates():
+    # Test with time_unit='month' and backward_window=2
+    observations_dates = {
+        "patient_1": [
+            pd.Timestamp('2023-01-31'),
+            pd.Timestamp('2023-05-28'),
+        ]
+    }
+
+    data = {
+        'patient_1': pd.DataFrame({
+            'value': [1, 2, 3, 4],
+        }, index=pd.to_datetime(['2023-01-08', '2023-02-14', '2023-04-24', '2023-08-12']))
+    }
+    expected = {
+        'patient_1': {
+            pd.Timestamp('2023-01-31'): pd.DataFrame({'value': [np.nan, 1]},
+                                                     index=pd.to_datetime(['2022-12-31', '2023-01-31'])),
+            pd.Timestamp('2023-05-28'): pd.DataFrame({'value': [3, np.nan]},
+                                                     index=pd.to_datetime(['2023-04-30', '2023-05-31'])),
+        }
+    }
+    result = make_rolling_records(data, 'month', 2, observation_dates=observations_dates)
+    for patient_id in result:
+        for date in result[patient_id]:
+            pd.testing.assert_frame_equal(result[patient_id][date], expected[patient_id][date],
+                                          check_dtype=False, check_freq=False)
+
+
+def test_make_rolling_records_year_set_observation_dates():
+    # Test with time_unit='year' and backward_window=2
+    observations_dates = {
+        "patient_1": [
+            pd.Timestamp('2023-06-06'),
+            pd.Timestamp('2024-04-24'),
+        ]
+    }
+
+    data = {
+        'patient_1': pd.DataFrame({
+            'value': [1, 2, 3, 4],
+        }, index=pd.to_datetime(['2023-01-08', '2024-02-14', '2027-04-24', '2029-08-12']))
+    }
+    expected = {
+        'patient_1': {
+            pd.Timestamp('2023-06-06'): pd.DataFrame({'value': [np.nan, 1]},
+                                                     index=pd.to_datetime(['2022-12-31', '2023-12-31'])),
+            pd.Timestamp('2024-04-24'): pd.DataFrame({'value': [1, 2]},
+                                                     index=pd.to_datetime(['2023-12-31', '2024-12-31'])),
+        }
+    }
+    result = make_rolling_records(data, 'year', 2, observations_dates)
+    for patient_id in result:
+        for date in result[patient_id]:
+            pd.testing.assert_frame_equal(result[patient_id][date], expected[patient_id][date],
+                                          check_dtype=False, check_freq=False)
+
+
 def test_label_records():
     # Sample input data
     patient_rolling_records = {

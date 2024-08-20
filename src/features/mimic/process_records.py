@@ -8,6 +8,13 @@ def make_rolling_records(patient_records, time_unit: str, backward_window: int, 
     containing data from the previous `backward_window` units of time.
     If not provided, observation dates correspond to each record date, after resampling at the frequency given by `time_unit`.
 
+    ⚠️ When providing observation dates, the backward window will be computed not from the observation date directly,
+    but from the nearest month end / week sunday / year end, depending on the time unit (time_unit = 'day' should not be concerned).
+    The reason for this is that it allows for the normalization of matrix sizes.
+    This could lead to edge cases where data is recorded under an observation date, even though it is technically after.
+    This should only occur with "custom" observation dates, since when observation_dates = None, data is resampled and matches that behavior.
+    As such, it is safer to provide observation dates that correspond to month end / week sunday / year end.
+
     Parameters:
         :param patient_records: A dictionary where keys are patient IDs and values are DataFrames.
         :param time_unit: Base time unit for the output's indexes. Possible values are: {'day', 'week', 'month', 'year'}
@@ -34,15 +41,23 @@ def make_rolling_records(patient_records, time_unit: str, backward_window: int, 
 
     result = {}
 
-    for key, df in tqdm(patient_records.items(), desc="Creating rolling records for patients"):
+    for patient_id, df in tqdm(patient_records.items(), desc="Creating rolling records for patients"):
         # Resample the dataframe according to the specified frequency
         resampled = df.resample(offsets[time_unit]).mean().asfreq(offsets[time_unit]).dropna(how='all')
 
         # Create a dictionary to store sub-DataFrames for each time point
         sub_dfs = {}
 
-        # Iterate over the resampled index
-        for date in resampled.index:
+        # Iterate over the given observation dates if they exist, or the resampled index if not
+        if observation_dates is None:
+            observation_dates_for_patient = resampled.index
+        else:
+            observation_dates_for_patient = observation_dates[patient_id]
+
+        for observation_date in observation_dates_for_patient:
+            # Normalize date
+            date = roll_timestamp_forward(observation_date, time_unit)
+
             # Calculate the start date for the window
             one_time_unit = pd.Timedelta(deltas[time_unit])
             start_date = date - one_time_unit * backward_window
@@ -58,10 +73,10 @@ def make_rolling_records(patient_records, time_unit: str, backward_window: int, 
             full_df = full_df.merge(sub_df, left_index=True, right_index=True, how='left')
 
             # Add the sub-DataFrame to the dictionary
-            sub_dfs[date] = full_df
+            sub_dfs[observation_date] = full_df
 
         # Store the dictionary of sub-DataFrames in the result dictionary
-        result[key] = sub_dfs
+        result[patient_id] = sub_dfs
 
     return result
 
@@ -143,3 +158,24 @@ def label_records(patient_rolling_records, gap_days, prediction_window_days, pos
     )
 
     return labels
+
+
+def roll_timestamp_forward(timestamp, time_unit: str):
+    if time_unit == 'day':
+        # Return the timestamp as it is
+        return timestamp
+
+    elif time_unit == 'week':
+        # Round to the nearest end of the week (Sunday)
+        return pd.offsets.Week(weekday=6).rollforward(timestamp)
+
+    elif time_unit == 'month':
+        # Roll forward to the nearest end of the month
+        return pd.offsets.MonthEnd().rollforward(timestamp)
+
+    elif time_unit == 'year':
+        # Roll forward to the nearest end of the year
+        return pd.offsets.YearEnd().rollforward(timestamp)
+
+    else:
+        raise ValueError("Choice must be 'day', 'week', 'month', or 'year'")

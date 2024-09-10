@@ -5,7 +5,7 @@ from features.mimic.extract_lab_records import extract_lab_records, save_pickle
 
 
 def get_sample_analyses():
-    return pd.read_parquet("data/analyses_sample.parquet")
+    return pd.read_parquet("data/sample/analyses_sample.parquet")
 
 
 def main():
@@ -22,7 +22,7 @@ def main():
         aggfunc='mean'
     )
 
-    save_pickle(patient_dataframes, "data/sample_patient_lab_records.pkl")
+    save_pickle(patient_dataframes, "data/sample/sample_patient_lab_records.pkl")
 
 
 if __name__ == '__main__':

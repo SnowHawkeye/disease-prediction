@@ -137,8 +137,8 @@ def label_rolling_lab_records(cfg, dataset, rolling_lab_records, paths):
 
 
 def main():
-    EXTRACTION_CONFIG_FILEPATH = "config/test_extraction_config.json"
-    PATH_CONFIG_FILEPATH = "config/test_extraction_paths.json"
+    EXTRACTION_CONFIG_FILEPATH = "config/test_extraction/test_extraction_config.json"
+    PATH_CONFIG_FILEPATH = "config/test_extraction/test_extraction_paths.json"
     MIMIC_DATASET_CONFIG_FILEPATH = "config/mimic_dataset.mipha.json"
 
     extract_data(

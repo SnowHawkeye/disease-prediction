@@ -1,0 +1,4576 @@
+[{
+  "label": "Hematocrit",
+  "itemid": "51221",
+  "event_count": "3325700",
+  "percentage": "2.8143027236030873"
+}, {
+  "label": "Creatinine",
+  "itemid": "50912",
+  "event_count": "3282278",
+  "percentage": "2.7775577818271326"
+}, {
+  "label": "Platelet Count",
+  "itemid": "51265",
+  "event_count": "3216656",
+  "percentage": "2.7220265633383085"
+}, {
+  "label": "Urea Nitrogen",
+  "itemid": "51006",
+  "event_count": "3189474",
+  "percentage": "2.6990243753378937"
+}, {
+  "label": "Hemoglobin",
+  "itemid": "51222",
+  "event_count": "3188835",
+  "percentage": "2.6984836352108883"
+}, {
+  "label": "White Blood Cells",
+  "itemid": "51301",
+  "event_count": "3171798",
+  "percentage": "2.6840664371767824"
+}, {
+  "label": "MCHC",
+  "itemid": "51249",
+  "event_count": "3167190",
+  "percentage": "2.680167015415841"
+}, {
+  "label": "Red Blood Cells",
+  "itemid": "51279",
+  "event_count": "3167075",
+  "percentage": "2.6800696991175537"
+}, {
+  "label": "MCV",
+  "itemid": "51250",
+  "event_count": "3167074",
+  "percentage": "2.6800688528888728"
+}, {
+  "label": "MCH",
+  "itemid": "51248",
+  "event_count": "3167073",
+  "percentage": "2.6800680066601923"
+}, {
+  "label": "RDW",
+  "itemid": "51277",
+  "event_count": "3166860",
+  "percentage": "2.67988775995119"
+}, {
+  "label": "Potassium",
+  "itemid": "50971",
+  "event_count": "3150261",
+  "percentage": "2.665841210079257"
+}, {
+  "label": "Sodium",
+  "itemid": "50983",
+  "event_count": "3119778",
+  "percentage": "2.640045621203654"
+}, {
+  "label": "Chloride",
+  "itemid": "50902",
+  "event_count": "3083705",
+  "percentage": "2.6095196140026036"
+}, {
+  "label": "Bicarbonate",
+  "itemid": "50882",
+  "event_count": "2972827",
+  "percentage": "2.5156914703373112"
+}, {
+  "label": "Anion Gap",
+  "itemid": "50868",
+  "event_count": "2965452",
+  "percentage": "2.509450533816707"
+}, {
+  "label": "Glucose",
+  "itemid": "50931",
+  "event_count": "2749562",
+  "percentage": "2.3267582239274596"
+}, {
+  "label": "Calcium, Total",
+  "itemid": "50893",
+  "event_count": "2190816",
+  "percentage": "1.8539313334676073"
+}, {
+  "label": "Magnesium",
+  "itemid": "50960",
+  "event_count": "2154209",
+  "percentage": "1.822953440151031"
+}, {
+  "label": "Phosphate",
+  "itemid": "50970",
+  "event_count": "2066052",
+  "percentage": "1.7483524583412833"
+}, {
+  "label": "H",
+  "itemid": "50934",
+  "event_count": "1457350",
+  "percentage": "1.2332513679053911"
+}, {
+  "label": "L",
+  "itemid": "51678",
+  "event_count": "1457335",
+  "percentage": "1.2332386744751798"
+}, {
+  "label": "I",
+  "itemid": "50947",
+  "event_count": "1457326",
+  "percentage": "1.2332310584170529"
+}, {
+  "label": "INR(PT)",
+  "itemid": "51237",
+  "event_count": "1399650",
+  "percentage": "1.1844239730255468"
+}, {
+  "label": "PT",
+  "itemid": "51274",
+  "event_count": "1398998",
+  "percentage": "1.1838722319256914"
+}, {
+  "label": "Estimated GFR (MDRD equation)",
+  "itemid": "50920",
+  "event_count": "1373686",
+  "percentage": "1.1624524915582977"
+}, {
+  "label": "RDW-SD",
+  "itemid": "52172",
+  "event_count": "1365729",
+  "percentage": "1.1557190499454915"
+}, {
+  "label": "Alanine Aminotransferase (ALT)",
+  "itemid": "50861",
+  "event_count": "1348729",
+  "percentage": "1.1413331623725735"
+}, {
+  "label": "Asparate Aminotransferase (AST)",
+  "itemid": "50878",
+  "event_count": "1321132",
+  "percentage": "1.1179797894696437"
+}, {
+  "label": "PTT",
+  "itemid": "51275",
+  "event_count": "1261627",
+  "percentage": "1.0676249518210279"
+}, {
+  "label": "Lymphocytes",
+  "itemid": "51244",
+  "event_count": "1241592",
+  "percentage": "1.0506707602020038"
+}, {
+  "label": "Neutrophils",
+  "itemid": "51256",
+  "event_count": "1241592",
+  "percentage": "1.0506707602020038"
+}, {
+  "label": "Monocytes",
+  "itemid": "51254",
+  "event_count": "1241591",
+  "percentage": "1.0506699139733231"
+}, {
+  "label": "Basophils",
+  "itemid": "51146",
+  "event_count": "1241587",
+  "percentage": "1.0506665290586001"
+}, {
+  "label": "Eosinophils",
+  "itemid": "51200",
+  "event_count": "1241587",
+  "percentage": "1.0506665290586001"
+}, {
+  "label": "Bilirubin, Total",
+  "itemid": "50885",
+  "event_count": "1174903",
+  "percentage": "0.99423661571080912"
+}, {
+  "label": "Alkaline Phosphatase",
+  "itemid": "50863",
+  "event_count": "1171421",
+  "percentage": "0.9912900474444033"
+}, {
+  "label": "Albumin",
+  "itemid": "50862",
+  "event_count": "749944",
+  "percentage": "0.63462412176377714"
+}, {
+  "label": "Specific Gravity",
+  "itemid": "51498",
+  "event_count": "682923",
+  "percentage": "0.5779090293505702"
+}, {
+  "label": "pH",
+  "itemid": "51491",
+  "event_count": "682923",
+  "percentage": "0.5779090293505702"
+}, {
+  "label": "Urine Appearance",
+  "itemid": "51506",
+  "event_count": "682923",
+  "percentage": "0.5779090293505702"
+}, {
+  "label": "Leukocytes",
+  "itemid": "51486",
+  "event_count": "682923",
+  "percentage": "0.5779090293505702"
+}, {
+  "label": "Urine Color",
+  "itemid": "51508",
+  "event_count": "682923",
+  "percentage": "0.5779090293505702"
+}, {
+  "label": "Blood",
+  "itemid": "51466",
+  "event_count": "682919",
+  "percentage": "0.57790564443584713"
+}, {
+  "label": "Protein",
+  "itemid": "51492",
+  "event_count": "682918",
+  "percentage": "0.57790479820716634"
+}, {
+  "label": "Glucose",
+  "itemid": "51478",
+  "event_count": "682918",
+  "percentage": "0.57790479820716634"
+}, {
+  "label": "Bilirubin",
+  "itemid": "51464",
+  "event_count": "682917",
+  "percentage": "0.57790395197848565"
+}, {
+  "label": "Ketone",
+  "itemid": "51484",
+  "event_count": "682917",
+  "percentage": "0.57790395197848565"
+}, {
+  "label": "Nitrite",
+  "itemid": "51487",
+  "event_count": "682916",
+  "percentage": "0.57790310574980486"
+}, {
+  "label": "Urobilinogen",
+  "itemid": "51514",
+  "event_count": "682916",
+  "percentage": "0.57790310574980486"
+}, {
+  "label": "Length of Urine Collection",
+  "itemid": "51087",
+  "event_count": "639463",
+  "percentage": "0.54113193088474631"
+}, {
+  "label": "Specimen Type",
+  "itemid": "52033",
+  "event_count": "618512",
+  "percentage": "0.52340259379414644"
+}, {
+  "label": "pH",
+  "itemid": "50820",
+  "event_count": "564412",
+  "percentage": "0.47762162216503767"
+}, {
+  "label": "Absolute Neutrophil Count",
+  "itemid": "52075",
+  "event_count": "541658",
+  "percentage": "0.45836653476302769"
+}, {
+  "label": "Absolute Eosinophil Count",
+  "itemid": "52073",
+  "event_count": "518314",
+  "percentage": "0.43861217243936934"
+}, {
+  "label": "Absolute Monocyte Count",
+  "itemid": "52074",
+  "event_count": "518273",
+  "percentage": "0.43857747706345818"
+}, {
+  "label": "Absolute Lymphocyte Count",
+  "itemid": "51133",
+  "event_count": "518272",
+  "percentage": "0.43857663083477744"
+}, {
+  "label": "Absolute Basophil Count",
+  "itemid": "52069",
+  "event_count": "518272",
+  "percentage": "0.43857663083477744"
+}, {
+  "label": "pO2",
+  "itemid": "50821",
+  "event_count": "511938",
+  "percentage": "0.43321661837084446"
+}, {
+  "label": "Base Excess",
+  "itemid": "50802",
+  "event_count": "511831",
+  "percentage": "0.43312607190200308"
+}, {
+  "label": "Calculated Total CO2",
+  "itemid": "50804",
+  "event_count": "511828",
+  "percentage": "0.43312353321596081"
+}, {
+  "label": "pCO2",
+  "itemid": "50818",
+  "event_count": "511713",
+  "percentage": "0.43302621691767346"
+}, {
+  "label": "Lactate",
+  "itemid": "50813",
+  "event_count": "506778",
+  "percentage": "0.4288500783781235"
+}, {
+  "label": "WBC",
+  "itemid": "51516",
+  "event_count": "480935",
+  "percentage": "0.40698099058124632"
+}, {
+  "label": "RBC",
+  "itemid": "51493",
+  "event_count": "480935",
+  "percentage": "0.40698099058124632"
+}, {
+  "label": "Bacteria",
+  "itemid": "51463",
+  "event_count": "480934",
+  "percentage": "0.40698014435256552"
+}, {
+  "label": "Epithelial Cells",
+  "itemid": "51476",
+  "event_count": "480932",
+  "percentage": "0.406978451895204"
+}, {
+  "label": "Yeast",
+  "itemid": "51519",
+  "event_count": "480932",
+  "percentage": "0.406978451895204"
+}, {
+  "label": "Lactate Dehydrogenase (LD)",
+  "itemid": "50954",
+  "event_count": "473446",
+  "percentage": "0.40064358399103567"
+}, {
+  "label": "Immature Granulocytes",
+  "itemid": "52135",
+  "event_count": "415010",
+  "percentage": "0.35119336480215213"
+}, {
+  "label": "Troponin T",
+  "itemid": "51003",
+  "event_count": "359000",
+  "percentage": "0.303796096392792"
+}, {
+  "label": "Urine Mucous",
+  "itemid": "51512",
+  "event_count": "317765",
+  "percentage": "0.2689018567416589"
+}, {
+  "label": "Thyroid Stimulating Hormone",
+  "itemid": "50993",
+  "event_count": "316395",
+  "percentage": "0.26774252344901789"
+}, {
+  "label": "Green Top Hold (plasma)",
+  "itemid": "50933",
+  "event_count": "303560",
+  "percentage": "0.256881178331465"
+}, {
+  "label": "Free Calcium",
+  "itemid": "50808",
+  "event_count": "281355",
+  "percentage": "0.23809067047519217"
+}, {
+  "label": "Creatine Kinase (CK)",
+  "itemid": "50910",
+  "event_count": "280892",
+  "percentage": "0.23769886659600037"
+}, {
+  "label": "Blue Top Hold",
+  "itemid": "50887",
+  "event_count": "274679",
+  "percentage": "0.23244124780243933"
+}, {
+  "label": "Platelet Smear",
+  "itemid": "51266",
+  "event_count": "251500",
+  "percentage": "0.21282651321110638"
+}, {
+  "label": "Cholesterol, Total",
+  "itemid": "50907",
+  "event_count": "250248",
+  "percentage": "0.211767034902795"
+}, {
+  "label": "Triglycerides",
+  "itemid": "51000",
+  "event_count": "250001",
+  "percentage": "0.21155801641864733"
+}, {
+  "label": "Potassium, Whole Blood",
+  "itemid": "50822",
+  "event_count": "247306",
+  "percentage": "0.20927743012399952"
+}, {
+  "label": "Cholesterol, HDL",
+  "itemid": "50904",
+  "event_count": "244256",
+  "percentage": "0.20669643264768192"
+}, {
+  "label": "Cholesterol Ratio (Total/HDL)",
+  "itemid": "50903",
+  "event_count": "243329",
+  "percentage": "0.2059119786606175"
+}, {
+  "label": "Anisocytosis",
+  "itemid": "51137",
+  "event_count": "233319",
+  "percentage": "0.19744122956621124"
+}, {
+  "label": "Poikilocytosis",
+  "itemid": "51267",
+  "event_count": "233194",
+  "percentage": "0.19733545098111627"
+}, {
+  "label": "Lipase",
+  "itemid": "50956",
+  "event_count": "229600",
+  "percentage": "0.19429410510246528"
+}, {
+  "label": "Macrocytes",
+  "itemid": "51246",
+  "event_count": "228920",
+  "percentage": "0.19371866959954859"
+}, {
+  "label": "Light Green Top Hold",
+  "itemid": "50955",
+  "event_count": "228422",
+  "percentage": "0.19329724771653017"
+}, {
+  "label": "Polychromasia",
+  "itemid": "51268",
+  "event_count": "227292",
+  "percentage": "0.19234100930727152"
+}, {
+  "label": "Microcytes",
+  "itemid": "51252",
+  "event_count": "226410",
+  "percentage": "0.19159463561084134"
+}, {
+  "label": "Creatine Kinase, MB Isoenzyme",
+  "itemid": "50911",
+  "event_count": "226097",
+  "percentage": "0.19132976603376348"
+}, {
+  "label": "Hypochromia",
+  "itemid": "51233",
+  "event_count": "225467",
+  "percentage": "0.19079664196488477"
+}, {
+  "label": "% Hemoglobin A1c",
+  "itemid": "50852",
+  "event_count": "223327",
+  "percentage": "0.18898571258805866"
+}, {
+  "label": "Cholesterol, LDL, Calculated",
+  "itemid": "50905",
+  "event_count": "222310",
+  "percentage": "0.18812509801972588"
+}, {
+  "label": "Bands",
+  "itemid": "51144",
+  "event_count": "215373",
+  "percentage": "0.18225480966129468"
+}, {
+  "label": "Glucose",
+  "itemid": "50809",
+  "event_count": "211004",
+  "percentage": "0.17855763655505483"
+}, {
+  "label": "Metamyelocytes",
+  "itemid": "51251",
+  "event_count": "199315",
+  "percentage": "0.16866606950565274"
+}, {
+  "label": "Myelocytes",
+  "itemid": "51255",
+  "event_count": "197969",
+  "percentage": "0.16752704570134996"
+}, {
+  "label": "Atypical Lymphocytes",
+  "itemid": "51143",
+  "event_count": "196602",
+  "percentage": "0.16637025109475123"
+}, {
+  "label": "eAG",
+  "itemid": "51613",
+  "event_count": "193437",
+  "percentage": "0.16369193732014625"
+}, {
+  "label": "Creatinine, Urine",
+  "itemid": "51082",
+  "event_count": "186319",
+  "percentage": "0.15766848157049751"
+}, {
+  "label": "Oxygen Saturation",
+  "itemid": "50817",
+  "event_count": "176225",
+  "percentage": "0.14912664926690744"
+}, {
+  "label": "Red Top Hold",
+  "itemid": "50979",
+  "event_count": "174612",
+  "percentage": "0.14776168240484178"
+}, {
+  "label": "Protein, Total",
+  "itemid": "50976",
+  "event_count": "159912",
+  "percentage": "0.13532212079767175"
+}, {
+  "label": "Uhold",
+  "itemid": "51103",
+  "event_count": "153299",
+  "percentage": "0.12972601053180674"
+}, {
+  "label": "Intubated",
+  "itemid": "50812",
+  "event_count": "151764",
+  "percentage": "0.12842704950684036"
+}, {
+  "label": "Ferritin",
+  "itemid": "50924",
+  "event_count": "138297",
+  "percentage": "0.11703088786304723"
+}, {
+  "label": "Uric Acid",
+  "itemid": "51007",
+  "event_count": "134539",
+  "percentage": "0.11385076048075166"
+}, {
+  "label": "Urine tube, held",
+  "itemid": "51107",
+  "event_count": "128553",
+  "percentage": "0.1087852355977231"
+}, {
+  "label": "Globulin",
+  "itemid": "50930",
+  "event_count": "126574",
+  "percentage": "0.10711054903849931"
+}, {
+  "label": "C-Reactive Protein",
+  "itemid": "50889",
+  "event_count": "119742",
+  "percentage": "0.1013291146915479"
+}, {
+  "label": "Iron",
+  "itemid": "50952",
+  "event_count": "117310",
+  "percentage": "0.099271086539939921"
+}, {
+  "label": "Ovalocytes",
+  "itemid": "51260",
+  "event_count": "116339",
+  "percentage": "0.098449398490922088"
+}, {
+  "label": "Sodium, Whole Blood",
+  "itemid": "50824",
+  "event_count": "112368",
+  "percentage": "0.095089024399624647"
+}, {
+  "label": "Hematocrit, Calculated",
+  "itemid": "50810",
+  "event_count": "111637",
+  "percentage": "0.0944704312339892"
+}, {
+  "label": "Hemoglobin",
+  "itemid": "50811",
+  "event_count": "111633",
+  "percentage": "0.094467046319266154"
+}, {
+  "label": "Fibrinogen, Functional",
+  "itemid": "51214",
+  "event_count": "110761",
+  "percentage": "0.093729134909643547"
+}, {
+  "label": "Hyaline Casts",
+  "itemid": "51482",
+  "event_count": "105458",
+  "percentage": "0.089241584215573988"
+}, {
+  "label": "Transferrin",
+  "itemid": "50998",
+  "event_count": "104976",
+  "percentage": "0.08883370199144773"
+}, {
+  "label": "Iron Binding Capacity, Total",
+  "itemid": "50953",
+  "event_count": "104902",
+  "percentage": "0.0887710810690715"
+}, {
+  "label": "Vitamin B12",
+  "itemid": "51010",
+  "event_count": "103324",
+  "percentage": "0.087435732210832423"
+}, {
+  "label": "Temperature",
+  "itemid": "50825",
+  "event_count": "102109",
+  "percentage": "0.0864075643637092"
+}, {
+  "label": "Thyroxine (T4), Free",
+  "itemid": "50995",
+  "event_count": "101521",
+  "percentage": "0.0859099818994224"
+}, {
+  "label": "Vancomycin",
+  "itemid": "51009",
+  "event_count": "99177",
+  "percentage": "0.083926421871721252"
+}, {
+  "label": "tacroFK",
+  "itemid": "50986",
+  "event_count": "97095",
+  "percentage": "0.082164573758379225"
+}, {
+  "label": "Granulocyte Count",
+  "itemid": "51218",
+  "event_count": "94141",
+  "percentage": "0.079664814235414577"
+}, {
+  "label": "Bilirubin, Direct",
+  "itemid": "50883",
+  "event_count": "91016",
+  "percentage": "0.07702034960804"
+}, {
+  "label": "Total Protein, Urine",
+  "itemid": "51102",
+  "event_count": "89889",
+  "percentage": "0.076066649884823631"
+}, {
+  "label": "Ethanol",
+  "itemid": "50922",
+  "event_count": "88720",
+  "percentage": "0.075077408557015335"
+}, {
+  "label": "Bilirubin, Indirect",
+  "itemid": "50884",
+  "event_count": "86393",
+  "percentage": "0.07310823441688713"
+}, {
+  "label": "Acetaminophen",
+  "itemid": "50856",
+  "event_count": "86207",
+  "percentage": "0.0729508358822658"
+}, {
+  "label": "Salicylate",
+  "itemid": "50981",
+  "event_count": "84571",
+  "percentage": "0.071566405760542656"
+}, {
+  "label": "Chloride, Whole Blood",
+  "itemid": "50806",
+  "event_count": "84527",
+  "percentage": "0.071529171698589217"
+}, {
+  "label": "Tricyclic Antidepressant Screen",
+  "itemid": "50999",
+  "event_count": "83598",
+  "percentage": "0.0707430252541633"
+}, {
+  "label": "Amylase",
+  "itemid": "50867",
+  "event_count": "82615",
+  "percentage": "0.069911182460976357"
+}, {
+  "label": "EDTA Hold",
+  "itemid": "50919",
+  "event_count": "81219",
+  "percentage": "0.068729847222635587"
+}, {
+  "label": "HCG, Urine, Qualitative",
+  "itemid": "51085",
+  "event_count": "81160",
+  "percentage": "0.068679919730470745"
+}, {
+  "label": "Opiate Screen, Urine",
+  "itemid": "51092",
+  "event_count": "79811",
+  "percentage": "0.06753835724012569"
+}, {
+  "label": "Cocaine, Urine",
+  "itemid": "51079",
+  "event_count": "79659",
+  "percentage": "0.067409730480650187"
+}, {
+  "label": "Benzodiazepine Screen, Urine",
+  "itemid": "51075",
+  "event_count": "79078",
+  "percentage": "0.0669180716171287"
+}, {
+  "label": "Amphetamine Screen, Urine",
+  "itemid": "51071",
+  "event_count": "78907",
+  "percentage": "0.066773366512718771"
+}, {
+  "label": "Methadone, Urine",
+  "itemid": "51090",
+  "event_count": "78746",
+  "percentage": "0.066637123695116429"
+}, {
+  "label": "25-OH Vitamin D",
+  "itemid": "50853",
+  "event_count": "78341",
+  "percentage": "0.066294401079408677"
+}, {
+  "label": "Barbiturate Screen, Urine",
+  "itemid": "51074",
+  "event_count": "78236",
+  "percentage": "0.0662055470679289"
+}, {
+  "label": "Protein/Creatinine Ratio",
+  "itemid": "51099",
+  "event_count": "77457",
+  "percentage": "0.06554633492561697"
+}, {
+  "label": "Teardrop Cells",
+  "itemid": "51296",
+  "event_count": "72077",
+  "percentage": "0.060993624623128885"
+}, {
+  "label": "Benzodiazepine Screen",
+  "itemid": "50880",
+  "event_count": "69583",
+  "percentage": "0.058883130293313775"
+}, {
+  "label": "Barbiturate Screen",
+  "itemid": "50879",
+  "event_count": "69484",
+  "percentage": "0.058799353653918543"
+}, {
+  "label": "Oxygen",
+  "itemid": "50816",
+  "event_count": "68851",
+  "percentage": "0.05826369089899755"
+}, {
+  "label": "Nucleated Red Cells",
+  "itemid": "51257",
+  "event_count": "67979",
+  "percentage": "0.057525779489374949"
+}, {
+  "label": "NTproBNP",
+  "itemid": "50963",
+  "event_count": "66944",
+  "percentage": "0.056649932804788493"
+}, {
+  "label": "Sodium, Urine",
+  "itemid": "51100",
+  "event_count": "66828",
+  "percentage": "0.056551770277820344"
+}, {
+  "label": "Transitional Epithelial Cells",
+  "itemid": "51501",
+  "event_count": "63150",
+  "percentage": "0.053439341189985556"
+}, {
+  "label": "Hepatitis B Surface Antigen",
+  "itemid": "50941",
+  "event_count": "62204",
+  "percentage": "0.052638808857986719"
+}, {
+  "label": "Hepatitis C Virus Antibody",
+  "itemid": "50943",
+  "event_count": "61429",
+  "percentage": "0.051982981630397829"
+}, {
+  "label": "Sedimentation Rate",
+  "itemid": "51288",
+  "event_count": "60481",
+  "percentage": "0.05118075684103747"
+}, {
+  "label": "HIV Screen",
+  "itemid": "53153",
+  "event_count": "58925",
+  "percentage": "0.049864025013775119"
+}, {
+  "label": "Schistocytes",
+  "itemid": "51287",
+  "event_count": "58203",
+  "percentage": "0.0492530479062665"
+}, {
+  "label": "Prostate Specific Antigen",
+  "itemid": "50974",
+  "event_count": "58166",
+  "percentage": "0.049221737445078385"
+}, {
+  "label": "Albumin, Urine",
+  "itemid": "51069",
+  "event_count": "56977",
+  "percentage": "0.048215571543654905"
+}, {
+  "label": "PEEP",
+  "itemid": "50819",
+  "event_count": "56859",
+  "percentage": "0.048115716559325242"
+}, {
+  "label": "Ventilator",
+  "itemid": "50828",
+  "event_count": "56657",
+  "percentage": "0.047944778365811742"
+}, {
+  "label": "Albumin/Creatinine, Urine",
+  "itemid": "51070",
+  "event_count": "54939",
+  "percentage": "0.0464909574922663"
+}, {
+  "label": "Ventilation Rate",
+  "itemid": "50827",
+  "event_count": "53687",
+  "percentage": "0.045431479183954945"
+}, {
+  "label": "Folate",
+  "itemid": "50925",
+  "event_count": "53116",
+  "percentage": "0.044948282607241055"
+}, {
+  "label": "Hepatitis B Surface Antibody",
+  "itemid": "50940",
+  "event_count": "53098",
+  "percentage": "0.044933050490987378"
+}, {
+  "label": "Osmolality, Urine",
+  "itemid": "51093",
+  "event_count": "50210",
+  "percentage": "0.042489142060952889"
+}, {
+  "label": "Parathyroid Hormone",
+  "itemid": "50965",
+  "event_count": "49107",
+  "percentage": "0.041555751826074759"
+}, {
+  "label": "Tidal Volume",
+  "itemid": "50826",
+  "event_count": "48627",
+  "percentage": "0.041149562059310016"
+}, {
+  "label": "Reticulocyte Count, Automated",
+  "itemid": "51283",
+  "event_count": "47375",
+  "percentage": "0.040090083750998665"
+}, {
+  "label": "Immunoglobulin G",
+  "itemid": "50950",
+  "event_count": "46293",
+  "percentage": "0.039174464318416494"
+}, {
+  "label": "Haptoglobin",
+  "itemid": "50935",
+  "event_count": "43315",
+  "percentage": "0.036654395307113612"
+}, {
+  "label": "Protein Electrophoresis",
+  "itemid": "50975",
+  "event_count": "42784",
+  "percentage": "0.036205047877630119"
+}, {
+  "label": "Immunoglobulin A",
+  "itemid": "50949",
+  "event_count": "42412",
+  "percentage": "0.035890250808387446"
+}, {
+  "label": "Osmolality, Measured",
+  "itemid": "50964",
+  "event_count": "40304",
+  "percentage": "0.03410640074934565"
+}, {
+  "label": "Potassium, Urine",
+  "itemid": "51097",
+  "event_count": "40277",
+  "percentage": "0.034083552574965134"
+}, {
+  "label": "Carcinoembyronic Antigen (CEA)",
+  "itemid": "50900",
+  "event_count": "39971",
+  "percentage": "0.033824606598652614"
+}, {
+  "label": "Cholesterol, LDL, Measured",
+  "itemid": "50906",
+  "event_count": "39282",
+  "percentage": "0.033241555037609068"
+}, {
+  "label": "Chloride, Urine",
+  "itemid": "51078",
+  "event_count": "38812",
+  "percentage": "0.032843827557651931"
+}, {
+  "label": "Hepatitis B Virus Core Antibody",
+  "itemid": "50942",
+  "event_count": "38770",
+  "percentage": "0.032808285953060019"
+}, {
+  "label": "Immunoglobulin M",
+  "itemid": "50951",
+  "event_count": "36609",
+  "percentage": "0.030979585773937945"
+}, {
+  "label": "Human Chorionic Gonadotropin",
+  "itemid": "50946",
+  "event_count": "35218",
+  "percentage": "0.029802481679000972"
+}, {
+  "label": "Urea Nitrogen, Urine",
+  "itemid": "51104",
+  "event_count": "34033",
+  "percentage": "0.02879970069230053"
+}, {
+  "label": "Echinocytes",
+  "itemid": "52111",
+  "event_count": "33483",
+  "percentage": "0.028334274917882603"
+}, {
+  "label": "Amorphous Crystals",
+  "itemid": "51462",
+  "event_count": "33137",
+  "percentage": "0.028041479794339689"
+}, {
+  "label": "Oxycodone",
+  "itemid": "51989",
+  "event_count": "32844",
+  "percentage": "0.027793534790877046"
+}, {
+  "label": "Alpha-Fetoprotein",
+  "itemid": "50864",
+  "event_count": "29980",
+  "percentage": "0.025369935849180795"
+}, {
+  "label": "STX2",
+  "itemid": "51733",
+  "event_count": "28385",
+  "percentage": "0.024020201103368805"
+}, {
+  "label": "CD3 Cells, Percent",
+  "itemid": "51176",
+  "event_count": "27409",
+  "percentage": "0.023194281910947176"
+}, {
+  "label": "STX3",
+  "itemid": "51734",
+  "event_count": "27145",
+  "percentage": "0.02297087753922657"
+}, {
+  "label": "UTX4",
+  "itemid": "52007",
+  "event_count": "27058",
+  "percentage": "0.022897255644000462"
+}, {
+  "label": "CD4 Cells, Percent",
+  "itemid": "51180",
+  "event_count": "26904",
+  "percentage": "0.022766936427163442"
+}, {
+  "label": "CD8 Cells, Percent",
+  "itemid": "51194",
+  "event_count": "26894",
+  "percentage": "0.022758474140355846"
+}, {
+  "label": "UTX1",
+  "itemid": "52004",
+  "event_count": "26884",
+  "percentage": "0.022750011853548247"
+}, {
+  "label": "UTX3",
+  "itemid": "52006",
+  "event_count": "26874",
+  "percentage": "0.022741549566740647"
+}, {
+  "label": "UTX5",
+  "itemid": "52008",
+  "event_count": "26846",
+  "percentage": "0.022717855163679371"
+}, {
+  "label": "UTX7",
+  "itemid": "52010",
+  "event_count": "26730",
+  "percentage": "0.022619692636711226"
+}, {
+  "label": "STX1",
+  "itemid": "51732",
+  "event_count": "26683",
+  "percentage": "0.022579919888715511"
+}, {
+  "label": "STX6",
+  "itemid": "51737",
+  "event_count": "26454",
+  "percentage": "0.022386133520821503"
+}, {
+  "label": "Anti-Nuclear Antibody",
+  "itemid": "50873",
+  "event_count": "26396",
+  "percentage": "0.022337052257337429"
+}, {
+  "label": "UTX2",
+  "itemid": "52005",
+  "event_count": "26355",
+  "percentage": "0.022302356881426275"
+}, {
+  "label": "Absolute CD4 Count",
+  "itemid": "51131",
+  "event_count": "26181",
+  "percentage": "0.022155113090974059"
+}, {
+  "label": "Absolute CD8 Count",
+  "itemid": "51132",
+  "event_count": "26180",
+  "percentage": "0.0221542668622933"
+}, {
+  "label": "Absolute CD3 Count",
+  "itemid": "51130",
+  "event_count": "26180",
+  "percentage": "0.0221542668622933"
+}, {
+  "label": "Lymphocytes, Percent",
+  "itemid": "51245",
+  "event_count": "26180",
+  "percentage": "0.0221542668622933"
+}, {
+  "label": "WBC Count",
+  "itemid": "51300",
+  "event_count": "26180",
+  "percentage": "0.0221542668622933"
+}, {
+  "label": "CD4/CD8 Ratio",
+  "itemid": "51181",
+  "event_count": "26180",
+  "percentage": "0.0221542668622933"
+}, {
+  "label": "Absolute Lymphocyte Count",
+  "itemid": "52769",
+  "event_count": "26180",
+  "percentage": "0.0221542668622933"
+}, {
+  "label": "UTX6",
+  "itemid": "52009",
+  "event_count": "25929",
+  "percentage": "0.021941863463422574"
+}, {
+  "label": "Cortisol",
+  "itemid": "50909",
+  "event_count": "25547",
+  "percentage": "0.021618604107372305"
+}, {
+  "label": "ARCH-1",
+  "itemid": "51564",
+  "event_count": "25312",
+  "percentage": "0.021419740367393737"
+}, {
+  "label": "CK-MB Index",
+  "itemid": "50908",
+  "event_count": "25044",
+  "percentage": "0.021192951080950092"
+}, {
+  "label": "Blasts",
+  "itemid": "51148",
+  "event_count": "24453",
+  "percentage": "0.02069282993062101"
+}, {
+  "label": "Problem Specimen",
+  "itemid": "51706",
+  "event_count": "24398",
+  "percentage": "0.020646287353179218"
+}, {
+  "label": "Reticulocyte Count, Absolute",
+  "itemid": "51282",
+  "event_count": "23422",
+  "percentage": "0.019820368160757589"
+}, {
+  "label": "Calculated Bicarbonate, Whole Blood",
+  "itemid": "50803",
+  "event_count": "23250",
+  "percentage": "0.019674816827666891"
+}, {
+  "label": "D-Dimer",
+  "itemid": "50915",
+  "event_count": "22329",
+  "percentage": "0.018895440212687055"
+}, {
+  "label": "Phenytoin",
+  "itemid": "50967",
+  "event_count": "22324",
+  "percentage": "0.018891209069283255"
+}, {
+  "label": "HPE1",
+  "itemid": "51657",
+  "event_count": "22174",
+  "percentage": "0.018764274767169273"
+}, {
+  "label": "RBC Morphology",
+  "itemid": "52171",
+  "event_count": "21732",
+  "percentage": "0.018390241690273416"
+}, {
+  "label": "HPE7",
+  "itemid": "51663",
+  "event_count": "21502",
+  "percentage": "0.018195609093698644"
+}, {
+  "label": "Thyroxine (T4)",
+  "itemid": "50994",
+  "event_count": "21336",
+  "percentage": "0.01805513513269251"
+}, {
+  "label": "Assist/Control",
+  "itemid": "52023",
+  "event_count": "21201",
+  "percentage": "0.017940894260789923"
+}, {
+  "label": "Target Cells",
+  "itemid": "51294",
+  "event_count": "20056",
+  "percentage": "0.016971962421319878"
+}, {
+  "label": "Cyclosporin",
+  "itemid": "50914",
+  "event_count": "19851",
+  "percentage": "0.016798485541764104"
+}, {
+  "label": "Prot. Electrophoresis, Urine",
+  "itemid": "51098",
+  "event_count": "19442",
+  "percentage": "0.01645237801133332"
+}, {
+  "label": "Triiodothyronine (T3)",
+  "itemid": "51001",
+  "event_count": "19294",
+  "percentage": "0.016327136166580859"
+}, {
+  "label": "HPE2",
+  "itemid": "51658",
+  "event_count": "18619",
+  "percentage": "0.015755931807067951"
+}, {
+  "label": "WBC Clumps",
+  "itemid": "51518",
+  "event_count": "18138",
+  "percentage": "0.015348895811622456"
+}, {
+  "label": "Influenza B by PCR",
+  "itemid": "51873",
+  "event_count": "18007",
+  "percentage": "0.015238039854442912"
+}, {
+  "label": "Influenza A by PCR",
+  "itemid": "51865",
+  "event_count": "18007",
+  "percentage": "0.015238039854442912"
+}, {
+  "label": "Hepatitis A Virus Antibody",
+  "itemid": "50937",
+  "event_count": "17596",
+  "percentage": "0.014890239866650608"
+}, {
+  "label": "Lymphs",
+  "itemid": "52264",
+  "event_count": "17292",
+  "percentage": "0.014632986347699608"
+}, {
+  "label": "Monocytes",
+  "itemid": "52272",
+  "event_count": "17292",
+  "percentage": "0.014632986347699608"
+}, {
+  "label": "Polys",
+  "itemid": "52281",
+  "event_count": "17292",
+  "percentage": "0.014632986347699608"
+}, {
+  "label": "Total Nucleated Cells, CSF",
+  "itemid": "52286",
+  "event_count": "17283",
+  "percentage": "0.014625370289572771"
+}, {
+  "label": "Testosterone",
+  "itemid": "50988",
+  "event_count": "17272",
+  "percentage": "0.014616061774084409"
+}, {
+  "label": "RBC, CSF",
+  "itemid": "52285",
+  "event_count": "17181",
+  "percentage": "0.014539054964135264"
+}, {
+  "label": "Spherocytes",
+  "itemid": "51292",
+  "event_count": "15943",
+  "percentage": "0.013491423857354549"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "51752",
+  "event_count": "15777",
+  "percentage": "0.013350949896348411"
+}, {
+  "label": "Gamma Glutamyltransferase",
+  "itemid": "50927",
+  "event_count": "15637",
+  "percentage": "0.01323247788104203"
+}, {
+  "label": "HPE3",
+  "itemid": "51659",
+  "event_count": "15517",
+  "percentage": "0.013130930439350845"
+}, {
+  "label": "Tissue Transglutaminase Ab, IgA",
+  "itemid": "50996",
+  "event_count": "15444",
+  "percentage": "0.013069155745655377"
+}, {
+  "label": "Calcium Oxalate Crystals",
+  "itemid": "51469",
+  "event_count": "15150",
+  "percentage": "0.012820364513511975"
+}, {
+  "label": "Granular Casts",
+  "itemid": "51479",
+  "event_count": "14413",
+  "percentage": "0.012196693975791952"
+}, {
+  "label": "Free Kappa",
+  "itemid": "51625",
+  "event_count": "14141",
+  "percentage": "0.01196651977462527"
+}, {
+  "label": "Free Lambda",
+  "itemid": "51627",
+  "event_count": "14127",
+  "percentage": "0.01195467257309463"
+}, {
+  "label": "Free Kappa/Free Lambda Ratio",
+  "itemid": "51626",
+  "event_count": "14054",
+  "percentage": "0.011892897879399161"
+}, {
+  "label": "Elliptocytes",
+  "itemid": "51197",
+  "event_count": "13934",
+  "percentage": "0.011791350437707977"
+}, {
+  "label": "H/O Smear",
+  "itemid": "51219",
+  "event_count": "13894",
+  "percentage": "0.011757501290477583"
+}, {
+  "label": "CA-125",
+  "itemid": "50892",
+  "event_count": "13694",
+  "percentage": "0.011588255554325608"
+}, {
+  "label": "Basophilic Stippling",
+  "itemid": "51145",
+  "event_count": "13450",
+  "percentage": "0.011381775756220201"
+}, {
+  "label": "Total Protein, CSF",
+  "itemid": "51802",
+  "event_count": "12848",
+  "percentage": "0.010872346090402763"
+}, {
+  "label": "Required O2",
+  "itemid": "50823",
+  "event_count": "12577",
+  "percentage": "0.010643018117916838"
+}, {
+  "label": "Alveolar-arterial Gradient",
+  "itemid": "50801",
+  "event_count": "12558",
+  "percentage": "0.0106269397729824"
+}, {
+  "label": "Glucose, CSF",
+  "itemid": "51790",
+  "event_count": "12519",
+  "percentage": "0.010593936854432768"
+}, {
+  "label": "STX5",
+  "itemid": "51736",
+  "event_count": "12131",
+  "percentage": "0.010265600126297939"
+}, {
+  "label": "STX4",
+  "itemid": "51735",
+  "event_count": "12127",
+  "percentage": "0.010262215211574898"
+}, {
+  "label": "Acanthocytes",
+  "itemid": "51134",
+  "event_count": "11821",
+  "percentage": "0.010003269235262379"
+}, {
+  "label": "C4",
+  "itemid": "50891",
+  "event_count": "11817",
+  "percentage": "0.00999988432053934"
+}, {
+  "label": "Valproic Acid",
+  "itemid": "51008",
+  "event_count": "11682",
+  "percentage": "0.0098856434486367575"
+}, {
+  "label": "Digoxin",
+  "itemid": "50917",
+  "event_count": "11632",
+  "percentage": "0.0098433320145987647"
+}, {
+  "label": "Monocytes",
+  "itemid": "51120",
+  "event_count": "11604",
+  "percentage": "0.0098196376115374882"
+}, {
+  "label": "Lymphocytes",
+  "itemid": "51116",
+  "event_count": "11604",
+  "percentage": "0.0098196376115374882"
+}, {
+  "label": "Total Nucleated Cells, Ascites",
+  "itemid": "52065",
+  "event_count": "11604",
+  "percentage": "0.0098196376115374882"
+}, {
+  "label": "Polys",
+  "itemid": "51125",
+  "event_count": "11604",
+  "percentage": "0.0098196376115374882"
+}, {
+  "label": "RBC, Ascites",
+  "itemid": "51127",
+  "event_count": "11380",
+  "percentage": "0.00963008238704728"
+}, {
+  "label": "C3",
+  "itemid": "50890",
+  "event_count": "11262",
+  "percentage": "0.009530227402717615"
+}, {
+  "label": "Rapamycin",
+  "itemid": "50978",
+  "event_count": "10991",
+  "percentage": "0.00930089943023169"
+}, {
+  "label": "Marijuana",
+  "itemid": "51089",
+  "event_count": "10792",
+  "percentage": "0.0091324999227604779"
+}, {
+  "label": "Rheumatoid Factor",
+  "itemid": "50980",
+  "event_count": "10572",
+  "percentage": "0.0089463296129933065"
+}, {
+  "label": "Urine Volume",
+  "itemid": "51108",
+  "event_count": "10567",
+  "percentage": "0.0089420984695895069"
+}, {
+  "label": "pH",
+  "itemid": "51094",
+  "event_count": "10442",
+  "percentage": "0.0088363198844945232"
+}, {
+  "label": "Cancer Antigen 27.29",
+  "itemid": "50898",
+  "event_count": "9883",
+  "percentage": "0.0083632780519497588"
+}, {
+  "label": "Other Cells",
+  "itemid": "51259",
+  "event_count": "9695",
+  "percentage": "0.0082041870599669046"
+}, {
+  "label": "Prolactin",
+  "itemid": "50973",
+  "event_count": "9690",
+  "percentage": "0.008199955916563105"
+}, {
+  "label": "Macrophage",
+  "itemid": "51117",
+  "event_count": "9689",
+  "percentage": "0.0081991096878823444"
+}, {
+  "label": "Promyelocytes",
+  "itemid": "51269",
+  "event_count": "9684",
+  "percentage": "0.0081948785444785448"
+}, {
+  "label": "O2 Flow",
+  "itemid": "50815",
+  "event_count": "9320",
+  "percentage": "0.0078868513046819536"
+}, {
+  "label": "D-Dimer",
+  "itemid": "51196",
+  "event_count": "9298",
+  "percentage": "0.0078682342737052373"
+}, {
+  "label": "Immunofixation",
+  "itemid": "50948",
+  "event_count": "9269",
+  "percentage": "0.0078436936419632019"
+}, {
+  "label": "Chlamydia trachomatis",
+  "itemid": "51846",
+  "event_count": "8760",
+  "percentage": "0.0074129632434564293"
+}, {
+  "label": "Neisseria gonorrhoeae",
+  "itemid": "51879",
+  "event_count": "8757",
+  "percentage": "0.0074104245574141483"
+}, {
+  "label": "PAN1",
+  "itemid": "51903",
+  "event_count": "8753",
+  "percentage": "0.00740703964269111"
+}, {
+  "label": "Follicle Stimulating Hormone",
+  "itemid": "50926",
+  "event_count": "8738",
+  "percentage": "0.0073943462124797122"
+}, {
+  "label": "24 hr Creatinine",
+  "itemid": "51067",
+  "event_count": "8704",
+  "percentage": "0.0073655744373338763"
+}, {
+  "label": "Beta-2 Microglobulin",
+  "itemid": "50881",
+  "event_count": "8100",
+  "percentage": "0.0068544523141549178"
+}, {
+  "label": "Calculated TBG",
+  "itemid": "50895",
+  "event_count": "7950",
+  "percentage": "0.0067275180120409377"
+}, {
+  "label": "Uptake Ratio",
+  "itemid": "51005",
+  "event_count": "7926",
+  "percentage": "0.0067072085237027"
+}, {
+  "label": "Mesothelial Cell",
+  "itemid": "51118",
+  "event_count": "7919",
+  "percentage": "0.0067012849229373811"
+}, {
+  "label": "Calculated Thyroxine (T4) Index",
+  "itemid": "50896",
+  "event_count": "7876",
+  "percentage": "0.0066648970896647074"
+}, {
+  "label": "Total Nucleated Cells, Pleural",
+  "itemid": "52391",
+  "event_count": "7622",
+  "percentage": "0.006449955004751701"
+}, {
+  "label": "Polys",
+  "itemid": "51455",
+  "event_count": "7621",
+  "percentage": "0.0064491087760709413"
+}, {
+  "label": "Lymphocytes",
+  "itemid": "51446",
+  "event_count": "7621",
+  "percentage": "0.0064491087760709413"
+}, {
+  "label": "Monos",
+  "itemid": "51450",
+  "event_count": "7621",
+  "percentage": "0.0064491087760709413"
+}, {
+  "label": "Anti-Nuclear Antibody, Titer",
+  "itemid": "50874",
+  "event_count": "7604",
+  "percentage": "0.0064347228884980238"
+}, {
+  "label": "Lactate Dehydrogenase, Pleural",
+  "itemid": "51054",
+  "event_count": "7391",
+  "percentage": "0.0062544761794961724"
+}, {
+  "label": "Total Protein, Pleural",
+  "itemid": "51059",
+  "event_count": "7387",
+  "percentage": "0.0062510912647731325"
+}, {
+  "label": "Double Stranded DNA",
+  "itemid": "50918",
+  "event_count": "7300",
+  "percentage": "0.0061774693695470246"
+}, {
+  "label": "Total Protein, Ascites",
+  "itemid": "50849",
+  "event_count": "7286",
+  "percentage": "0.0061656221680163855"
+}, {
+  "label": "Lithium",
+  "itemid": "50957",
+  "event_count": "7247",
+  "percentage": "0.0061326192494667508"
+}, {
+  "label": "PAN1",
+  "itemid": "52018",
+  "event_count": "7226",
+  "percentage": "0.0061148484471707943"
+}, {
+  "label": "Chlamydia trachomatis",
+  "itemid": "51972",
+  "event_count": "7213",
+  "percentage": "0.0061038474743209158"
+}, {
+  "label": "Neisseria gonorrhoeae",
+  "itemid": "51986",
+  "event_count": "7212",
+  "percentage": "0.0061030012456401552"
+}, {
+  "label": "RBC, Pleural",
+  "itemid": "51457",
+  "event_count": "7056",
+  "percentage": "0.0059709895714416166"
+}, {
+  "label": "Gray Top Hold (plasma)",
+  "itemid": "50932",
+  "event_count": "7050",
+  "percentage": "0.0059659121993570572"
+}, {
+  "label": "Sex Hormone Binding Globulin",
+  "itemid": "50982",
+  "event_count": "7036",
+  "percentage": "0.0059540649978264189"
+}, {
+  "label": "Bite Cells",
+  "itemid": "51147",
+  "event_count": "7026",
+  "percentage": "0.0059456027110188206"
+}, {
+  "label": "Renal Epithelial Cells",
+  "itemid": "51497",
+  "event_count": "6983",
+  "percentage": "0.005909214877746146"
+}, {
+  "label": "Glucose, Pleural",
+  "itemid": "51053",
+  "event_count": "6853",
+  "percentage": "0.0057992051492473636"
+}, {
+  "label": "Ammonia",
+  "itemid": "50866",
+  "event_count": "6826",
+  "percentage": "0.0057763569748668477"
+}, {
+  "label": "Eosinophils",
+  "itemid": "51474",
+  "event_count": "6720",
+  "percentage": "0.005686656734706301"
+}, {
+  "label": "Calculated Free Testosterone",
+  "itemid": "50894",
+  "event_count": "6661",
+  "percentage": "0.00563672924254147"
+}, {
+  "label": "Anti-Neutrophil Cytoplasmic Antibody",
+  "itemid": "50872",
+  "event_count": "6617",
+  "percentage": "0.0055994951805880353"
+}, {
+  "label": "Anti-Thyroglobulin Antibodies",
+  "itemid": "50877",
+  "event_count": "6605",
+  "percentage": "0.0055893404364189166"
+}, {
+  "label": "Cytomegalovirus Viral Load",
+  "itemid": "51598",
+  "event_count": "6555",
+  "percentage": "0.0055470290023809238"
+}, {
+  "label": "Anti-Smooth Muscle Antibody",
+  "itemid": "50876",
+  "event_count": "6437",
+  "percentage": "0.0054471740180512592"
+}, {
+  "label": "Immunofixation, Urine",
+  "itemid": "51086",
+  "event_count": "6299",
+  "percentage": "0.0053303944601063979"
+}, {
+  "label": "HPE4",
+  "itemid": "51660",
+  "event_count": "6164",
+  "percentage": "0.0052161535882038158"
+}, {
+  "label": "Total Nucleated Cells, Joint",
+  "itemid": "52312",
+  "event_count": "6119",
+  "percentage": "0.0051780732975696218"
+}, {
+  "label": "Polys",
+  "itemid": "51382",
+  "event_count": "6116",
+  "percentage": "0.0051755346115273416"
+}, {
+  "label": "Lymphocytes",
+  "itemid": "51375",
+  "event_count": "6116",
+  "percentage": "0.0051755346115273416"
+}, {
+  "label": "Monocytes",
+  "itemid": "51379",
+  "event_count": "6116",
+  "percentage": "0.0051755346115273416"
+}, {
+  "label": "Albumin, Ascites",
+  "itemid": "50835",
+  "event_count": "6012",
+  "percentage": "0.0050875268287283162"
+}, {
+  "label": "Anti-Mitochondrial Antibody",
+  "itemid": "50871",
+  "event_count": "5920",
+  "percentage": "0.0050096737900984087"
+}, {
+  "label": "Large Platelets",
+  "itemid": "51240",
+  "event_count": "5911",
+  "percentage": "0.00500205773197157"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52036",
+  "event_count": "5699",
+  "percentage": "0.0048226572516504784"
+}, {
+  "label": "Methotrexate",
+  "itemid": "50961",
+  "event_count": "5682",
+  "percentage": "0.00480827136407756"
+}, {
+  "label": "Carboxyhemoglobin",
+  "itemid": "50805",
+  "event_count": "5643",
+  "percentage": "0.0047752684455279254"
+}, {
+  "label": "Luteinizing Hormone",
+  "itemid": "50958",
+  "event_count": "5605",
+  "percentage": "0.0047431117556590505"
+}, {
+  "label": "Macrophages",
+  "itemid": "51447",
+  "event_count": "5536",
+  "percentage": "0.00468472197668662"
+}, {
+  "label": "Joint Crystals, Number",
+  "itemid": "51373",
+  "event_count": "5430",
+  "percentage": "0.004595021736526074"
+}, {
+  "label": "Fragmented Cells",
+  "itemid": "51216",
+  "event_count": "5400",
+  "percentage": "0.004569634876103278"
+}, {
+  "label": "RBC, Joint Fluid",
+  "itemid": "51383",
+  "event_count": "5380",
+  "percentage": "0.0045527103024880812"
+}, {
+  "label": "pH",
+  "itemid": "50831",
+  "event_count": "5314",
+  "percentage": "0.0044968592095579289"
+}, {
+  "label": "Hemoglobin C",
+  "itemid": "51224",
+  "event_count": "5298",
+  "percentage": "0.0044833195506657712"
+}, {
+  "label": "Hemogloblin A",
+  "itemid": "51226",
+  "event_count": "5298",
+  "percentage": "0.0044833195506657712"
+}, {
+  "label": "Hemogloblin S",
+  "itemid": "51227",
+  "event_count": "5298",
+  "percentage": "0.0044833195506657712"
+}, {
+  "label": "Immunophenotyping",
+  "itemid": "51424",
+  "event_count": "5240",
+  "percentage": "0.0044342382871816995"
+}, {
+  "label": "Hepatitis A Virus IgM Antibody",
+  "itemid": "50938",
+  "event_count": "5070",
+  "percentage": "0.0042903794114525218"
+}, {
+  "label": "Urine Specimen Type",
+  "itemid": "51513",
+  "event_count": "4986",
+  "percentage": "0.0042192962022686931"
+}, {
+  "label": "Thyroid Peroxidase Antibodies",
+  "itemid": "50992",
+  "event_count": "4970",
+  "percentage": "0.0042057565433765353"
+}, {
+  "label": "Methemoglobin",
+  "itemid": "50814",
+  "event_count": "4833",
+  "percentage": "0.0040898232141124338"
+}, {
+  "label": "Glucose, Ascites",
+  "itemid": "50842",
+  "event_count": "4797",
+  "percentage": "0.0040593589816050784"
+}, {
+  "label": "Lymphocytes",
+  "itemid": "51427",
+  "event_count": "4778",
+  "percentage": "0.0040432806366706413"
+}, {
+  "label": "Polys",
+  "itemid": "51436",
+  "event_count": "4778",
+  "percentage": "0.0040432806366706413"
+}, {
+  "label": "Monos",
+  "itemid": "51431",
+  "event_count": "4778",
+  "percentage": "0.0040432806366706413"
+}, {
+  "label": "Immunophenotyping",
+  "itemid": "51338",
+  "event_count": "4723",
+  "percentage": "0.0039967380592288481"
+}, {
+  "label": "Thyroglobulin",
+  "itemid": "50991",
+  "event_count": "4675",
+  "percentage": "0.0039561190825523748"
+}, {
+  "label": "wbcp",
+  "itemid": "52220",
+  "event_count": "4651",
+  "percentage": "0.0039358095942141381"
+}, {
+  "label": "Albumin, Pleural",
+  "itemid": "51046",
+  "event_count": "4593",
+  "percentage": "0.003886728330730066"
+}, {
+  "label": "Calcium, Urine",
+  "itemid": "51077",
+  "event_count": "4493",
+  "percentage": "0.0038021054626540792"
+}, {
+  "label": "Inpatient Hematology/Oncology Smear",
+  "itemid": "51236",
+  "event_count": "4488",
+  "percentage": "0.00379787431925028"
+}, {
+  "label": "XUCU",
+  "itemid": "52425",
+  "event_count": "4474",
+  "percentage": "0.0037860271177196422"
+}, {
+  "label": "Cholesterol, Pleural",
+  "itemid": "51051",
+  "event_count": "4470",
+  "percentage": "0.0037826422029966023"
+}, {
+  "label": "Lupus Anticoagulant",
+  "itemid": "51243",
+  "event_count": "4439",
+  "percentage": "0.0037564091138930465"
+}, {
+  "label": "Blood Parasite Smear",
+  "itemid": "51150",
+  "event_count": "4349",
+  "percentage": "0.003680248532624658"
+}, {
+  "label": "Fibrin Degradation Products",
+  "itemid": "51213",
+  "event_count": "4345",
+  "percentage": "0.003676863617901619"
+}, {
+  "label": "Creatinine, Whole Blood",
+  "itemid": "52024",
+  "event_count": "4327",
+  "percentage": "0.0036616315016479418"
+}, {
+  "label": "Hepatitis C Viral Load",
+  "itemid": "51651",
+  "event_count": "4321",
+  "percentage": "0.0036565541295633824"
+}, {
+  "label": "Mesothelial Cells",
+  "itemid": "51448",
+  "event_count": "4252",
+  "percentage": "0.0035981643505909517"
+}, {
+  "label": "Howell-Jolly Bodies",
+  "itemid": "51231",
+  "event_count": "3966",
+  "percentage": "0.0033561429478936302"
+}, {
+  "label": "24 hr Protein",
+  "itemid": "51068",
+  "event_count": "3892",
+  "percentage": "0.0032935220255174"
+}, {
+  "label": "Heparin",
+  "itemid": "51228",
+  "event_count": "3816",
+  "percentage": "0.0032292086457796497"
+}, {
+  "label": "HIV 1 Viral Load",
+  "itemid": "51654",
+  "event_count": "3782",
+  "percentage": "0.0032004368706338147"
+}, {
+  "label": "Estimated GFR (MDRD equation)",
+  "itemid": "52026",
+  "event_count": "3720",
+  "percentage": "0.0031479706924267023"
+}, {
+  "label": "Hepatitis B Core Antibody, IgM",
+  "itemid": "50939",
+  "event_count": "3639",
+  "percentage": "0.0030794261692851537"
+}, {
+  "label": "Lactate Dehydrogenase, Ascites",
+  "itemid": "50843",
+  "event_count": "3551",
+  "percentage": "0.0030049580453782852"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52014",
+  "event_count": "3535",
+  "percentage": "0.0029914183864861274"
+}, {
+  "label": "Treponema pallidum (Syphilis) Ab",
+  "itemid": "51748",
+  "event_count": "3442",
+  "percentage": "0.0029127191191754597"
+}, {
+  "label": "Macrophage",
+  "itemid": "52266",
+  "event_count": "3440",
+  "percentage": "0.00291102666181394"
+}, {
+  "label": "Treponema pallidum (syphilis) value",
+  "itemid": "51749",
+  "event_count": "3422",
+  "percentage": "0.0028957945455602625"
+}, {
+  "label": "Hemoglobin F",
+  "itemid": "51225",
+  "event_count": "3328",
+  "percentage": "0.002816249049568835"
+}, {
+  "label": "Macrophage",
+  "itemid": "51428",
+  "event_count": "3298",
+  "percentage": "0.002790862189146039"
+}, {
+  "label": "Amylase, Ascites",
+  "itemid": "50836",
+  "event_count": "3268",
+  "percentage": "0.0027654753287232429"
+}, {
+  "label": "Reticulocyte Count, Manual",
+  "itemid": "51284",
+  "event_count": "3242",
+  "percentage": "0.0027434733830234864"
+}, {
+  "label": "Phenobarbital",
+  "itemid": "50966",
+  "event_count": "3237",
+  "percentage": "0.0027392422396196872"
+}, {
+  "label": "Estradiol",
+  "itemid": "50921",
+  "event_count": "3180",
+  "percentage": "0.0026910072048163748"
+}, {
+  "label": "Hemoglobin A2",
+  "itemid": "51223",
+  "event_count": "3167",
+  "percentage": "0.0026800062319664968"
+}, {
+  "label": "Hepatitis B Viral Load",
+  "itemid": "51648",
+  "event_count": "3129",
+  "percentage": "0.0026478495420976214"
+}, {
+  "label": "Gentamicin",
+  "itemid": "50929",
+  "event_count": "3077",
+  "percentage": "0.0026038456506981087"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52195",
+  "event_count": "3047",
+  "percentage": "0.0025784587902753127"
+}, {
+  "label": "CD45",
+  "itemid": "51411",
+  "event_count": "3037",
+  "percentage": "0.0025699965034677139"
+}, {
+  "label": "Other",
+  "itemid": "51453",
+  "event_count": "3032",
+  "percentage": "0.0025657653600639147"
+}, {
+  "label": "Pappenheimer Bodies",
+  "itemid": "51261",
+  "event_count": "3023",
+  "percentage": "0.002558149301937076"
+}, {
+  "label": "Phosphate, Urine",
+  "itemid": "51095",
+  "event_count": "3017",
+  "percentage": "0.0025530719298525167"
+}, {
+  "label": "Wright Giemsa",
+  "itemid": "51342",
+  "event_count": "2987",
+  "percentage": "0.0025276850694297207"
+}, {
+  "label": "Carbamazepine",
+  "itemid": "50899",
+  "event_count": "2947",
+  "percentage": "0.0024938359221993263"
+}, {
+  "label": "CD19",
+  "itemid": "51398",
+  "event_count": "2939",
+  "percentage": "0.0024870660927532469"
+}, {
+  "label": "UTX9",
+  "itemid": "52012",
+  "event_count": "2935",
+  "percentage": "0.0024836811780302075"
+}, {
+  "label": "Macrophage",
+  "itemid": "51376",
+  "event_count": "2927",
+  "percentage": "0.0024769113485841286"
+}, {
+  "label": "C. diff PCR",
+  "itemid": "51933",
+  "event_count": "2902",
+  "percentage": "0.0024557556315651322"
+}, {
+  "label": "Blood, Occult",
+  "itemid": "51460",
+  "event_count": "2860",
+  "percentage": "0.0024202140269732175"
+}, {
+  "label": "Immunophenotyping",
+  "itemid": "51234",
+  "event_count": "2703",
+  "percentage": "0.0022873561240939187"
+}, {
+  "label": "Other",
+  "itemid": "51123",
+  "event_count": "2637",
+  "percentage": "0.0022315050311637673"
+}, {
+  "label": "CDT027",
+  "itemid": "51956",
+  "event_count": "2598",
+  "percentage": "0.0021985021126141326"
+}, {
+  "label": "Bicarbonate, Urine",
+  "itemid": "51076",
+  "event_count": "2590",
+  "percentage": "0.0021917322831680537"
+}, {
+  "label": "Lambda",
+  "itemid": "51426",
+  "event_count": "2567",
+  "percentage": "0.0021722690235105768"
+}, {
+  "label": "Kappa",
+  "itemid": "51425",
+  "event_count": "2567",
+  "percentage": "0.0021722690235105768"
+}, {
+  "label": "Quantitative G6PD",
+  "itemid": "51276",
+  "event_count": "2557",
+  "percentage": "0.0021638067367029785"
+}, {
+  "label": "Anat Path Hold",
+  "itemid": "51839",
+  "event_count": "2538",
+  "percentage": "0.0021477283917685406"
+}, {
+  "label": "Anticardiolipin Antibody IgM",
+  "itemid": "51139",
+  "event_count": "2506",
+  "percentage": "0.0021206490739842251"
+}, {
+  "label": "Anticardiolipin Antibody IgG",
+  "itemid": "51138",
+  "event_count": "2506",
+  "percentage": "0.0021206490739842251"
+}, {
+  "label": "Heparin, LMW",
+  "itemid": "51229",
+  "event_count": "2371",
+  "percentage": "0.002006408202081643"
+}, {
+  "label": "Eosinophils",
+  "itemid": "51444",
+  "event_count": "2339",
+  "percentage": "0.0019793288842973275"
+}, {
+  "label": "Uric Acid Crystals",
+  "itemid": "51505",
+  "event_count": "2310",
+  "percentage": "0.0019547882525552912"
+}, {
+  "label": "Factor VIII",
+  "itemid": "51206",
+  "event_count": "2309",
+  "percentage": "0.0019539420238745314"
+}, {
+  "label": "Homocysteine",
+  "itemid": "50945",
+  "event_count": "2299",
+  "percentage": "0.0019454797370669326"
+}, {
+  "label": "Pencil Cells",
+  "itemid": "51262",
+  "event_count": "2294",
+  "percentage": "0.0019412485936631334"
+}, {
+  "label": "Trichomonas vaginalis",
+  "itemid": "51899",
+  "event_count": "2276",
+  "percentage": "0.0019260164774094557"
+}, {
+  "label": "PAN2",
+  "itemid": "51904",
+  "event_count": "2271",
+  "percentage": "0.0019217853340056565"
+}, {
+  "label": "Lactate Dehydrogenase, CSF",
+  "itemid": "51795",
+  "event_count": "2260",
+  "percentage": "0.001912476818517298"
+}, {
+  "label": "UCU2",
+  "itemid": "52427",
+  "event_count": "2191",
+  "percentage": "0.0018540870395448671"
+}, {
+  "label": "Cryoglobulin",
+  "itemid": "50913",
+  "event_count": "2182",
+  "percentage": "0.0018464709814180285"
+}, {
+  "label": "Total Nucleated Cells, Other",
+  "itemid": "52369",
+  "event_count": "2168",
+  "percentage": "0.0018346237798873902"
+}, {
+  "label": "Envelope Cells",
+  "itemid": "51198",
+  "event_count": "2109",
+  "percentage": "0.0017846962877225579"
+}, {
+  "label": "Testosterone, Free",
+  "itemid": "50989",
+  "event_count": "2099",
+  "percentage": "0.0017762340009149593"
+}, {
+  "label": "Antithrombin",
+  "itemid": "51140",
+  "event_count": "2094",
+  "percentage": "0.00177200285751116"
+}, {
+  "label": "Bilirubin, Total, Ascites",
+  "itemid": "50838",
+  "event_count": "2043",
+  "percentage": "0.0017288451947924069"
+}, {
+  "label": "CD45",
+  "itemid": "51325",
+  "event_count": "2029",
+  "percentage": "0.0017169979932617687"
+}, {
+  "label": "24 hr Calcium",
+  "itemid": "51066",
+  "event_count": "2011",
+  "percentage": "0.0017017658770080912"
+}, {
+  "label": "Creatinine, Ascites",
+  "itemid": "50841",
+  "event_count": "1989",
+  "percentage": "0.0016831488460313741"
+}, {
+  "label": "Thrombin",
+  "itemid": "51297",
+  "event_count": "1932",
+  "percentage": "0.0016349138112280617"
+}, {
+  "label": "HPE6",
+  "itemid": "51662",
+  "event_count": "1932",
+  "percentage": "0.0016349138112280617"
+}, {
+  "label": "DHEA-Sulfate",
+  "itemid": "50916",
+  "event_count": "1876",
+  "percentage": "0.0015875250051055091"
+}, {
+  "label": "Tobramycin",
+  "itemid": "50997",
+  "event_count": "1867",
+  "percentage": "0.0015799089469786705"
+}, {
+  "label": "Amylase, Pleural",
+  "itemid": "51047",
+  "event_count": "1865",
+  "percentage": "0.0015782164896171508"
+}, {
+  "label": "CD5",
+  "itemid": "51412",
+  "event_count": "1862",
+  "percentage": "0.0015756778035748711"
+}, {
+  "label": "RBC, Other Fluid",
+  "itemid": "51438",
+  "event_count": "1860",
+  "percentage": "0.0015739853462133511"
+}, {
+  "label": "CD3",
+  "itemid": "51404",
+  "event_count": "1830",
+  "percentage": "0.0015485984857905553"
+}, {
+  "label": "CD10",
+  "itemid": "51388",
+  "event_count": "1811",
+  "percentage": "0.0015325201408561179"
+}, {
+  "label": "CD20",
+  "itemid": "51400",
+  "event_count": "1807",
+  "percentage": "0.0015291352261330785"
+}, {
+  "label": "Other",
+  "itemid": "52278",
+  "event_count": "1798",
+  "percentage": "0.0015215191680062396"
+}, {
+  "label": "Plasma Cells",
+  "itemid": "51263",
+  "event_count": "1784",
+  "percentage": "0.0015096719664756016"
+}, {
+  "label": "RFXUCU",
+  "itemid": "52424",
+  "event_count": "1746",
+  "percentage": "0.0014775152766067267"
+}, {
+  "label": "Eosinophils",
+  "itemid": "51114",
+  "event_count": "1722",
+  "percentage": "0.0014572057882684898"
+}, {
+  "label": "Other Cell",
+  "itemid": "51434",
+  "event_count": "1679",
+  "percentage": "0.0014208179549958155"
+}, {
+  "label": "Triglycerides, Pleural",
+  "itemid": "51060",
+  "event_count": "1587",
+  "percentage": "0.0013429649163659077"
+}, {
+  "label": "Eosinophils",
+  "itemid": "51419",
+  "event_count": "1577",
+  "percentage": "0.0013345026295583091"
+}, {
+  "label": "Uric Acid, Urine",
+  "itemid": "51105",
+  "event_count": "1576",
+  "percentage": "0.0013336564008775494"
+}, {
+  "label": "CD19",
+  "itemid": "51313",
+  "event_count": "1571",
+  "percentage": "0.00132942525747375"
+}, {
+  "label": "Protein C, Functional",
+  "itemid": "51271",
+  "event_count": "1569",
+  "percentage": "0.0013277328001122302"
+}, {
+  "label": "Acetone",
+  "itemid": "50857",
+  "event_count": "1567",
+  "percentage": "0.0013260403427507103"
+}, {
+  "label": "Miscellaneous, Pleural",
+  "itemid": "51056",
+  "event_count": "1543",
+  "percentage": "0.0013057308544124737"
+}, {
+  "label": "RFXLDLM",
+  "itemid": "51722",
+  "event_count": "1538",
+  "percentage": "0.0013014997110086745"
+}, {
+  "label": "Eosinophils",
+  "itemid": "52256",
+  "event_count": "1519",
+  "percentage": "0.0012854213660742368"
+}, {
+  "label": "CD3",
+  "itemid": "51319",
+  "event_count": "1494",
+  "percentage": "0.0012642656490552402"
+}, {
+  "label": "Magnesium, Urine",
+  "itemid": "51088",
+  "event_count": "1477",
+  "percentage": "0.0012498797614823225"
+}, {
+  "label": "Norovirus Genogroup II",
+  "itemid": "51946",
+  "event_count": "1467",
+  "percentage": "0.0012414174746747239"
+}, {
+  "label": "Norovirus Genogroup I",
+  "itemid": "51945",
+  "event_count": "1467",
+  "percentage": "0.0012414174746747239"
+}, {
+  "label": "HLA-DR",
+  "itemid": "51337",
+  "event_count": "1463",
+  "percentage": "0.0012380325599516844"
+}, {
+  "label": "CD10",
+  "itemid": "52955",
+  "event_count": "1462",
+  "percentage": "0.0012371863312709247"
+}, {
+  "label": "Protein S, Functional",
+  "itemid": "51273",
+  "event_count": "1448",
+  "percentage": "0.0012253391297402864"
+}, {
+  "label": "HLA-DR",
+  "itemid": "51423",
+  "event_count": "1430",
+  "percentage": "0.0012101070134866087"
+}, {
+  "label": "CD20",
+  "itemid": "51315",
+  "event_count": "1423",
+  "percentage": "0.0012041834127212896"
+}, {
+  "label": "FMC-7",
+  "itemid": "51420",
+  "event_count": "1400",
+  "percentage": "0.0011847201530638129"
+}, {
+  "label": "CD23",
+  "itemid": "51402",
+  "event_count": "1396",
+  "percentage": "0.0011813352383407733"
+}, {
+  "label": "Kappa",
+  "itemid": "51340",
+  "event_count": "1394",
+  "percentage": "0.0011796427809792535"
+}, {
+  "label": "Lambda",
+  "itemid": "51341",
+  "event_count": "1394",
+  "percentage": "0.0011796427809792535"
+}, {
+  "label": "CD5",
+  "itemid": "51326",
+  "event_count": "1390",
+  "percentage": "0.0011762578662562143"
+}, {
+  "label": "Serum Viscosity",
+  "itemid": "51289",
+  "event_count": "1363",
+  "percentage": "0.0011534096918756978"
+}, {
+  "label": "Anti-DGP (IgA/IgG)",
+  "itemid": "50869",
+  "event_count": "1357",
+  "percentage": "0.0011483323197911386"
+}, {
+  "label": "UTX10",
+  "itemid": "52020",
+  "event_count": "1356",
+  "percentage": "0.0011474860911103787"
+}, {
+  "label": "Fentanyl",
+  "itemid": "51980",
+  "event_count": "1356",
+  "percentage": "0.0011474860911103787"
+}, {
+  "label": "CD45",
+  "itemid": "51183",
+  "event_count": "1353",
+  "percentage": "0.0011449474050680992"
+}, {
+  "label": "Amylase, Body Fluid",
+  "itemid": "51026",
+  "event_count": "1307",
+  "percentage": "0.0011060208857531452"
+}, {
+  "label": "CD19",
+  "itemid": "51164",
+  "event_count": "1305",
+  "percentage": "0.0011043284283916255"
+}, {
+  "label": "Joint Crystals, Location",
+  "itemid": "51372",
+  "event_count": "1277",
+  "percentage": "0.0010806340253303494"
+}, {
+  "label": "Joint Crystals, Comment",
+  "itemid": "51371",
+  "event_count": "1277",
+  "percentage": "0.0010806340253303494"
+}, {
+  "label": "Joint Crystals, Shape",
+  "itemid": "51374",
+  "event_count": "1277",
+  "percentage": "0.0010806340253303494"
+}, {
+  "label": "Joint Crystals, Birefringence",
+  "itemid": "51370",
+  "event_count": "1277",
+  "percentage": "0.0010806340253303494"
+}, {
+  "label": "Creatinine, Pleural",
+  "itemid": "51052",
+  "event_count": "1274",
+  "percentage": "0.0010780953392880697"
+}, {
+  "label": "FetalFN",
+  "itemid": "51033",
+  "event_count": "1262",
+  "percentage": "0.0010679405951189512"
+}, {
+  "label": "CD20",
+  "itemid": "51168",
+  "event_count": "1259",
+  "percentage": "0.0010654019090766717"
+}, {
+  "label": "CD10",
+  "itemid": "51152",
+  "event_count": "1257",
+  "percentage": "0.001063709451715152"
+}, {
+  "label": "CD3 %",
+  "itemid": "51174",
+  "event_count": "1256",
+  "percentage": "0.0010628632230343922"
+}, {
+  "label": "CD3 Absolute Count",
+  "itemid": "51175",
+  "event_count": "1256",
+  "percentage": "0.0010628632230343922"
+}, {
+  "label": "Iron Stain",
+  "itemid": "52992",
+  "event_count": "1255",
+  "percentage": "0.0010620169943536322"
+}, {
+  "label": "Strep A, Rapid Antigen",
+  "itemid": "51894",
+  "event_count": "1254",
+  "percentage": "0.0010611707656728723"
+}, {
+  "label": "Kappa",
+  "itemid": "51238",
+  "event_count": "1246",
+  "percentage": "0.0010544009362267934"
+}, {
+  "label": "CD5",
+  "itemid": "51184",
+  "event_count": "1246",
+  "percentage": "0.0010544009362267934"
+}, {
+  "label": "Lambda",
+  "itemid": "51239",
+  "event_count": "1246",
+  "percentage": "0.0010544009362267934"
+}, {
+  "label": "PAN3",
+  "itemid": "51772",
+  "event_count": "1232",
+  "percentage": "0.0010425537346961554"
+}, {
+  "label": "HLA-DR",
+  "itemid": "51230",
+  "event_count": "1228",
+  "percentage": "0.0010391688199731157"
+}, {
+  "label": "HPE8",
+  "itemid": "51664",
+  "event_count": "1220",
+  "percentage": "0.0010323989905270368"
+}, {
+  "label": "proBNP, Pleural",
+  "itemid": "51921",
+  "event_count": "1204",
+  "percentage": "0.0010188593316348791"
+}, {
+  "label": "Triple Phosphate Crystals",
+  "itemid": "51503",
+  "event_count": "1193",
+  "percentage": "0.0010095508161465205"
+}, {
+  "label": "G6PD, Qualitative",
+  "itemid": "52123",
+  "event_count": "1189",
+  "percentage": "0.0010061659014234811"
+}, {
+  "label": "CD19 %",
+  "itemid": "51165",
+  "event_count": "1134",
+  "percentage": "0.00095962332398168843"
+}, {
+  "label": "CD19 Absolute Count",
+  "itemid": "51166",
+  "event_count": "1134",
+  "percentage": "0.00095962332398168843"
+}, {
+  "label": "CD20 Absolute Count",
+  "itemid": "51170",
+  "event_count": "1134",
+  "percentage": "0.00095962332398168843"
+}, {
+  "label": "CD20 %",
+  "itemid": "51169",
+  "event_count": "1134",
+  "percentage": "0.00095962332398168843"
+}, {
+  "label": "Von Willebrand Factor Antigen",
+  "itemid": "51299",
+  "event_count": "1098",
+  "percentage": "0.00092915909147433314"
+}, {
+  "label": "Von Willebrand Factor Activity",
+  "itemid": "51298",
+  "event_count": "1094",
+  "percentage": "0.0009257741767512937"
+}, {
+  "label": "Mesothelial cells",
+  "itemid": "51429",
+  "event_count": "1093",
+  "percentage": "0.00092492794807053384"
+}, {
+  "label": "CD16/56 Absolute Count",
+  "itemid": "51162",
+  "event_count": "1090",
+  "percentage": "0.00092238926202825415"
+}, {
+  "label": "CD16/56%",
+  "itemid": "51163",
+  "event_count": "1090",
+  "percentage": "0.00092238926202825415"
+}, {
+  "label": "Lyme C6 Ab",
+  "itemid": "51688",
+  "event_count": "1065",
+  "percentage": "0.00090123354500925754"
+}, {
+  "label": "Lyme G and M Value",
+  "itemid": "51689",
+  "event_count": "1061",
+  "percentage": "0.00089784863028621821"
+}, {
+  "label": "CD23",
+  "itemid": "51317",
+  "event_count": "1058",
+  "percentage": "0.00089530994424393863"
+}, {
+  "label": "FMC-7",
+  "itemid": "51335",
+  "event_count": "1058",
+  "percentage": "0.00089530994424393863"
+}, {
+  "label": "Eosinophils",
+  "itemid": "51368",
+  "event_count": "1036",
+  "percentage": "0.0008766929132672216"
+}, {
+  "label": "FMC-7",
+  "itemid": "51215",
+  "event_count": "1033",
+  "percentage": "0.00087415422722494191"
+}, {
+  "label": "VZV IgG Ab Value",
+  "itemid": "51754",
+  "event_count": "1024",
+  "percentage": "0.00086653816909810317"
+}, {
+  "label": "VZV IgG Ab",
+  "itemid": "51753",
+  "event_count": "1023",
+  "percentage": "0.00086569194041734331"
+}, {
+  "label": "CD7",
+  "itemid": "51416",
+  "event_count": "1020",
+  "percentage": "0.00086315325437506362"
+}, {
+  "label": "CD23",
+  "itemid": "51172",
+  "event_count": "1019",
+  "percentage": "0.00086230702569430387"
+}, {
+  "label": "CD2",
+  "itemid": "51399",
+  "event_count": "1014",
+  "percentage": "0.00085807588229050435"
+}, {
+  "label": "RUBIgGV",
+  "itemid": "51769",
+  "event_count": "984",
+  "percentage": "0.00083268902186770845"
+}, {
+  "label": "Rubella IgG Ab",
+  "itemid": "51724",
+  "event_count": "980",
+  "percentage": "0.0008293041071446689"
+}, {
+  "label": "CD34",
+  "itemid": "51406",
+  "event_count": "971",
+  "percentage": "0.00082168804901783016"
+}, {
+  "label": "Cellular Cast",
+  "itemid": "51471",
+  "event_count": "944",
+  "percentage": "0.00079883987463731383"
+}, {
+  "label": "PAN2",
+  "itemid": "52019",
+  "event_count": "941",
+  "percentage": "0.00079630118859503414"
+}, {
+  "label": "Trichomonas vaginalis",
+  "itemid": "51996",
+  "event_count": "940",
+  "percentage": "0.00079545495991427439"
+}, {
+  "label": "Hematocrit, Pleural",
+  "itemid": "51445",
+  "event_count": "939",
+  "percentage": "0.00079460873123351453"
+}, {
+  "label": "CD7",
+  "itemid": "51192",
+  "event_count": "925",
+  "percentage": "0.00078276152970287627"
+}, {
+  "label": "CD2",
+  "itemid": "51167",
+  "event_count": "916",
+  "percentage": "0.00077514547157603753"
+}, {
+  "label": "CD34",
+  "itemid": "51321",
+  "event_count": "913",
+  "percentage": "0.00077260678553375784"
+}, {
+  "label": "HPE5",
+  "itemid": "51661",
+  "event_count": "906",
+  "percentage": "0.00076668318476843893"
+}, {
+  "label": "MRSA PCR",
+  "itemid": "51877",
+  "event_count": "905",
+  "percentage": "0.00076583695608767907"
+}, {
+  "label": "Staph aureus PCR",
+  "itemid": "51893",
+  "event_count": "905",
+  "percentage": "0.00076583695608767907"
+}, {
+  "label": "Inhibitor Screen",
+  "itemid": "51235",
+  "event_count": "882",
+  "percentage": "0.00074637369643020207"
+}, {
+  "label": "Other",
+  "itemid": "51381",
+  "event_count": "878",
+  "percentage": "0.00074298878170716263"
+}, {
+  "label": "CMV IgG Ab Value",
+  "itemid": "51587",
+  "event_count": "876",
+  "percentage": "0.0007412963243456428"
+}, {
+  "label": "CMV IgG Ab",
+  "itemid": "51586",
+  "event_count": "874",
+  "percentage": "0.00073960386698412308"
+}, {
+  "label": "CD7",
+  "itemid": "51332",
+  "event_count": "858",
+  "percentage": "0.00072606420809196532"
+}, {
+  "label": "CA 19-9",
+  "itemid": "51579",
+  "event_count": "851",
+  "percentage": "0.00072014060732664619"
+}, {
+  "label": "Atypical Lymphocytes",
+  "itemid": "52221",
+  "event_count": "831",
+  "percentage": "0.00070321603371144889"
+}, {
+  "label": "CD2",
+  "itemid": "51314",
+  "event_count": "830",
+  "percentage": "0.000702369805030689"
+}, {
+  "label": "CD13",
+  "itemid": "51307",
+  "event_count": "819",
+  "percentage": "0.00069306128954233046"
+}, {
+  "label": "UCU1",
+  "itemid": "52426",
+  "event_count": "817",
+  "percentage": "0.00069136883218081074"
+}, {
+  "label": "EE1",
+  "itemid": "51762",
+  "event_count": "806",
+  "percentage": "0.00068206031669245228"
+}, {
+  "label": "EE6",
+  "itemid": "51768",
+  "event_count": "804",
+  "percentage": "0.00068036785933093245"
+}, {
+  "label": "Sickle Cells",
+  "itemid": "51291",
+  "event_count": "790",
+  "percentage": "0.00066852065780029441"
+}, {
+  "label": "PEP, CSF",
+  "itemid": "51798",
+  "event_count": "787",
+  "percentage": "0.00066598197175801472"
+}, {
+  "label": "Sperm",
+  "itemid": "51499",
+  "event_count": "771",
+  "percentage": "0.000652442312865857"
+}, {
+  "label": "Hematocrit, Joint Fluid",
+  "itemid": "51369",
+  "event_count": "758",
+  "percentage": "0.00064144134001597867"
+}, {
+  "label": "CMV IgM Ab",
+  "itemid": "51588",
+  "event_count": "749",
+  "percentage": "0.00063382528188913982"
+}, {
+  "label": "CMV Interpretation",
+  "itemid": "51590",
+  "event_count": "749",
+  "percentage": "0.00063382528188913982"
+}, {
+  "label": "NonSquamous Epithelial Cell",
+  "itemid": "51489",
+  "event_count": "712",
+  "percentage": "0.00060251482070102489"
+}, {
+  "label": "Phenytoin, Free",
+  "itemid": "50968",
+  "event_count": "711",
+  "percentage": "0.00060166859202026492"
+}, {
+  "label": "Glucose, Body Fluid",
+  "itemid": "51034",
+  "event_count": "708",
+  "percentage": "0.00059912990597798534"
+}, {
+  "label": "EE2",
+  "itemid": "51763",
+  "event_count": "700",
+  "percentage": "0.00059236007653190646"
+}, {
+  "label": "Miscellaneous, Body Fluid",
+  "itemid": "51038",
+  "event_count": "696",
+  "percentage": "0.00058897516180886691"
+}, {
+  "label": "CD117",
+  "itemid": "51305",
+  "event_count": "695",
+  "percentage": "0.00058812893312810716"
+}, {
+  "label": "Total Protein, Body Fluid",
+  "itemid": "51043",
+  "event_count": "693",
+  "percentage": "0.00058643647576658733"
+}, {
+  "label": "MacroOvalocytes",
+  "itemid": "51247",
+  "event_count": "693",
+  "percentage": "0.00058643647576658733"
+}, {
+  "label": "Sickle Cell Preparation",
+  "itemid": "51290",
+  "event_count": "686",
+  "percentage": "0.00058051287500126831"
+}, {
+  "label": "Phenytoin, Percent Free",
+  "itemid": "50969",
+  "event_count": "678",
+  "percentage": "0.00057374304555518933"
+}, {
+  "label": "Epstein-Barr Virus VCA IgM Ab",
+  "itemid": "51620",
+  "event_count": "667",
+  "percentage": "0.00056443453006683076"
+}, {
+  "label": "CD15",
+  "itemid": "51310",
+  "event_count": "667",
+  "percentage": "0.00056443453006683076"
+}, {
+  "label": "Epstein-Barr Virus VCA IgG Ab",
+  "itemid": "51619",
+  "event_count": "667",
+  "percentage": "0.00056443453006683076"
+}, {
+  "label": "Epstein-Barr Virus  EBNA IgG Ab",
+  "itemid": "51614",
+  "event_count": "667",
+  "percentage": "0.00056443453006683076"
+}, {
+  "label": "Epstein-Barr Virus Interpretation",
+  "itemid": "51618",
+  "event_count": "667",
+  "percentage": "0.00056443453006683076"
+}, {
+  "label": "Epstein-Barr Virus EBNA IgG Ab",
+  "itemid": "51615",
+  "event_count": "664",
+  "percentage": "0.00056189584402455129"
+}, {
+  "label": "Epstein-Barr Virus IgM Ab Value",
+  "itemid": "51617",
+  "event_count": "663",
+  "percentage": "0.00056104961534379132"
+}, {
+  "label": "Epstein-Barr Virus IgG Ab Value",
+  "itemid": "51616",
+  "event_count": "663",
+  "percentage": "0.00056104961534379132"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52419",
+  "event_count": "662",
+  "percentage": "0.00056020338666303146"
+}, {
+  "label": "Hemosiderin",
+  "itemid": "51481",
+  "event_count": "661",
+  "percentage": "0.0005593571579822716"
+}, {
+  "label": "Immunophenotyping",
+  "itemid": "52262",
+  "event_count": "656",
+  "percentage": "0.0005551260145784723"
+}, {
+  "label": "Plasma",
+  "itemid": "51124",
+  "event_count": "641",
+  "percentage": "0.00054243258436707429"
+}, {
+  "label": "Urine Volume, Total",
+  "itemid": "51109",
+  "event_count": "625",
+  "percentage": "0.00052889292547491642"
+}, {
+  "label": "Creatinine Clearance",
+  "itemid": "51080",
+  "event_count": "625",
+  "percentage": "0.00052889292547491642"
+}, {
+  "label": "Urine Creatinine",
+  "itemid": "51106",
+  "event_count": "625",
+  "percentage": "0.00052889292547491642"
+}, {
+  "label": "Creatinine, Serum",
+  "itemid": "51081",
+  "event_count": "625",
+  "percentage": "0.00052889292547491642"
+}, {
+  "label": "Total Collection Time",
+  "itemid": "51101",
+  "event_count": "625",
+  "percentage": "0.00052889292547491642"
+}, {
+  "label": "CD33",
+  "itemid": "51320",
+  "event_count": "619",
+  "percentage": "0.00052381555339035715"
+}, {
+  "label": "Rubeola IgG Ab Value",
+  "itemid": "51726",
+  "event_count": "616",
+  "percentage": "0.00052127686734807768"
+}, {
+  "label": "Rubeola IgG Ab",
+  "itemid": "51725",
+  "event_count": "615",
+  "percentage": "0.00052043063866731782"
+}, {
+  "label": "LD, Body Fluid",
+  "itemid": "51035",
+  "event_count": "614",
+  "percentage": "0.00051958440998655785"
+}, {
+  "label": "Albumin, Body Fluid",
+  "itemid": "51025",
+  "event_count": "613",
+  "percentage": "0.0005187381813057981"
+}, {
+  "label": "WBC Casts",
+  "itemid": "51517",
+  "event_count": "595",
+  "percentage": "0.0005035060650521204"
+}, {
+  "label": "Hypersegmented Neutrophils",
+  "itemid": "51232",
+  "event_count": "590",
+  "percentage": "0.0004992749216483211"
+}, {
+  "label": "CD14",
+  "itemid": "51309",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Specific Gravity",
+  "itemid": "51994",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Ketone",
+  "itemid": "51984",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Glucose",
+  "itemid": "51981",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Bilirubin",
+  "itemid": "51966",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Protein",
+  "itemid": "51992",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "pH",
+  "itemid": "52730",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Urobilinogen",
+  "itemid": "52002",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Nitrite",
+  "itemid": "51987",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Blood",
+  "itemid": "51967",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Leukocytes",
+  "itemid": "51985",
+  "event_count": "563",
+  "percentage": "0.00047642674726780472"
+}, {
+  "label": "Amikacin",
+  "itemid": "50865",
+  "event_count": "541",
+  "percentage": "0.00045780971629108769"
+}, {
+  "label": "Mumps IgG Ab Value",
+  "itemid": "51694",
+  "event_count": "537",
+  "percentage": "0.00045442480156804825"
+}, {
+  "label": "Mumps IgG Ab",
+  "itemid": "51693",
+  "event_count": "536",
+  "percentage": "0.00045357857288728833"
+}, {
+  "label": "Toxoplasma Interpretation",
+  "itemid": "51745",
+  "event_count": "531",
+  "percentage": "0.00044934742948348903"
+}, {
+  "label": "Toxoplasma IgG Ab",
+  "itemid": "51741",
+  "event_count": "531",
+  "percentage": "0.00044934742948348903"
+}, {
+  "label": "EE7",
+  "itemid": "51764",
+  "event_count": "529",
+  "percentage": "0.00044765497212196931"
+}, {
+  "label": "Centromere",
+  "itemid": "50901",
+  "event_count": "525",
+  "percentage": "0.00044427005739892982"
+}, {
+  "label": "Toxoplasma IgG Ab Value",
+  "itemid": "51742",
+  "event_count": "520",
+  "percentage": "0.00044003891399513052"
+}, {
+  "label": "Absolute Hemoglobin",
+  "itemid": "50855",
+  "event_count": "518",
+  "percentage": "0.0004383464566336108"
+}, {
+  "label": "Absolute A1c",
+  "itemid": "50854",
+  "event_count": "518",
+  "percentage": "0.0004383464566336108"
+}, {
+  "label": "Plasma Cells",
+  "itemid": "51454",
+  "event_count": "514",
+  "percentage": "0.00043496154191057131"
+}, {
+  "label": "Bands",
+  "itemid": "52223",
+  "event_count": "512",
+  "percentage": "0.00043326908454905159"
+}, {
+  "label": "Eosinophil Count",
+  "itemid": "51199",
+  "event_count": "506",
+  "percentage": "0.00042819171246449237"
+}, {
+  "label": "Miscellaneous, CSF",
+  "itemid": "51796",
+  "event_count": "500",
+  "percentage": "0.00042311434037993316"
+}, {
+  "label": "CD4",
+  "itemid": "51323",
+  "event_count": "495",
+  "percentage": "0.00041888319697613386"
+}, {
+  "label": "C Diff Toxin Antigen Assay",
+  "itemid": "51934",
+  "event_count": "485",
+  "percentage": "0.00041042091016853515"
+}, {
+  "label": "Porphobilinogen Screen",
+  "itemid": "51096",
+  "event_count": "483",
+  "percentage": "0.00040872845280701543"
+}, {
+  "label": "CD15/56",
+  "itemid": "52087",
+  "event_count": "479",
+  "percentage": "0.00040534353808397593"
+}, {
+  "label": "Beta Hydroxybutyrate",
+  "itemid": "51567",
+  "event_count": "475",
+  "percentage": "0.00040195862336093649"
+}, {
+  "label": "Basophils",
+  "itemid": "51442",
+  "event_count": "458",
+  "percentage": "0.00038757273578801877"
+}, {
+  "label": "CD8",
+  "itemid": "51334",
+  "event_count": "452",
+  "percentage": "0.00038249536370345955"
+}, {
+  "label": "dRVVT - Screen",
+  "itemid": "52109",
+  "event_count": "447",
+  "percentage": "0.00037826422029966025"
+}, {
+  "label": "Hematocrit, Other Fluid",
+  "itemid": "51422",
+  "event_count": "445",
+  "percentage": "0.00037657176293814053"
+}, {
+  "label": "K (GREEN)",
+  "itemid": "51677",
+  "event_count": "436",
+  "percentage": "0.00036895570481130168"
+}, {
+  "label": "Atypical Lymphocytes",
+  "itemid": "51110",
+  "event_count": "433",
+  "percentage": "0.0003664170187690221"
+}, {
+  "label": "Factor VII",
+  "itemid": "51205",
+  "event_count": "428",
+  "percentage": "0.0003621858753652228"
+}, {
+  "label": "Arachadonic Acid",
+  "itemid": "51142",
+  "event_count": "427",
+  "percentage": "0.00036133964668446294"
+}, {
+  "label": "Triglycerides, Ascites",
+  "itemid": "50850",
+  "event_count": "421",
+  "percentage": "0.00035626227459990373"
+}, {
+  "label": "CD64",
+  "itemid": "51331",
+  "event_count": "419",
+  "percentage": "0.00035456981723838395"
+}, {
+  "label": "ADP",
+  "itemid": "51135",
+  "event_count": "419",
+  "percentage": "0.00035456981723838395"
+}, {
+  "label": "CD56",
+  "itemid": "51328",
+  "event_count": "417",
+  "percentage": "0.00035287735987686423"
+}, {
+  "label": "Creatinine, Body Fluid",
+  "itemid": "51032",
+  "event_count": "415",
+  "percentage": "0.00035118490251534451"
+}, {
+  "label": "Collagen",
+  "itemid": "51195",
+  "event_count": "413",
+  "percentage": "0.00034949244515382479"
+}, {
+  "label": "Myoglobin, Urine",
+  "itemid": "51091",
+  "event_count": "410",
+  "percentage": "0.00034695375911154521"
+}, {
+  "label": "CD11c",
+  "itemid": "51306",
+  "event_count": "406",
+  "percentage": "0.00034356884438850572"
+}, {
+  "label": "Glucose",
+  "itemid": "52569",
+  "event_count": "402",
+  "percentage": "0.00034018392966546622"
+}, {
+  "label": "Potassium",
+  "itemid": "52610",
+  "event_count": "402",
+  "percentage": "0.00034018392966546622"
+}, {
+  "label": "Hematocrit",
+  "itemid": "51638",
+  "event_count": "402",
+  "percentage": "0.00034018392966546622"
+}, {
+  "label": "Sodium",
+  "itemid": "52623",
+  "event_count": "402",
+  "percentage": "0.00034018392966546622"
+}, {
+  "label": "Hemoglobin, Calculated",
+  "itemid": "51645",
+  "event_count": "402",
+  "percentage": "0.00034018392966546622"
+}, {
+  "label": "Bilirubin, Total, Body Fluid",
+  "itemid": "51028",
+  "event_count": "396",
+  "percentage": "0.00033510655758090706"
+}, {
+  "label": "Urine Casts, Other",
+  "itemid": "51507",
+  "event_count": "390",
+  "percentage": "0.00033002918549634785"
+}, {
+  "label": "Atypical Lymphocytes",
+  "itemid": "51440",
+  "event_count": "385",
+  "percentage": "0.00032579804209254855"
+}, {
+  "label": "Fetal Hemoglobin",
+  "itemid": "51212",
+  "event_count": "384",
+  "percentage": "0.00032495181341178864"
+}, {
+  "label": "Urine Crystals, Other",
+  "itemid": "51510",
+  "event_count": "384",
+  "percentage": "0.00032495181341178864"
+}, {
+  "label": "Creatinine",
+  "itemid": "52546",
+  "event_count": "377",
+  "percentage": "0.00031902821264646956"
+}, {
+  "label": "Chloride",
+  "itemid": "52535",
+  "event_count": "369",
+  "percentage": "0.00031225838320039068"
+}, {
+  "label": "Urea Nitrogen",
+  "itemid": "52647",
+  "event_count": "369",
+  "percentage": "0.00031225838320039068"
+}, {
+  "label": "Free Calcium",
+  "itemid": "51624",
+  "event_count": "368",
+  "percentage": "0.00031141215451963082"
+}, {
+  "label": "Anion Gap",
+  "itemid": "52500",
+  "event_count": "367",
+  "percentage": "0.00031056592583887091"
+}, {
+  "label": "Total CO2",
+  "itemid": "51739",
+  "event_count": "367",
+  "percentage": "0.00031056592583887091"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "51901",
+  "event_count": "358",
+  "percentage": "0.00030294986771203211"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "51953",
+  "event_count": "354",
+  "percentage": "0.00029956495298899267"
+}, {
+  "label": "H. pylori IgG Ab",
+  "itemid": "51666",
+  "event_count": "348",
+  "percentage": "0.00029448758090443346"
+}, {
+  "label": "Basophils",
+  "itemid": "51112",
+  "event_count": "334",
+  "percentage": "0.00028264037937379536"
+}, {
+  "label": "CD56",
+  "itemid": "51188",
+  "event_count": "333",
+  "percentage": "0.0002817941506930355"
+}, {
+  "label": "Urine Comments",
+  "itemid": "51509",
+  "event_count": "331",
+  "percentage": "0.00028010169333151573"
+}, {
+  "label": "CD41",
+  "itemid": "51324",
+  "event_count": "330",
+  "percentage": "0.00027925546465075587"
+}, {
+  "label": "Hematocrit, Ascites",
+  "itemid": "51115",
+  "event_count": "328",
+  "percentage": "0.00027756300728923615"
+}, {
+  "label": "SCT - Screen",
+  "itemid": "52179",
+  "event_count": "327",
+  "percentage": "0.00027671677860847629"
+}, {
+  "label": "Platelet Clumps",
+  "itemid": "51264",
+  "event_count": "322",
+  "percentage": "0.00027248563520467693"
+}, {
+  "label": "LUC",
+  "itemid": "51242",
+  "event_count": "318",
+  "percentage": "0.00026910072048163749"
+}, {
+  "label": "Mesothelial Cells",
+  "itemid": "51377",
+  "event_count": "314",
+  "percentage": "0.00026571580575859805"
+}, {
+  "label": "H. pylori IgG Ab Value",
+  "itemid": "51667",
+  "event_count": "310",
+  "percentage": "0.00026233089103555856"
+}, {
+  "label": "Blue Top Hold Frozen",
+  "itemid": "50888",
+  "event_count": "306",
+  "percentage": "0.00025894597631251907"
+}, {
+  "label": "CD71",
+  "itemid": "51333",
+  "event_count": "306",
+  "percentage": "0.00025894597631251907"
+}, {
+  "label": "CDT027",
+  "itemid": "51954",
+  "event_count": "296",
+  "percentage": "0.00025048368950492047"
+}, {
+  "label": "Basophils",
+  "itemid": "52225",
+  "event_count": "295",
+  "percentage": "0.00024963746082416055"
+}, {
+  "label": "Glyco A",
+  "itemid": "51336",
+  "event_count": "293",
+  "percentage": "0.00024794500346264083"
+}, {
+  "label": "Factor IX",
+  "itemid": "51203",
+  "event_count": "291",
+  "percentage": "0.00024625254610112111"
+}, {
+  "label": "CD34",
+  "itemid": "51178",
+  "event_count": "279",
+  "percentage": "0.00023609780193200271"
+}, {
+  "label": "Factor XI",
+  "itemid": "51209",
+  "event_count": "271",
+  "percentage": "0.00022932797248592377"
+}, {
+  "label": "Waxy Casts",
+  "itemid": "51515",
+  "event_count": "271",
+  "percentage": "0.00022932797248592377"
+}, {
+  "label": "Factor V",
+  "itemid": "51204",
+  "event_count": "268",
+  "percentage": "0.00022678928644364417"
+}, {
+  "label": "Bands",
+  "itemid": "51111",
+  "event_count": "268",
+  "percentage": "0.00022678928644364417"
+}, {
+  "label": "Influenza B, Rapid Antigen",
+  "itemid": "51874",
+  "event_count": "262",
+  "percentage": "0.00022171191435908495"
+}, {
+  "label": "Influenza A, Rapid Antigen",
+  "itemid": "51869",
+  "event_count": "262",
+  "percentage": "0.00022171191435908495"
+}, {
+  "label": "CD13",
+  "itemid": "51156",
+  "event_count": "256",
+  "percentage": "0.00021663454227452579"
+}, {
+  "label": "HIV 2 Ab Confirmation",
+  "itemid": "51655",
+  "event_count": "248",
+  "percentage": "0.00020986471282844683"
+}, {
+  "label": "HIT-Ab Interpreted Result",
+  "itemid": "52131",
+  "event_count": "248",
+  "percentage": "0.00020986471282844683"
+}, {
+  "label": "HIT-Ab Numerical Result",
+  "itemid": "52132",
+  "event_count": "248",
+  "percentage": "0.00020986471282844683"
+}, {
+  "label": "HIV 1 Ab Confirmation",
+  "itemid": "51653",
+  "event_count": "248",
+  "percentage": "0.00020986471282844683"
+}, {
+  "label": "CD11c",
+  "itemid": "51155",
+  "event_count": "248",
+  "percentage": "0.00020986471282844683"
+}, {
+  "label": "HCG, Urine, Qualitative",
+  "itemid": "52720",
+  "event_count": "245",
+  "percentage": "0.00020732602678616722"
+}, {
+  "label": "Strep A, Rapid Antigen",
+  "itemid": "51895",
+  "event_count": "243",
+  "percentage": "0.0002056335694246475"
+}, {
+  "label": "EE3",
+  "itemid": "51765",
+  "event_count": "229",
+  "percentage": "0.00019378636789400938"
+}, {
+  "label": "Sodium, Stool",
+  "itemid": "51065",
+  "event_count": "229",
+  "percentage": "0.00019378636789400938"
+}, {
+  "label": "Potassium, Stool",
+  "itemid": "51064",
+  "event_count": "227",
+  "percentage": "0.00019209391053248964"
+}, {
+  "label": "Factor X",
+  "itemid": "51208",
+  "event_count": "224",
+  "percentage": "0.00018955522449021006"
+}, {
+  "label": "Osmolality, Stool",
+  "itemid": "51063",
+  "event_count": "224",
+  "percentage": "0.00018955522449021006"
+}, {
+  "label": "CD117",
+  "itemid": "51154",
+  "event_count": "222",
+  "percentage": "0.00018786276712869031"
+}, {
+  "label": "High-Sensitivity CRP",
+  "itemid": "51652",
+  "event_count": "221",
+  "percentage": "0.00018701653844793045"
+}, {
+  "label": "CD4",
+  "itemid": "51408",
+  "event_count": "220",
+  "percentage": "0.00018617030976717059"
+}, {
+  "label": "CD15",
+  "itemid": "51159",
+  "event_count": "218",
+  "percentage": "0.00018447785240565084"
+}, {
+  "label": "White Blood Cells",
+  "itemid": "51755",
+  "event_count": "218",
+  "percentage": "0.00018447785240565084"
+}, {
+  "label": "CD8",
+  "itemid": "51418",
+  "event_count": "214",
+  "percentage": "0.0001810929376826114"
+}, {
+  "label": "CD33",
+  "itemid": "51177",
+  "event_count": "214",
+  "percentage": "0.0001810929376826114"
+}, {
+  "label": "CD14",
+  "itemid": "51158",
+  "event_count": "212",
+  "percentage": "0.00017940048032109165"
+}, {
+  "label": "Bands",
+  "itemid": "51366",
+  "event_count": "208",
+  "percentage": "0.00017601556559805219"
+}, {
+  "label": "Influenza B by PCR",
+  "itemid": "51872",
+  "event_count": "207",
+  "percentage": "0.00017516933691729233"
+}, {
+  "label": "Influenza A by PCR",
+  "itemid": "51864",
+  "event_count": "207",
+  "percentage": "0.00017516933691729233"
+}, {
+  "label": "Factor II",
+  "itemid": "51202",
+  "event_count": "202",
+  "percentage": "0.000170938193513493"
+}, {
+  "label": "CD59",
+  "itemid": "51190",
+  "event_count": "200",
+  "percentage": "0.00016924573615197325"
+}, {
+  "label": "CD55",
+  "itemid": "51187",
+  "event_count": "200",
+  "percentage": "0.00016924573615197325"
+}, {
+  "label": "Heinz Body Prep",
+  "itemid": "51220",
+  "event_count": "195",
+  "percentage": "0.00016501459274817392"
+}, {
+  "label": "CD64",
+  "itemid": "51191",
+  "event_count": "193",
+  "percentage": "0.0001633221353866542"
+}, {
+  "label": "Plasma",
+  "itemid": "52279",
+  "event_count": "189",
+  "percentage": "0.00015993722066361471"
+}, {
+  "label": "CD5 %",
+  "itemid": "51185",
+  "event_count": "188",
+  "percentage": "0.00015909099198285488"
+}, {
+  "label": "CD5 Absolute Count",
+  "itemid": "51186",
+  "event_count": "188",
+  "percentage": "0.00015909099198285488"
+}, {
+  "label": "Basophils",
+  "itemid": "51387",
+  "event_count": "187",
+  "percentage": "0.00015824476330209502"
+}, {
+  "label": "Factor VIII Inhibitor",
+  "itemid": "51207",
+  "event_count": "184",
+  "percentage": "0.00015570607725981541"
+}, {
+  "label": "Non-squamous Epithelial Cells",
+  "itemid": "51488",
+  "event_count": "184",
+  "percentage": "0.00015570607725981541"
+}, {
+  "label": "Bands",
+  "itemid": "51441",
+  "event_count": "183",
+  "percentage": "0.00015485984857905552"
+}, {
+  "label": "CD71",
+  "itemid": "51193",
+  "event_count": "183",
+  "percentage": "0.00015485984857905552"
+}, {
+  "label": "CD41",
+  "itemid": "51182",
+  "event_count": "179",
+  "percentage": "0.00015147493385601606"
+}, {
+  "label": "Glyco A",
+  "itemid": "51217",
+  "event_count": "179",
+  "percentage": "0.00015147493385601606"
+}, {
+  "label": "Bands",
+  "itemid": "51386",
+  "event_count": "176",
+  "percentage": "0.00014893624781373648"
+}, {
+  "label": "NRBC",
+  "itemid": "52276",
+  "event_count": "175",
+  "percentage": "0.00014809001913297662"
+}, {
+  "label": "Bicarbonate, Other Fluid",
+  "itemid": "51027",
+  "event_count": "173",
+  "percentage": "0.00014639756177145687"
+}, {
+  "label": "Protein S, Antigen",
+  "itemid": "51272",
+  "event_count": "173",
+  "percentage": "0.00014639756177145687"
+}, {
+  "label": "Bilirubin, Total, Pleural",
+  "itemid": "51049",
+  "event_count": "170",
+  "percentage": "0.00014385887572917726"
+}, {
+  "label": "Basophils",
+  "itemid": "51367",
+  "event_count": "167",
+  "percentage": "0.00014132018968689768"
+}, {
+  "label": "Ethylene Glycol",
+  "itemid": "51621",
+  "event_count": "164",
+  "percentage": "0.00013878150364461807"
+}, {
+  "label": "Troponin I",
+  "itemid": "52642",
+  "event_count": "163",
+  "percentage": "0.00013793527496385821"
+}, {
+  "label": "Glucose, Joint Fluid",
+  "itemid": "51022",
+  "event_count": "162",
+  "percentage": "0.00013708904628309833"
+}, {
+  "label": "Lining Cell",
+  "itemid": "52358",
+  "event_count": "158",
+  "percentage": "0.00013370413156005889"
+}, {
+  "label": "Nucleated RBC",
+  "itemid": "51122",
+  "event_count": "155",
+  "percentage": "0.00013116544551777928"
+}, {
+  "label": "CD57",
+  "itemid": "51189",
+  "event_count": "150",
+  "percentage": "0.00012693430211397993"
+}, {
+  "label": "Trichomonas",
+  "itemid": "51502",
+  "event_count": "149",
+  "percentage": "0.00012608807343322009"
+}, {
+  "label": "Epinepherine",
+  "itemid": "51201",
+  "event_count": "146",
+  "percentage": "0.00012354938739094049"
+}, {
+  "label": "Lining Cell",
+  "itemid": "52301",
+  "event_count": "146",
+  "percentage": "0.00012354938739094049"
+}, {
+  "label": "Anti-Parietal Cell Antibody",
+  "itemid": "50875",
+  "event_count": "146",
+  "percentage": "0.00012354938739094049"
+}, {
+  "label": "Triglycer",
+  "itemid": "51044",
+  "event_count": "140",
+  "percentage": "0.0001184720153063813"
+}, {
+  "label": "CD16/56",
+  "itemid": "51312",
+  "event_count": "138",
+  "percentage": "0.00011677955794486155"
+}, {
+  "label": "Atypical Lymphocytes",
+  "itemid": "51385",
+  "event_count": "138",
+  "percentage": "0.00011677955794486155"
+}, {
+  "label": "Young Cells",
+  "itemid": "51302",
+  "event_count": "137",
+  "percentage": "0.00011593332926410169"
+}, {
+  "label": "Toxoplasma IgM Ab",
+  "itemid": "51743",
+  "event_count": "135",
+  "percentage": "0.00011424087190258194"
+}, {
+  "label": "NRBC",
+  "itemid": "51452",
+  "event_count": "133",
+  "percentage": "0.00011254841454106221"
+}, {
+  "label": "Glucose, Urine",
+  "itemid": "51084",
+  "event_count": "133",
+  "percentage": "0.00011254841454106221"
+}, {
+  "label": "Protein C, Antigen",
+  "itemid": "51270",
+  "event_count": "131",
+  "percentage": "0.00011085595717954248"
+}, {
+  "label": "Atypical Lymphocytes",
+  "itemid": "51365",
+  "event_count": "131",
+  "percentage": "0.00011085595717954248"
+}, {
+  "label": "Ristocetin",
+  "itemid": "51286",
+  "event_count": "128",
+  "percentage": "0.0001083172711372629"
+}, {
+  "label": "Toxoplasma IgM Ab Value",
+  "itemid": "51744",
+  "event_count": "127",
+  "percentage": "0.00010747104245650302"
+}, {
+  "label": "Total Protein, Joint Fluid",
+  "itemid": "51024",
+  "event_count": "125",
+  "percentage": "0.00010577858509498329"
+}, {
+  "label": "Amylase, Urine",
+  "itemid": "51072",
+  "event_count": "116",
+  "percentage": "9.81625269681445e-05"
+}, {
+  "label": "Metamyelocytes",
+  "itemid": "52270",
+  "event_count": "116",
+  "percentage": "9.81625269681445e-05"
+}, {
+  "label": "Influenza A, Rapid Antigen",
+  "itemid": "51870",
+  "event_count": "115",
+  "percentage": "9.7316298287384621e-05"
+}, {
+  "label": "Influenza B, Rapid Antigen",
+  "itemid": "51875",
+  "event_count": "115",
+  "percentage": "9.7316298287384621e-05"
+}, {
+  "label": "dRVVT - Normalized Ratio",
+  "itemid": "52108",
+  "event_count": "115",
+  "percentage": "9.7316298287384621e-05"
+}, {
+  "label": "dRVVT - Confirmation",
+  "itemid": "52107",
+  "event_count": "115",
+  "percentage": "9.7316298287384621e-05"
+}, {
+  "label": "Amylase/Creatinine Ratio, Urine",
+  "itemid": "51073",
+  "event_count": "114",
+  "percentage": "9.6470069606624748e-05"
+}, {
+  "label": "Stomatocyte",
+  "itemid": "52181",
+  "event_count": "114",
+  "percentage": "9.6470069606624748e-05"
+}, {
+  "label": "Anti-Gliadin Antibody, IgA",
+  "itemid": "50870",
+  "event_count": "112",
+  "percentage": "9.4777612245105028e-05"
+}, {
+  "label": "Hematocrit, CSF",
+  "itemid": "52257",
+  "event_count": "109",
+  "percentage": "9.223892620282542e-05"
+}, {
+  "label": "Ethanol, Urine",
+  "itemid": "51083",
+  "event_count": "108",
+  "percentage": "9.139269752206556e-05"
+}, {
+  "label": "CD16",
+  "itemid": "51161",
+  "event_count": "102",
+  "percentage": "8.631532543750636e-05"
+}, {
+  "label": "Theophylline",
+  "itemid": "50990",
+  "event_count": "98",
+  "percentage": "8.29304107144669e-05"
+}, {
+  "label": "Broad Casts",
+  "itemid": "51467",
+  "event_count": "98",
+  "percentage": "8.29304107144669e-05"
+}, {
+  "label": "CD13",
+  "itemid": "51392",
+  "event_count": "96",
+  "percentage": "8.1237953352947159e-05"
+}, {
+  "label": "Lipase, Ascites",
+  "itemid": "50844",
+  "event_count": "95",
+  "percentage": "8.03917246721873e-05"
+}, {
+  "label": "RBC Casts",
+  "itemid": "51494",
+  "event_count": "92",
+  "percentage": "7.78530386299077e-05"
+}, {
+  "label": "EE5",
+  "itemid": "51767",
+  "event_count": "91",
+  "percentage": "7.7006809949147832e-05"
+}, {
+  "label": "Chloride, Stool",
+  "itemid": "51062",
+  "event_count": "91",
+  "percentage": "7.7006809949147832e-05"
+}, {
+  "label": "Blasts",
+  "itemid": "52227",
+  "event_count": "89",
+  "percentage": "7.5314352587628112e-05"
+}, {
+  "label": "CD38",
+  "itemid": "51179",
+  "event_count": "87",
+  "percentage": "7.3621895226108364e-05"
+}, {
+  "label": "NRBC",
+  "itemid": "51433",
+  "event_count": "84",
+  "percentage": "7.1083209183828771e-05"
+}, {
+  "label": "Lactate",
+  "itemid": "53154",
+  "event_count": "83",
+  "percentage": "7.0236980503068911e-05"
+}, {
+  "label": "Bilirubin Crystals",
+  "itemid": "51465",
+  "event_count": "81",
+  "percentage": "6.8544523141549164e-05"
+}, {
+  "label": "Factor XIII",
+  "itemid": "51211",
+  "event_count": "80",
+  "percentage": "6.76982944607893e-05"
+}, {
+  "label": "CD25",
+  "itemid": "51173",
+  "event_count": "80",
+  "percentage": "6.76982944607893e-05"
+}, {
+  "label": "Reflex Confirmatory Hepatitis C Viral Load",
+  "itemid": "51713",
+  "event_count": "80",
+  "percentage": "6.76982944607893e-05"
+}, {
+  "label": "CD16/56",
+  "itemid": "51397",
+  "event_count": "79",
+  "percentage": "6.6852065780029444e-05"
+}, {
+  "label": "Mesothelial cells",
+  "itemid": "52268",
+  "event_count": "78",
+  "percentage": "6.600583709926957e-05"
+}, {
+  "label": "Urine Fat Bodies",
+  "itemid": "51511",
+  "event_count": "72",
+  "percentage": "6.0928465014710376e-05"
+}, {
+  "label": "NRBC",
+  "itemid": "51380",
+  "event_count": "68",
+  "percentage": "5.7543550291670909e-05"
+}, {
+  "label": "CD22",
+  "itemid": "51171",
+  "event_count": "67",
+  "percentage": "5.6697321610911042e-05"
+}, {
+  "label": "Bleeding Time",
+  "itemid": "51149",
+  "event_count": "66",
+  "percentage": "5.5851092930151175e-05"
+}, {
+  "label": "CD56",
+  "itemid": "51413",
+  "event_count": "64",
+  "percentage": "5.4158635568631448e-05"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "53127",
+  "event_count": "63",
+  "percentage": "5.3312406887871575e-05"
+}, {
+  "label": "CD103",
+  "itemid": "51153",
+  "event_count": "62",
+  "percentage": "5.2466178207111708e-05"
+}, {
+  "label": "Rouleaux",
+  "itemid": "52176",
+  "event_count": "61",
+  "percentage": "5.1619949526351841e-05"
+}, {
+  "label": "CD25",
+  "itemid": "51318",
+  "event_count": "60",
+  "percentage": "5.0773720845591981e-05"
+}, {
+  "label": "CD117",
+  "itemid": "51390",
+  "event_count": "60",
+  "percentage": "5.0773720845591981e-05"
+}, {
+  "label": "Factor XII",
+  "itemid": "51210",
+  "event_count": "60",
+  "percentage": "5.0773720845591981e-05"
+}, {
+  "label": "TdT",
+  "itemid": "52335",
+  "event_count": "56",
+  "percentage": "4.7388806122552514e-05"
+}, {
+  "label": "CD15",
+  "itemid": "51395",
+  "event_count": "55",
+  "percentage": "4.6542577441792647e-05"
+}, {
+  "label": "Plasma",
+  "itemid": "51435",
+  "event_count": "55",
+  "percentage": "4.6542577441792647e-05"
+}, {
+  "label": "Promyelocytes",
+  "itemid": "52283",
+  "event_count": "53",
+  "percentage": "4.4850120080272913e-05"
+}, {
+  "label": "Lipase, Body Fluid",
+  "itemid": "51036",
+  "event_count": "53",
+  "percentage": "4.4850120080272913e-05"
+}, {
+  "label": "Calcium Phosphate Crystals",
+  "itemid": "51470",
+  "event_count": "52",
+  "percentage": "4.4003891399513047e-05"
+}, {
+  "label": "Myelocytes",
+  "itemid": "52274",
+  "event_count": "52",
+  "percentage": "4.4003891399513047e-05"
+}, {
+  "label": "Monospot, Rapid Antigen",
+  "itemid": "51692",
+  "event_count": "51",
+  "percentage": "4.315766271875318e-05"
+}, {
+  "label": "Urea Nitrogen, Body Fluid",
+  "itemid": "51045",
+  "event_count": "51",
+  "percentage": "4.315766271875318e-05"
+}, {
+  "label": "CD33",
+  "itemid": "51405",
+  "event_count": "50",
+  "percentage": "4.2311434037993313e-05"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52043",
+  "event_count": "50",
+  "percentage": "4.2311434037993313e-05"
+}, {
+  "label": "ANCA Titer",
+  "itemid": "53144",
+  "event_count": "49",
+  "percentage": "4.1465205357233453e-05"
+}, {
+  "label": "Leukocyte Alkaline Phosphatase",
+  "itemid": "51241",
+  "event_count": "48",
+  "percentage": "4.0618976676473579e-05"
+}, {
+  "label": "Sodium, Ascites",
+  "itemid": "50848",
+  "event_count": "48",
+  "percentage": "4.0618976676473579e-05"
+}, {
+  "label": "Bicarbonate, Stool",
+  "itemid": "51061",
+  "event_count": "47",
+  "percentage": "3.9772747995713719e-05"
+}, {
+  "label": "Cholesterol, Ascites",
+  "itemid": "50840",
+  "event_count": "47",
+  "percentage": "3.9772747995713719e-05"
+}, {
+  "label": "SCT - Normalized Ratio",
+  "itemid": "52178",
+  "event_count": "46",
+  "percentage": "3.8926519314953853e-05"
+}, {
+  "label": "CD38",
+  "itemid": "51407",
+  "event_count": "46",
+  "percentage": "3.8926519314953853e-05"
+}, {
+  "label": "SCT - Confirmation",
+  "itemid": "52177",
+  "event_count": "46",
+  "percentage": "3.8926519314953853e-05"
+}, {
+  "label": "TdT",
+  "itemid": "51295",
+  "event_count": "46",
+  "percentage": "3.8926519314953853e-05"
+}, {
+  "label": "CD4/CD8 Ratio",
+  "itemid": "51409",
+  "event_count": "46",
+  "percentage": "3.8926519314953853e-05"
+}, {
+  "label": "CD38",
+  "itemid": "51322",
+  "event_count": "46",
+  "percentage": "3.8926519314953853e-05"
+}, {
+  "label": "Lining Cell",
+  "itemid": "52263",
+  "event_count": "45",
+  "percentage": "3.8080290634193979e-05"
+}, {
+  "label": "Hemoglobin Other",
+  "itemid": "52129",
+  "event_count": "41",
+  "percentage": "3.4695375911154519e-05"
+}, {
+  "label": "CD14",
+  "itemid": "51394",
+  "event_count": "41",
+  "percentage": "3.4695375911154519e-05"
+}, {
+  "label": "CD22",
+  "itemid": "51316",
+  "event_count": "41",
+  "percentage": "3.4695375911154519e-05"
+}, {
+  "label": "LD, Joint Fluid",
+  "itemid": "51023",
+  "event_count": "40",
+  "percentage": "3.3849147230394652e-05"
+}, {
+  "label": "CD138",
+  "itemid": "51393",
+  "event_count": "40",
+  "percentage": "3.3849147230394652e-05"
+}, {
+  "label": "D-Dimer",
+  "itemid": "52551",
+  "event_count": "39",
+  "percentage": "3.3002918549634785e-05"
+}, {
+  "label": "Sodium, Body Fluid",
+  "itemid": "51042",
+  "event_count": "39",
+  "percentage": "3.3002918549634785e-05"
+}, {
+  "label": "INR(PT)",
+  "itemid": "51675",
+  "event_count": "38",
+  "percentage": "3.2156689868874918e-05"
+}, {
+  "label": "Surfactant/Albumin",
+  "itemid": "51897",
+  "event_count": "36",
+  "percentage": "3.0464232507355188e-05"
+}, {
+  "label": "\u003cAlbumin\u003e",
+  "itemid": "51776",
+  "event_count": "36",
+  "percentage": "3.0464232507355188e-05"
+}, {
+  "label": "Miscellaneous, Ascites",
+  "itemid": "50845",
+  "event_count": "36",
+  "percentage": "3.0464232507355188e-05"
+}, {
+  "label": "Monocyte Count",
+  "itemid": "51253",
+  "event_count": "35",
+  "percentage": "2.9618003826595325e-05"
+}, {
+  "label": "CD57",
+  "itemid": "51329",
+  "event_count": "35",
+  "percentage": "2.9618003826595325e-05"
+}, {
+  "label": "Potassium, Ascites",
+  "itemid": "50847",
+  "event_count": "35",
+  "percentage": "2.9618003826595325e-05"
+}, {
+  "label": "Potassium, Body Fluid",
+  "itemid": "51041",
+  "event_count": "35",
+  "percentage": "2.9618003826595325e-05"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "51806",
+  "event_count": "34",
+  "percentage": "2.8771775145835454e-05"
+}, {
+  "label": "CD103",
+  "itemid": "51304",
+  "event_count": "34",
+  "percentage": "2.8771775145835454e-05"
+}, {
+  "label": "RBC Clumps",
+  "itemid": "51495",
+  "event_count": "33",
+  "percentage": "2.7925546465075588e-05"
+}, {
+  "label": "Chloride, Ascites",
+  "itemid": "50839",
+  "event_count": "32",
+  "percentage": "2.7079317784315724e-05"
+}, {
+  "label": "CD64",
+  "itemid": "51415",
+  "event_count": "32",
+  "percentage": "2.7079317784315724e-05"
+}, {
+  "label": "Bicarbonate, Ascites",
+  "itemid": "50837",
+  "event_count": "31",
+  "percentage": "2.6233089103555854e-05"
+}, {
+  "label": "Oval Fat Body",
+  "itemid": "51490",
+  "event_count": "30",
+  "percentage": "2.5386860422795991e-05"
+}, {
+  "label": "Chloride, Body Fluid",
+  "itemid": "51030",
+  "event_count": "30",
+  "percentage": "2.5386860422795991e-05"
+}, {
+  "label": "Epithelial Casts",
+  "itemid": "51475",
+  "event_count": "30",
+  "percentage": "2.5386860422795991e-05"
+}, {
+  "label": "CD11c",
+  "itemid": "51391",
+  "event_count": "29",
+  "percentage": "2.4540631742036124e-05"
+}, {
+  "label": "Macro Prolactin",
+  "itemid": "50959",
+  "event_count": "29",
+  "percentage": "2.4540631742036124e-05"
+}, {
+  "label": "Promyelocytes",
+  "itemid": "51456",
+  "event_count": "28",
+  "percentage": "2.3694403061276257e-05"
+}, {
+  "label": "CD16",
+  "itemid": "51311",
+  "event_count": "27",
+  "percentage": "2.284817438051639e-05"
+}, {
+  "label": "Reflex HIV Confirmation",
+  "itemid": "51714",
+  "event_count": "27",
+  "percentage": "2.284817438051639e-05"
+}, {
+  "label": "Metamyelocytes",
+  "itemid": "51449",
+  "event_count": "25",
+  "percentage": "2.1155717018996657e-05"
+}, {
+  "label": "Ammonium Biurate",
+  "itemid": "51461",
+  "event_count": "25",
+  "percentage": "2.1155717018996657e-05"
+}, {
+  "label": "Procainamide",
+  "itemid": "50972",
+  "event_count": "24",
+  "percentage": "2.030948833823679e-05"
+}, {
+  "label": "N-Acetylprocainamide (NAPA)",
+  "itemid": "50962",
+  "event_count": "24",
+  "percentage": "2.030948833823679e-05"
+}, {
+  "label": "Metamyelocytes",
+  "itemid": "51430",
+  "event_count": "22",
+  "percentage": "1.8617030976717059e-05"
+}, {
+  "label": "CD25",
+  "itemid": "51403",
+  "event_count": "22",
+  "percentage": "1.8617030976717059e-05"
+}, {
+  "label": "Urea Nitrogen, Ascites",
+  "itemid": "50851",
+  "event_count": "21",
+  "percentage": "1.7770802295957193e-05"
+}, {
+  "label": "Metamyelocytes",
+  "itemid": "51119",
+  "event_count": "18",
+  "percentage": "1.5232116253677594e-05"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "51924",
+  "event_count": "16",
+  "percentage": "1.3539658892157862e-05"
+}, {
+  "label": "CD22",
+  "itemid": "51401",
+  "event_count": "16",
+  "percentage": "1.3539658892157862e-05"
+}, {
+  "label": "Cholesterol Crystals",
+  "itemid": "51472",
+  "event_count": "16",
+  "percentage": "1.3539658892157862e-05"
+}, {
+  "label": "CD71",
+  "itemid": "51417",
+  "event_count": "15",
+  "percentage": "1.2693430211397995e-05"
+}, {
+  "label": "CD41",
+  "itemid": "51410",
+  "event_count": "15",
+  "percentage": "1.2693430211397995e-05"
+}, {
+  "label": "Plasma",
+  "itemid": "52307",
+  "event_count": "15",
+  "percentage": "1.2693430211397995e-05"
+}, {
+  "label": "CD57",
+  "itemid": "51414",
+  "event_count": "15",
+  "percentage": "1.2693430211397995e-05"
+}, {
+  "label": "CD138",
+  "itemid": "51308",
+  "event_count": "15",
+  "percentage": "1.2693430211397995e-05"
+}, {
+  "label": "CD16",
+  "itemid": "51396",
+  "event_count": "15",
+  "percentage": "1.2693430211397995e-05"
+}, {
+  "label": "Promyelocytes",
+  "itemid": "51126",
+  "event_count": "15",
+  "percentage": "1.2693430211397995e-05"
+}, {
+  "label": "Cholesterol, Body Fluid",
+  "itemid": "51031",
+  "event_count": "14",
+  "percentage": "1.1847201530638128e-05"
+}, {
+  "label": "HIV 1 Viral Load",
+  "itemid": "51791",
+  "event_count": "14",
+  "percentage": "1.1847201530638128e-05"
+}, {
+  "label": "Hematocrit",
+  "itemid": "51480",
+  "event_count": "14",
+  "percentage": "1.1847201530638128e-05"
+}, {
+  "label": "Metamyelocytes",
+  "itemid": "51378",
+  "event_count": "14",
+  "percentage": "1.1847201530638128e-05"
+}, {
+  "label": "Myelocytes",
+  "itemid": "51451",
+  "event_count": "14",
+  "percentage": "1.1847201530638128e-05"
+}, {
+  "label": "Glyco A",
+  "itemid": "51421",
+  "event_count": "14",
+  "percentage": "1.1847201530638128e-05"
+}, {
+  "label": "Calcium Carbonate Crystals",
+  "itemid": "51468",
+  "event_count": "14",
+  "percentage": "1.1847201530638128e-05"
+}, {
+  "label": "TdT",
+  "itemid": "52373",
+  "event_count": "13",
+  "percentage": "1.1000972849878262e-05"
+}, {
+  "label": "Cysteine Crystals",
+  "itemid": "51473",
+  "event_count": "13",
+  "percentage": "1.1000972849878262e-05"
+}, {
+  "label": "Myelocytes",
+  "itemid": "51121",
+  "event_count": "12",
+  "percentage": "1.0154744169118395e-05"
+}, {
+  "label": "CD138",
+  "itemid": "51157",
+  "event_count": "12",
+  "percentage": "1.0154744169118395e-05"
+}, {
+  "label": "Myelocytes",
+  "itemid": "51432",
+  "event_count": "11",
+  "percentage": "9.30851548835853e-06"
+}, {
+  "label": "Free Fat",
+  "itemid": "51477",
+  "event_count": "10",
+  "percentage": "8.4622868075986629e-06"
+}, {
+  "label": "CD103",
+  "itemid": "51389",
+  "event_count": "10",
+  "percentage": "8.4622868075986629e-06"
+}, {
+  "label": "Phosphate, Body Fluid",
+  "itemid": "51040",
+  "event_count": "10",
+  "percentage": "8.4622868075986629e-06"
+}, {
+  "label": "Blasts",
+  "itemid": "51443",
+  "event_count": "10",
+  "percentage": "8.4622868075986629e-06"
+}, {
+  "label": "Osmolality, Body Fluid",
+  "itemid": "51039",
+  "event_count": "10",
+  "percentage": "8.4622868075986629e-06"
+}, {
+  "label": "Calcium, Body Fluid",
+  "itemid": "51029",
+  "event_count": "10",
+  "percentage": "8.4622868075986629e-06"
+}, {
+  "label": "Promyelocytes",
+  "itemid": "52311",
+  "event_count": "10",
+  "percentage": "8.4622868075986629e-06"
+}, {
+  "label": "Promyelocytes",
+  "itemid": "51437",
+  "event_count": "10",
+  "percentage": "8.4622868075986629e-06"
+}, {
+  "label": "HPE9",
+  "itemid": "51665",
+  "event_count": "10",
+  "percentage": "8.4622868075986629e-06"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "51827",
+  "event_count": "9",
+  "percentage": "7.616058126838797e-06"
+}, {
+  "label": "CD56 %",
+  "itemid": "52092",
+  "event_count": "9",
+  "percentage": "7.616058126838797e-06"
+}, {
+  "label": "CD56 Absolute Count",
+  "itemid": "52093",
+  "event_count": "9",
+  "percentage": "7.616058126838797e-06"
+}, {
+  "label": "Albumin, Joint Fluid",
+  "itemid": "51019",
+  "event_count": "9",
+  "percentage": "7.616058126838797e-06"
+}, {
+  "label": "Lipase, Pleural",
+  "itemid": "51055",
+  "event_count": "9",
+  "percentage": "7.616058126838797e-06"
+}, {
+  "label": "Myelocytes",
+  "itemid": "52305",
+  "event_count": "8",
+  "percentage": "6.769829446078931e-06"
+}, {
+  "label": "Sulfonamides",
+  "itemid": "51500",
+  "event_count": "8",
+  "percentage": "6.769829446078931e-06"
+}, {
+  "label": "Tyrosine Crystals",
+  "itemid": "51504",
+  "event_count": "8",
+  "percentage": "6.769829446078931e-06"
+}, {
+  "label": "Magnesium, Body Fluid",
+  "itemid": "51037",
+  "event_count": "8",
+  "percentage": "6.769829446078931e-06"
+}, {
+  "label": "Osmolality, Ascites",
+  "itemid": "50846",
+  "event_count": "7",
+  "percentage": "5.9236007653190642e-06"
+}, {
+  "label": "TCR Gamma-Delta",
+  "itemid": "52185",
+  "event_count": "6",
+  "percentage": "5.0773720845591974e-06"
+}, {
+  "label": "CD 1a",
+  "itemid": "52319",
+  "event_count": "6",
+  "percentage": "5.0773720845591974e-06"
+}, {
+  "label": "CD55",
+  "itemid": "51327",
+  "event_count": "6",
+  "percentage": "5.0773720845591974e-06"
+}, {
+  "label": "TCR Alpha-Beta",
+  "itemid": "52184",
+  "event_count": "6",
+  "percentage": "5.0773720845591974e-06"
+}, {
+  "label": "Amylase, Joint Fluid",
+  "itemid": "51020",
+  "event_count": "6",
+  "percentage": "5.0773720845591974e-06"
+}, {
+  "label": "Osmotic Fragility",
+  "itemid": "51258",
+  "event_count": "6",
+  "percentage": "5.0773720845591974e-06"
+}, {
+  "label": "Reptilase Time",
+  "itemid": "51280",
+  "event_count": "5",
+  "percentage": "4.2311434037993315e-06"
+}, {
+  "label": "Sodium, Pleural",
+  "itemid": "51058",
+  "event_count": "5",
+  "percentage": "4.2311434037993315e-06"
+}, {
+  "label": "Reducing Substances, Urine",
+  "itemid": "51496",
+  "event_count": "5",
+  "percentage": "4.2311434037993315e-06"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52370",
+  "event_count": "5",
+  "percentage": "4.2311434037993315e-06"
+}, {
+  "label": "Leucine Crystals",
+  "itemid": "51485",
+  "event_count": "5",
+  "percentage": "4.2311434037993315e-06"
+}, {
+  "label": "Red Blood Cell Fragments",
+  "itemid": "51278",
+  "event_count": "5",
+  "percentage": "4.2311434037993315e-06"
+}, {
+  "label": "CD59",
+  "itemid": "51330",
+  "event_count": "5",
+  "percentage": "4.2311434037993315e-06"
+}, {
+  "label": "Potassium, Pleural",
+  "itemid": "51057",
+  "event_count": "5",
+  "percentage": "4.2311434037993315e-06"
+}, {
+  "label": "Hyphenated Yeast",
+  "itemid": "51483",
+  "event_count": "4",
+  "percentage": "3.3849147230394655e-06"
+}, {
+  "label": "TCR Alpha-Beta",
+  "itemid": "52331",
+  "event_count": "4",
+  "percentage": "3.3849147230394655e-06"
+}, {
+  "label": "Bilirubin, Total, CSF",
+  "itemid": "51783",
+  "event_count": "4",
+  "percentage": "3.3849147230394655e-06"
+}, {
+  "label": "Reptilase Time Control",
+  "itemid": "51281",
+  "event_count": "4",
+  "percentage": "3.3849147230394655e-06"
+}, {
+  "label": "TCR Gamma-Delta",
+  "itemid": "52332",
+  "event_count": "4",
+  "percentage": "3.3849147230394655e-06"
+}, {
+  "label": "Blasts",
+  "itemid": "51113",
+  "event_count": "3",
+  "percentage": "2.5386860422795987e-06"
+}, {
+  "label": "Creatinine, Joint Fluid",
+  "itemid": "51021",
+  "event_count": "3",
+  "percentage": "2.5386860422795987e-06"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52406",
+  "event_count": "3",
+  "percentage": "2.5386860422795987e-06"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52287",
+  "event_count": "3",
+  "percentage": "2.5386860422795987e-06"
+}, {
+  "label": "Young",
+  "itemid": "51129",
+  "event_count": "3",
+  "percentage": "2.5386860422795987e-06"
+}, {
+  "label": "Bicarbonate, Pleural",
+  "itemid": "51048",
+  "event_count": "3",
+  "percentage": "2.5386860422795987e-06"
+}, {
+  "label": "Young",
+  "itemid": "52288",
+  "event_count": "3",
+  "percentage": "2.5386860422795987e-06"
+}, {
+  "label": "CD 1a",
+  "itemid": "52088",
+  "event_count": "3",
+  "percentage": "2.5386860422795987e-06"
+}, {
+  "label": "Blasts",
+  "itemid": "52339",
+  "event_count": "2",
+  "percentage": "1.6924573615197328e-06"
+}, {
+  "label": "pCO2, Body Fluid",
+  "itemid": "50830",
+  "event_count": "2",
+  "percentage": "1.6924573615197328e-06"
+}, {
+  "label": "Fatty Casts",
+  "itemid": "52410",
+  "event_count": "2",
+  "percentage": "1.6924573615197328e-06"
+}, {
+  "label": "pO2, Body Fluid",
+  "itemid": "50832",
+  "event_count": "2",
+  "percentage": "1.6924573615197328e-06"
+}, {
+  "label": "Chloride, Pleural",
+  "itemid": "51050",
+  "event_count": "2",
+  "percentage": "1.6924573615197328e-06"
+}, {
+  "label": "CD 1a",
+  "itemid": "52341",
+  "event_count": "2",
+  "percentage": "1.6924573615197328e-06"
+}, {
+  "label": "Hypersegmented Neutrophils",
+  "itemid": "52355",
+  "event_count": "2",
+  "percentage": "1.6924573615197328e-06"
+}, {
+  "label": "Factor IX Inhibitor",
+  "itemid": "52113",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Young",
+  "itemid": "52371",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52392",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Blasts",
+  "itemid": "52294",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52313",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Young Cells",
+  "itemid": "51459",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "P50 of Hemoglobin",
+  "itemid": "52032",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Uric Acid, Joint Fluid",
+  "itemid": "51826",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Hyperseg",
+  "itemid": "52055",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Albumin, Stool",
+  "itemid": "51927",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Voided Specimen",
+  "itemid": "52066",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}, {
+  "label": "Chloride, CSF",
+  "itemid": "51784",
+  "event_count": "1",
+  "percentage": "8.4622868075986638e-07"
+}]

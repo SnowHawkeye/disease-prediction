@@ -50,7 +50,7 @@ def calculate_age_at_date(patient_demographics, date):
 
 def make_demographic_records(observation_dates, patient_ids, patients):
     demographics_records = {}
-    for patient_id in patient_ids:
+    for patient_id in tqdm(patient_ids, desc="Creating demographic records"):
         patient_demographics = patients.loc[patient_id]
         patient_record = {}
         for observation_date in observation_dates[patient_id]:
@@ -63,8 +63,8 @@ def make_demographic_records(observation_dates, patient_ids, patients):
 
 
 def main():
-    EXTRACTION_CONFIG_FILEPATH = "config/test_extraction_config.json"
-    PATH_CONFIG_FILEPATH = "config/test_extraction_paths.json"
+    EXTRACTION_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_config.json"
+    PATH_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_paths.json"
     MIMIC_DATASET_CONFIG_FILEPATH = "config/mimic_dataset.mipha.json"
 
     create_demographics_records_from_labeled_records(

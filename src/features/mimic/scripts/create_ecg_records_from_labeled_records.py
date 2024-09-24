@@ -58,8 +58,8 @@ def create_ecg_features_records_from_labeled_records(extraction_config_file_path
 
 
 def main():
-    EXTRACTION_CONFIG_FILEPATH = "config/test_extraction_config.json"
-    PATH_CONFIG_FILEPATH = "config/test_extraction_paths.json"
+    EXTRACTION_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_config.json"
+    PATH_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_paths.json"
     MIMIC_DATASET_CONFIG_FILEPATH = "config/mimic_dataset.mipha.json"
 
     create_ecg_features_records_from_labeled_records(

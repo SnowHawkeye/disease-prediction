@@ -47,8 +47,8 @@ class Config:
 
 
 def main():
-    EXTRACTION_CONFIG_FILEPATH = "config/test_extraction_config.json"
-    PATH_CONFIG_FILEPATH = "config/test_extraction_paths.json"
+    EXTRACTION_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_config.json"
+    PATH_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_paths.json"
 
     generate_config(extraction_config, EXTRACTION_CONFIG_FILEPATH)
     generate_config(paths_config, PATH_CONFIG_FILEPATH)

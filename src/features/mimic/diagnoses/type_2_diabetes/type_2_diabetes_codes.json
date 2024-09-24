@@ -1,0 +1,393 @@
+[{
+  "icd_code": "25000",
+  "occurrence_count": "41029",
+  "long_title": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "E119",
+  "occurrence_count": "16621",
+  "long_title": "Type 2 diabetes mellitus without complications"
+}, {
+  "icd_code": "E1122",
+  "occurrence_count": "10003",
+  "long_title": "Type 2 diabetes mellitus with diabetic chronic kidney disease"
+}, {
+  "icd_code": "25060",
+  "occurrence_count": "6646",
+  "long_title": "Diabetes with neurological manifestations, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "E1165",
+  "occurrence_count": "5458",
+  "long_title": "Type 2 diabetes mellitus with hyperglycemia"
+}, {
+  "icd_code": "25040",
+  "occurrence_count": "4098",
+  "long_title": "Diabetes with renal manifestations, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "E1140",
+  "occurrence_count": "4022",
+  "long_title": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified"
+}, {
+  "icd_code": "25050",
+  "occurrence_count": "2771",
+  "long_title": "Diabetes with ophthalmic manifestations, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "E1151",
+  "occurrence_count": "2550",
+  "long_title": "Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene"
+}, {
+  "icd_code": "25002",
+  "occurrence_count": "2401",
+  "long_title": "Diabetes mellitus without mention of complication, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "25080",
+  "occurrence_count": "2378",
+  "long_title": "Diabetes with other specified manifestations, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "E11319",
+  "occurrence_count": "2225",
+  "long_title": "Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema"
+}, {
+  "icd_code": "E1142",
+  "occurrence_count": "2194",
+  "long_title": "Type 2 diabetes mellitus with diabetic polyneuropathy"
+}, {
+  "icd_code": "E1121",
+  "occurrence_count": "1840",
+  "long_title": "Type 2 diabetes mellitus with diabetic nephropathy"
+}, {
+  "icd_code": "E11649",
+  "occurrence_count": "1643",
+  "long_title": "Type 2 diabetes mellitus with hypoglycemia without coma"
+}, {
+  "icd_code": "25062",
+  "occurrence_count": "1504",
+  "long_title": "Diabetes with neurological manifestations, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "E11621",
+  "occurrence_count": "1404",
+  "long_title": "Type 2 diabetes mellitus with foot ulcer"
+}, {
+  "icd_code": "25042",
+  "occurrence_count": "876",
+  "long_title": "Diabetes with renal manifestations, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "25082",
+  "occurrence_count": "843",
+  "long_title": "Diabetes with other specified manifestations, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "E1169",
+  "occurrence_count": "754",
+  "long_title": "Type 2 diabetes mellitus with other specified complication"
+}, {
+  "icd_code": "E1143",
+  "occurrence_count": "711",
+  "long_title": "Type 2 diabetes mellitus with diabetic autonomic (poly)neuropathy"
+}, {
+  "icd_code": "25052",
+  "occurrence_count": "699",
+  "long_title": "Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "25070",
+  "occurrence_count": "670",
+  "long_title": "Diabetes with peripheral circulatory disorders, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "E1152",
+  "occurrence_count": "624",
+  "long_title": "Type 2 diabetes mellitus with diabetic peripheral angiopathy with gangrene"
+}, {
+  "icd_code": "E118",
+  "occurrence_count": "413",
+  "long_title": "Type 2 diabetes mellitus with unspecified complications"
+}, {
+  "icd_code": "25012",
+  "occurrence_count": "375",
+  "long_title": "Diabetes with ketoacidosis, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "25092",
+  "occurrence_count": "335",
+  "long_title": "Diabetes with unspecified complication, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "E11610",
+  "occurrence_count": "326",
+  "long_title": "Type 2 diabetes mellitus with diabetic neuropathic arthropathy"
+}, {
+  "icd_code": "25072",
+  "occurrence_count": "249",
+  "long_title": "Diabetes with peripheral circulatory disorders, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "E11622",
+  "occurrence_count": "223",
+  "long_title": "Type 2 diabetes mellitus with other skin ulcer"
+}, {
+  "icd_code": "E1110",
+  "occurrence_count": "170",
+  "long_title": "Type 2 diabetes mellitus with ketoacidosis without coma"
+}, {
+  "icd_code": "25090",
+  "occurrence_count": "169",
+  "long_title": "Diabetes with unspecified complication, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "E11628",
+  "occurrence_count": "154",
+  "long_title": "Type 2 diabetes mellitus with other skin complications"
+}, {
+  "icd_code": "E1139",
+  "occurrence_count": "149",
+  "long_title": "Type 2 diabetes mellitus with other diabetic ophthalmic complication"
+}, {
+  "icd_code": "E1136",
+  "occurrence_count": "147",
+  "long_title": "Type 2 diabetes mellitus with diabetic cataract"
+}, {
+  "icd_code": "E1100",
+  "occurrence_count": "106",
+  "long_title": "Type 2 diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)"
+}, {
+  "icd_code": "25022",
+  "occurrence_count": "80",
+  "long_title": "Diabetes with hyperosmolarity, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "E113599",
+  "occurrence_count": "77",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, unspecified eye"
+}, {
+  "icd_code": "E113299",
+  "occurrence_count": "67",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, unspecified eye"
+}, {
+  "icd_code": "O2412",
+  "occurrence_count": "56",
+  "long_title": "Pre-existing type 2 diabetes mellitus, in childbirth"
+}, {
+  "icd_code": "E11311",
+  "occurrence_count": "48",
+  "long_title": "Type 2 diabetes mellitus with unspecified diabetic retinopathy with macular edema"
+}, {
+  "icd_code": "25020",
+  "occurrence_count": "47",
+  "long_title": "Diabetes with hyperosmolarity, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "E113593",
+  "occurrence_count": "34",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, bilateral"
+}, {
+  "icd_code": "E1159",
+  "occurrence_count": "25",
+  "long_title": "Type 2 diabetes mellitus with other circulatory complications"
+}, {
+  "icd_code": "E11329",
+  "occurrence_count": "24",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema"
+}, {
+  "icd_code": "E1149",
+  "occurrence_count": "20",
+  "long_title": "Type 2 diabetes mellitus with other diabetic neurological complication"
+}, {
+  "icd_code": "E113293",
+  "occurrence_count": "18",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral"
+}, {
+  "icd_code": "E11359",
+  "occurrence_count": "18",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema"
+}, {
+  "icd_code": "E1129",
+  "occurrence_count": "18",
+  "long_title": "Type 2 diabetes mellitus with other diabetic kidney complication"
+}, {
+  "icd_code": "E113499",
+  "occurrence_count": "17",
+  "long_title": "Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, unspecified eye"
+}, {
+  "icd_code": "E113399",
+  "occurrence_count": "15",
+  "long_title": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, unspecified eye"
+}, {
+  "icd_code": "E1141",
+  "occurrence_count": "14",
+  "long_title": "Type 2 diabetes mellitus with diabetic mononeuropathy"
+}, {
+  "icd_code": "O24113",
+  "occurrence_count": "14",
+  "long_title": "Pre-existing type 2 diabetes mellitus, in pregnancy, third trimester"
+}, {
+  "icd_code": "E113592",
+  "occurrence_count": "13",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, left eye"
+}, {
+  "icd_code": "E113591",
+  "occurrence_count": "11",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, right eye"
+}, {
+  "icd_code": "E113513",
+  "occurrence_count": "11",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema, bilateral"
+}, {
+  "icd_code": "O24111",
+  "occurrence_count": "11",
+  "long_title": "Pre-existing type 2 diabetes mellitus, in pregnancy, first trimester"
+}, {
+  "icd_code": "E113393",
+  "occurrence_count": "10",
+  "long_title": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, bilateral"
+}, {
+  "icd_code": "E1144",
+  "occurrence_count": "9",
+  "long_title": "Type 2 diabetes mellitus with diabetic amyotrophy"
+}, {
+  "icd_code": "25032",
+  "occurrence_count": "9",
+  "long_title": "Diabetes with other coma, type II or unspecified type, uncontrolled"
+}, {
+  "icd_code": "E113291",
+  "occurrence_count": "9",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, right eye"
+}, {
+  "icd_code": "E113519",
+  "occurrence_count": "8",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema, unspecified eye"
+}, {
+  "icd_code": "E113292",
+  "occurrence_count": "7",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, left eye"
+}, {
+  "icd_code": "E113219",
+  "occurrence_count": "7",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, unspecified eye"
+}, {
+  "icd_code": "E11349",
+  "occurrence_count": "6",
+  "long_title": "Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema"
+}, {
+  "icd_code": "O24112",
+  "occurrence_count": "6",
+  "long_title": "Pre-existing type 2 diabetes mellitus, in pregnancy, second trimester"
+}, {
+  "icd_code": "E11641",
+  "occurrence_count": "6",
+  "long_title": "Type 2 diabetes mellitus with hypoglycemia with coma"
+}, {
+  "icd_code": "E113313",
+  "occurrence_count": "6",
+  "long_title": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, bilateral"
+}, {
+  "icd_code": "25010",
+  "occurrence_count": "5",
+  "long_title": "Diabetes with ketoacidosis, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "25030",
+  "occurrence_count": "5",
+  "long_title": "Diabetes with other coma, type II or unspecified type, not stated as uncontrolled"
+}, {
+  "icd_code": "E1101",
+  "occurrence_count": "5",
+  "long_title": "Type 2 diabetes mellitus with hyperosmolarity with coma"
+}, {
+  "icd_code": "E11620",
+  "occurrence_count": "5",
+  "long_title": "Type 2 diabetes mellitus with diabetic dermatitis"
+}, {
+  "icd_code": "E113493",
+  "occurrence_count": "5",
+  "long_title": "Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, bilateral"
+}, {
+  "icd_code": "E11351",
+  "occurrence_count": "4",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema"
+}, {
+  "icd_code": "E11339",
+  "occurrence_count": "4",
+  "long_title": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema"
+}, {
+  "icd_code": "E113213",
+  "occurrence_count": "4",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, bilateral"
+}, {
+  "icd_code": "E113319",
+  "occurrence_count": "3",
+  "long_title": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, unspecified eye"
+}, {
+  "icd_code": "E113413",
+  "occurrence_count": "3",
+  "long_title": "Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, bilateral"
+}, {
+  "icd_code": "E11321",
+  "occurrence_count": "3",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema"
+}, {
+  "icd_code": "E113492",
+  "occurrence_count": "3",
+  "long_title": "Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, left eye"
+}, {
+  "icd_code": "O2413",
+  "occurrence_count": "2",
+  "long_title": "Pre-existing type 2 diabetes mellitus, in the puerperium"
+}, {
+  "icd_code": "E1137X9",
+  "occurrence_count": "2",
+  "long_title": "Type 2 diabetes mellitus with diabetic macular edema, resolved following treatment, unspecified eye"
+}, {
+  "icd_code": "E113391",
+  "occurrence_count": "2",
+  "long_title": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, right eye"
+}, {
+  "icd_code": "E11331",
+  "occurrence_count": "2",
+  "long_title": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema"
+}, {
+  "icd_code": "E113311",
+  "occurrence_count": "2",
+  "long_title": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, right eye"
+}, {
+  "icd_code": "E11341",
+  "occurrence_count": "2",
+  "long_title": "Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema"
+}, {
+  "icd_code": "E113491",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, right eye"
+}, {
+  "icd_code": "E113542",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye"
+}, {
+  "icd_code": "E113511",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema, right eye"
+}, {
+  "icd_code": "E11618",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with other diabetic arthropathy"
+}, {
+  "icd_code": "E113532",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye"
+}, {
+  "icd_code": "E113392",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, left eye"
+}, {
+  "icd_code": "E113512",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema, left eye"
+}, {
+  "icd_code": "E113521",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, right eye"
+}, {
+  "icd_code": "E113212",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, left eye"
+}, {
+  "icd_code": "E113419",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, unspecified eye"
+}, {
+  "icd_code": "E113553",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with stable proliferative diabetic retinopathy, bilateral"
+}, {
+  "icd_code": "E113211",
+  "occurrence_count": "1",
+  "long_title": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, right eye"
+}]

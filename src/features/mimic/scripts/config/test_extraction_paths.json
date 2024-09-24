@@ -4,5 +4,6 @@
   "filtered_lab_records": "data/test_extraction/filtered_lab_records.pkl",
   "rolling_lab_records": "data/test_extraction/rolling_lab_records.pkl",
   "labeled_lab_records": "data/test_extraction/labeled_lab_records.pkl",
-  "rolling_ecg_records": "data/test_extraction/rolling_ecg_records.pkl"
+  "rolling_ecg_records": "data/test_extraction/rolling_ecg_records.pkl",
+  "demographics_records": "data/test_extraction/demographics_records.pkl"
 }

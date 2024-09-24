@@ -17,6 +17,7 @@ paths_config = {
     "rolling_lab_records": None,
     "labeled_lab_records": None,
     "rolling_ecg_records": None,
+    "demographics_records": None,
 }
 
 

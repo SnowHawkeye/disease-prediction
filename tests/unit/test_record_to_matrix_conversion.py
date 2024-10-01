@@ -176,3 +176,121 @@ def test_create_learning_matrix(mock_rolling_records):
 
     # THEN
     np.testing.assert_array_equal(result, expected)
+
+
+def test_create_learning_matrix_missing_patient_id(mock_rolling_records):
+    # GIVEN
+    mask = [
+        ("patient_id_1", timestamp11),
+        ("patient_id_2", timestamp21),
+        ("patient_id_2", timestamp22),
+        ("patient_id_4", timestamp41),
+        ("patient_id_4", timestamp42),
+        ("patient_id_4", timestamp43),
+        ("extra_patient", pd.Timestamp("2020-01-01")),
+    ]
+    expected = np.array(  # 3D array of shape (len_mask, backward_window, features)
+        [
+            [  # ("patient_id_1", timestamp11)
+                [1.11, 1.12],
+                [1.11, 1.12],
+                [1.11, 1.12],
+            ],
+            [  # ("patient_id_2", timestamp21)
+                [2.11, 2.12],
+                [2.11, 2.12],
+                [2.11, 2.12],
+            ],
+            [  # ("patient_id_2", timestamp22)
+                [2.21, 2.22],
+                [2.21, 2.22],
+                [2.21, 2.22],
+            ],
+            [  # ("patient_id_4", timestamp41)
+                [np.NaN, np.NaN],
+                [np.NaN, np.NaN],
+                [np.NaN, np.NaN],
+            ],
+            [  # ("patient_id_4", timestamp42)
+                [4.21, np.NaN],
+                [4.21, np.NaN],
+                [4.21, np.NaN],
+            ],
+            [  # ("patient_id_4", timestamp43)
+                [4.31, 4.32],
+                [4.31, 4.32],
+                [4.31, 4.32],
+            ],
+            [  # ("extra_patient", pd.Timestamp("2020-01-01"))
+                [np.NaN, np.NaN],
+                [np.NaN, np.NaN],
+                [np.NaN, np.NaN],
+            ],
+        ]
+
+    )
+
+    # WHEN
+    result = create_learning_matrix(mock_rolling_records, mask)
+
+    # THEN
+    np.testing.assert_array_equal(result, expected)
+
+
+def test_create_learning_matrix_missing_timestamp(mock_rolling_records):
+    # GIVEN
+    mask = [
+        ("patient_id_1", timestamp11),
+        ("patient_id_2", timestamp21),
+        ("patient_id_2", timestamp22),
+        ("patient_id_4", timestamp41),
+        ("patient_id_4", timestamp42),
+        ("patient_id_4", timestamp43),
+        ("patient_id_4", pd.Timestamp("2020-01-01")), # this timestamp is not in records
+    ]
+    expected = np.array(  # 3D array of shape (len_mask, backward_window, features)
+        [
+            [  # ("patient_id_1", timestamp11)
+                [1.11, 1.12],
+                [1.11, 1.12],
+                [1.11, 1.12],
+            ],
+            [  # ("patient_id_2", timestamp21)
+                [2.11, 2.12],
+                [2.11, 2.12],
+                [2.11, 2.12],
+            ],
+            [  # ("patient_id_2", timestamp22)
+                [2.21, 2.22],
+                [2.21, 2.22],
+                [2.21, 2.22],
+            ],
+            [  # ("patient_id_4", timestamp41)
+                [np.NaN, np.NaN],
+                [np.NaN, np.NaN],
+                [np.NaN, np.NaN],
+            ],
+            [  # ("patient_id_4", timestamp42)
+                [4.21, np.NaN],
+                [4.21, np.NaN],
+                [4.21, np.NaN],
+            ],
+            [  # ("patient_id_4", timestamp43)
+                [4.31, 4.32],
+                [4.31, 4.32],
+                [4.31, 4.32],
+            ],
+            [  # ("patient_id_4", pd.Timestamp("2020-01-01"))
+                [1, 1],
+                [1, 1],
+                [1, 1],
+            ],
+        ]
+
+    )
+
+    # WHEN
+    result = create_learning_matrix(mock_rolling_records, mask, fill_value=1)
+
+    # THEN
+    np.testing.assert_array_equal(result, expected)

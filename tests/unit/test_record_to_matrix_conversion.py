@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from features.mimic.record_to_matrix_conversion import create_label_matrix, create_mask_from_records, \
+from models.mipha.data_sources.mimic.record_to_matrix_conversion import create_label_matrix, create_mask_from_records, \
     create_learning_matrix
 
 # Convention: timestamp[patient_number][timestamp_number]

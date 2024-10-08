@@ -7,7 +7,7 @@ import numpy as np
 from models.mipha.utils.data_processing import mask_train_test_split
 
 
-class PatientRecordDatasource(DataSource):
+class PatientRecordDataSource(DataSource):
     def __init__(self, data_type, name, data, mask=None):
         """
         Represents a data source with a specific type, name, and data.
@@ -32,19 +32,18 @@ class PatientRecordDatasource(DataSource):
 
         super().__init__(data_type=data_type, name=name, data=data)
 
-        # Only call create_learning_matrix if data is not already a numpy array
-        if isinstance(data, dict):
-            self.mask = mask if mask is not None else create_mask_from_records(patient_records=data)
+        self.mask = mask
+        if isinstance(data, dict):  # Only call create_learning_matrix if data is not already a numpy array
+            if self.mask is None:  # Create mask from dict if it was not provided
+                self.mask = create_mask_from_records(patient_records=data)
             self.data = create_learning_matrix(patient_records=data, mask=self.mask)
         else:
             self.data = data
 
-        if mask is None:
+        if self.mask is None:  # if no mask was created (data was not provided as dict)
             warnings.warn(
                 "Mask could not be created from the data and was set to None. In particular, the split_train_test method will not work."
             )
-
-        self.mask = mask
 
     def impute_data(self, imputer):
         """
@@ -85,12 +84,12 @@ class PatientRecordDatasource(DataSource):
         test_data = np.array(test_data)
 
         # Create new data sources for training and testing
-        train_datasource = PatientRecordDatasource(data_type=self.data_type,
+        train_datasource = PatientRecordDataSource(data_type=self.data_type,
                                                    name=f"{self.name}_train",
                                                    data=train_data,
                                                    mask=train_mask)
 
-        test_datasource = PatientRecordDatasource(data_type=self.data_type,
+        test_datasource = PatientRecordDataSource(data_type=self.data_type,
                                                   name=f"{self.name}_test",
                                                   data=test_data,
                                                   mask=test_mask)

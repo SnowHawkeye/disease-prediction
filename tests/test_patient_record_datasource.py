@@ -2,12 +2,13 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from models.mipha.data_sources.mimic.patient_record_datasource import PatientRecordDatasource
+from models.mipha.data_sources.mimic.patient_record_datasource import PatientRecordDataSource
 
 
 @pytest.fixture
 def sample_patient_records():
     """Mock data for patient records as dictionaries containing DataFrames."""
+    np.random.seed(42)
     return {
         'patient_1': {
             '2021-01-01': pd.DataFrame(np.random.rand(10, 5)),
@@ -36,13 +37,13 @@ def mock_mask():
 @pytest.fixture
 def datasource_with_dict(sample_patient_records):
     """Fixture for `PatientRecordDatasource` initialized with a dictionary."""
-    return PatientRecordDatasource(data_type="dict", name="sample_dict", data=sample_patient_records)
+    return PatientRecordDataSource(data_type="dict", name="sample_dict", data=sample_patient_records)
 
 
 @pytest.fixture
 def datasource_with_numpy(sample_numpy_data):
     """Fixture for `PatientRecordDatasource` initialized with a numpy array."""
-    return PatientRecordDatasource(data_type="numpy", name="sample_numpy", data=sample_numpy_data)
+    return PatientRecordDataSource(data_type="numpy", name="sample_numpy", data=sample_numpy_data)
 
 
 def test_datasource_initialization_dict(datasource_with_dict):
@@ -60,14 +61,14 @@ def test_datasource_initialization_numpy(datasource_with_numpy):
 def test_warning_for_missing_mask(sample_numpy_data):
     """Test that a warning is issued if no mask is provided for numpy data."""
     with pytest.warns(UserWarning, match="Mask could not be created"):
-        PatientRecordDatasource(data_type="numpy", name="sample_numpy", data=sample_numpy_data)
+        PatientRecordDataSource(data_type="numpy", name="sample_numpy", data=sample_numpy_data)
 
 
 def test_split_train_test_without_scaler(datasource_with_dict):
     """Test the split_train_test method with mocked mask splitting."""
     train_datasource, test_datasource = datasource_with_dict.split_train_test(random_seed=0)
 
-    assert isinstance(train_datasource, PatientRecordDatasource), "Train datasource should be PatientRecordDatasource."
-    assert isinstance(test_datasource, PatientRecordDatasource), "Test datasource should be PatientRecordDatasource."
+    assert isinstance(train_datasource, PatientRecordDataSource), "Train datasource should be PatientRecordDatasource."
+    assert isinstance(test_datasource, PatientRecordDataSource), "Test datasource should be PatientRecordDatasource."
     assert len(train_datasource.data) == 2, "Train data should contain 2 records (patient 1)."
     assert len(test_datasource.data) == 3, "Test data should contain 3 records (patient 2)."

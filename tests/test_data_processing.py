@@ -96,6 +96,7 @@ def test_scale_time_series_data_test():
 
 def test_scaler_consistency():
     # Ensure the same scaler is applied consistently to both train and test data
+    np.random.seed(42)
     train_data = np.random.rand(10, 5, 3)  # Shape (10, 5, 3)
     test_data = np.random.rand(5, 5, 3)  # Shape (5, 5, 3)
 
@@ -108,5 +109,4 @@ def test_scaler_consistency():
     scaled_test_data = scale_time_series_data_test(test_data, scaler)
 
     # Check that both sets have been transformed by the same scaler
-    assert scaled_train_data.mean() < 1e-5  # Train set should be centered around 0
-    assert scaled_test_data.mean() < 1e-5  # Test set should be scaled the same way
+    assert scaled_train_data.mean() < 1e-5  # Train set should be centered around 0 (not necessarily true for test set)

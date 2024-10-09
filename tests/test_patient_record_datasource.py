@@ -23,6 +23,11 @@ def sample_patient_records():
 
 
 @pytest.fixture
+def sample_labels():
+    return np.array([0, 1, 1, 0, 1])
+
+
+@pytest.fixture
 def sample_numpy_data():
     """Mock pre-formatted 3D numpy array data."""
     return np.random.rand(10, 2, 5)
@@ -64,9 +69,10 @@ def test_warning_for_missing_mask(sample_numpy_data):
         PatientRecordDataSource(data_type="numpy", name="sample_numpy", data=sample_numpy_data)
 
 
-def test_split_train_test_without_scaler(datasource_with_dict):
+def test_split_train_test_without_scaler(datasource_with_dict, sample_labels):
     """Test the split_train_test method with mocked mask splitting."""
-    train_datasource, test_datasource = datasource_with_dict.split_train_test(random_seed=0)
+    train_datasource, test_datasource, train_labels, test_labels = \
+        datasource_with_dict.split_train_test(random_seed=0, labels=sample_labels)
 
     assert isinstance(train_datasource, PatientRecordDataSource), "Train datasource should be PatientRecordDatasource."
     assert isinstance(test_datasource, PatientRecordDataSource), "Test datasource should be PatientRecordDatasource."

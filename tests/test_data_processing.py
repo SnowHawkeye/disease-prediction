@@ -1,9 +1,10 @@
 import numpy as np
 import pytest
+from imblearn.over_sampling import RandomOverSampler
 from sklearn.preprocessing import StandardScaler
 
 from models.mipha.utils.data_processing import mask_train_test_split, scale_time_series_data_train, \
-    scale_time_series_data_test
+    scale_time_series_data_test, resample_3d_data
 
 
 def test_mask_train_test_split():
@@ -110,3 +111,37 @@ def test_scaler_consistency():
 
     # Check that both sets have been transformed by the same scaler
     assert scaled_train_data.mean() < 1e-5  # Train set should be centered around 0 (not necessarily true for test set)
+
+
+def test_resample_3d_data_basic():
+    # GIVEN
+    np.random.seed(42)
+    data = np.random.randn(100, 10, 3)  # 100 samples, 10 timesteps, 3 features
+    labels = np.array([0] * 90 + [1] * 10)  # Imbalanced classes
+    ros = RandomOverSampler(random_state=42, sampling_strategy='auto')  # should be a 50/50 split
+
+    # WHEN
+    resampled_data, resampled_labels = resample_3d_data(data, labels, ros)
+
+    # THEN
+    assert resampled_data.shape[1:] == data.shape[1:]  # Check that the timesteps and features are preserved
+    assert len(resampled_data) == len(resampled_labels)  # Same number of samples and labels
+    assert len(resampled_labels) > len(labels)  # Check that oversampling actually occurred
+
+
+def test_resample_3d_data_invalid_input_shape():
+    data = np.random.randn(100, 30)  # 2D data (invalid)
+    labels = np.random.randint(0, 2, 100)
+    ros = RandomOverSampler()
+
+    with pytest.raises(ValueError):
+        resample_3d_data(data, labels, ros)
+
+
+def test_resample_3d_data_mismatched_labels():
+    data = np.random.randn(100, 10, 3)
+    labels = np.random.randint(0, 2, 99)  # Mismatched label length
+    ros = RandomOverSampler()
+
+    with pytest.raises(ValueError):
+        resample_3d_data(data, labels, ros)

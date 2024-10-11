@@ -42,6 +42,10 @@ class DemographicsDataSource(DataSource):
 
         self.data = create_learning_matrix(patient_records=demographics_records, mask=self.mask)
 
+        # Binarize data
+        self.data[self.data == 'F'] = 0
+        self.data[self.data == 'M'] = 1
+
     def extend_timesteps(self, n_timesteps):
         """
         Utility function to reshape the data to a 3D array of shape (n_samples, n_timesteps, n_features).

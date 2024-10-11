@@ -27,9 +27,9 @@ def test_init_without_mask(sample_data):
     # GIVEN
     expected_mask = [('patient_1', '2024-10-01'), ('patient_1', '2024-10-02'), ('patient_2', '2024-10-01')]
     expected_data = np.array([
-        [[65, 'M']],
-        [[65, 'M']],
-        [[72, 'F']],
+        [[65, 1]],
+        [[65, 1]],
+        [[72, 0]],
     ], dtype=object)  # if not set manually, numpy interprets the mixture of str and int as str
 
     # WHEN
@@ -43,8 +43,8 @@ def test_init_without_mask(sample_data):
 def test_init_with_mask(sample_data, mock_mask):
     # GIVEN
     expected_data = np.array([
-        [[65, 'M']],
-        [[72, 'F']],
+        [[65, 1]],
+        [[72, 0]],
     ], dtype=object)  # if not set manually, numpy interprets the mixture of str and int as str
 
     # WHEN
@@ -58,14 +58,14 @@ def test_init_with_mask(sample_data, mock_mask):
 def test_extend_timesteps_2d_data(sample_data, mock_mask):
     # GIVEN
     input_2d = np.array([
-        [65, 'M'],
-        [72, 'F']
+        [65, 1],
+        [72, 0]
     ], dtype=object)
 
     n_timesteps = 5
     expected_output = np.array([
-        [[65, 'M']] * n_timesteps,
-        [[72, 'F']] * n_timesteps,
+        [[65, 1]] * n_timesteps,
+        [[72, 0]] * n_timesteps,
     ], dtype=object)
 
     # WHEN
@@ -82,8 +82,8 @@ def test_extend_timesteps_3d_single_timestep(sample_data, mock_mask):
     # GIVEN
     n_timesteps = 5
     expected_output = np.array([
-        [[65, 'M']] * n_timesteps,
-        [[72, 'F']] * n_timesteps,
+        [[65, 1]] * n_timesteps,
+        [[72, 0]] * n_timesteps,
     ], dtype=object)
 
     # WHEN
@@ -99,8 +99,8 @@ def test_extend_timesteps_3d_multiple_timesteps(sample_data, mock_mask):
     # GIVEN
     n_timesteps = 5
     input_3d = np.array([
-        [[65, 'M']] * n_timesteps,
-        [[72, 'F']] * n_timesteps,
+        [[65, 1]] * n_timesteps,
+        [[72, 0]] * n_timesteps,
     ], dtype=object)
 
     # WHEN
@@ -120,8 +120,8 @@ def test_extend_timesteps_3d_multiple_timesteps(sample_data, mock_mask):
 def test_flatten_data(sample_data, mock_mask):
     # GIVEN
     expected_output = np.array([
-        [65, 'M'],
-        [72, 'F']
+        [65, 1],
+        [72, 0]
     ], dtype=object)
 
     # WHEN

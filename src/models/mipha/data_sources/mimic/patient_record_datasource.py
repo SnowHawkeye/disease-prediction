@@ -2,8 +2,7 @@ import warnings
 
 from mipha.framework import DataSource
 from models.mipha.data_sources.mimic.record_to_matrix_conversion import create_learning_matrix, create_mask_from_records
-from models.mipha.utils.data_processing import impute_data, scale_time_series_data_train, scale_time_series_data_test, \
-    resample_3d_data
+from models.mipha.utils.data_processing import impute_data
 import numpy as np
 from models.mipha.utils.data_processing import mask_train_test_split
 
@@ -54,10 +53,9 @@ class PatientRecordDataSource(DataSource):
         """
         self.data = impute_data(data=self.data, imputer=imputer)
 
-    def split_train_test(self, labels, test_size=0.2, random_seed=None, resampler=None, scaler=None):
+    def split_train_test(self, labels, test_size=0.2, random_seed=None):
         """
         Split the data source's data into two new data sources: one for training and one for testing.
-        Optionally scales the data.
 
         :param labels: The labels associated with the data source.
 
@@ -66,10 +64,6 @@ class PatientRecordDataSource(DataSource):
 
         :param random_seed: Seed for the random number generator for reproducibility (default is None).
         :type random_seed: int or None
-
-        :param resampler: The resampler used to balance the data, only applied to training data. Defaults to None. If no resampler is provided, the data isn't resampled.
-
-        :param scaler: The scaler used to scale the data. Defaults to None. If no scaler is provided, the data isn't scaled.
 
         :return: Two new PatientRecordDatasource instances for training and testing and their associated labels. In order: train_datasource, test_datasource, train_labels, test_labels
         :rtype: tuple(PatientRecordDatasource, PatientRecordDatasource, numpy.ndarray, numpy.ndarray)
@@ -103,16 +97,5 @@ class PatientRecordDataSource(DataSource):
                                                   name=f"{self.name}_test",
                                                   data=test_data,
                                                   mask=test_mask)
-
-        if resampler is not None:
-            print(f"Resampling training data. Current shape is {train_datasource.data.shape}.")
-            train_datasource.data, train_labels = resample_3d_data(train_data, train_labels, resampler)
-            print(f"Training data successfully resampled. New shape is {train_datasource.data.shape}.")
-
-        if scaler is not None:
-            print("Scaling data...")
-            train_datasource.data = scale_time_series_data_train(train_data=train_datasource.data, scaler=scaler)
-            test_datasource.data = scale_time_series_data_test(test_data=test_datasource.data, trained_scaler=scaler)
-            print("Data successfully scaled.")
 
         return train_datasource, test_datasource, train_labels, test_labels

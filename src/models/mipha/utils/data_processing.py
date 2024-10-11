@@ -78,9 +78,8 @@ def scale_time_series_data_train(train_data, scaler):
     print("Scaling training data...")
 
     x_train_reshape = np.reshape(train_data, newshape=(n_samples, n_timesteps * n_features))
-    scaler.fit(x_train_reshape)
 
-    x_train_reshape = scaler.transform(x_train_reshape)
+    x_train_reshape = scaler.fit_transform(x_train_reshape)
     x_train_scaled = x_train_reshape.reshape(x_train_shape)
 
     print("Training data scaled successfully!")

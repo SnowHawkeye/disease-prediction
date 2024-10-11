@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 
-from models.mipha.components.kernels.RandomForestKernel import RandomForestKernel
+from models.mipha.components.kernels.random_forest_kernel import RandomForestKernel
 
 
 @pytest.fixture

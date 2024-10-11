@@ -1,9 +1,10 @@
-from mipha.framework import MachineLearningModel
 from sklearn.ensemble import RandomForestClassifier
 
+from models.mipha.components.kernels.data_processing_kernel import DataProcessingKernel
 
-class RandomForestKernel(MachineLearningModel):
-    def __init__(self, component_name, **kwargs):
+
+class RandomForestKernel(DataProcessingKernel):
+    def __init__(self, component_name=None, imputer=None, resampler=None, scaler=None, **kwargs):
         """
         Initializes the RandomForestKernel.
 
@@ -11,7 +12,7 @@ class RandomForestKernel(MachineLearningModel):
         :param kwargs: Additional keyword arguments passed to RandomForestClassifier.
                        Refer to scikit-learn's RandomForestClassifier for a list of all available parameters.
         """
-        super().__init__(component_name=component_name)
+        super().__init__(component_name=component_name, imputer=imputer, resampler=resampler, scaler=scaler)
         self.model = RandomForestClassifier(**kwargs)
 
     def fit(self, x_train, y_train, *args, **kwargs):
@@ -23,7 +24,9 @@ class RandomForestKernel(MachineLearningModel):
         :param args: Additional arguments.
         :param kwargs: Additional keyword arguments.
         """
-        self.model.fit(x_train, y_train, *args, **kwargs)
+
+        _x_train, _y_train = super().process_train_data(x_train, y_train)
+        self.model.fit(_x_train, _y_train, *args, **kwargs)
 
     def predict(self, x_test, *args, **kwargs):
         """
@@ -32,7 +35,8 @@ class RandomForestKernel(MachineLearningModel):
         :param x_test: Test features.
         :return: Predicted labels for x_test.
         """
-        return self.model.predict(x_test)
+        _x_test = super().process_test_data(x_test)
+        return self.model.predict(_x_test)
 
     def predict_proba(self, x_test, *args, **kwargs):
         """
@@ -41,4 +45,5 @@ class RandomForestKernel(MachineLearningModel):
         :param x_test: Test features.
         :return: Predicted class probabilities for x_test.
         """
-        return self.model.predict_proba(x_test)
+        _x_test = super().process_test_data(x_test)
+        return self.model.predict_proba(_x_test)

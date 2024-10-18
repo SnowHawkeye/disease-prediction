@@ -86,11 +86,10 @@ def test_display_results(sample_data):
     }
     evaluator.metrics = metrics
 
-    x_test, y_test, _ = sample_data
-    y_pred_classes = np.array([0, 1, 0, 1])
+    x_test, _, _ = sample_data
 
     with patch("matplotlib.pyplot.show") as mock_show:
         with patch("seaborn.heatmap") as mock_heatmap:
-            evaluator.display_results(y_test, y_pred_classes)
+            evaluator.display_results()
             mock_show.assert_called_once()
             mock_heatmap.assert_called()

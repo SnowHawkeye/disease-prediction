@@ -88,15 +88,9 @@ class ClassificationEvaluator(Evaluator):
             with open(file_path, 'w') as json_file:
                 json.dump(self.metrics, json_file, indent=4)
 
-    def display_results(self, y_test, y_pred_classes) -> None:
+    def display_results(self) -> None:
         """
         Display confusion matrix and other visualizations.
-
-        :param y_test: The true labels for the test set.
-        :type y_test: np.ndarray or pd.Series
-        :param y_pred_classes: The predicted classes.
-        :type y_pred_classes: np.ndarray
-        :return: None
         """
 
         if self.metrics is None:

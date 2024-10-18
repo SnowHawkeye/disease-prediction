@@ -13,6 +13,11 @@ from models.mipha.components.kernels.random_forest_kernel import RandomForestKer
 
 RANDOM_SEED = 39
 
+"""
+Example experiment with sample data.
+
+Data: sample_data_t2d_B2y_G3m_P1y
+"""
 
 def main(arguments):
     data_sources_train, data_sources_test, labels_train, labels_test = setup_datasources(arguments.data_root)

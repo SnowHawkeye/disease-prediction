@@ -51,7 +51,7 @@ def load_data_sources(data_root, test_size=0.2, random_seed=None):
         "lab_data_sources": (lab_data_source_train, lab_data_source_test),
         "ecg_data_sources": (ecg_data_source_train, ecg_data_source_test),
         "demographics_data_sources_2d": (demographics_2d_data_source_train, demographics_2d_data_source_test),
-        "demographics_data_sources_3D": (demographics_data_source_3d_train, demographics_data_source_3d_test),
+        "demographics_data_sources_3d": (demographics_data_source_3d_train, demographics_data_source_3d_test),
         "labels": (labels_train, labels_test)
     }
 
@@ -75,6 +75,7 @@ def make_lab_data_sources(lab_records, labels, random_seed, test_size, mask):
     print("Imputing data...")
     lab_data_source.impute_data(make_simple_imputer())
 
+    print("Splitting training and test set...")
     lab_data_source_train, lab_data_source_test, labels_train, labels_test = lab_data_source.split_train_test(
         labels=labels, test_size=test_size, random_seed=random_seed
     )

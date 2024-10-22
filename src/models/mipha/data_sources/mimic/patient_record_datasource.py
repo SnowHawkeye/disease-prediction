@@ -72,20 +72,20 @@ class PatientRecordDataSource(DataSource):
         # Split the mask into training and testing masks
         train_mask, test_mask = mask_train_test_split(self.mask, test_size=test_size, random_seed=random_seed)
 
-        # Split the data according to the new masks
-        train_data, test_data, train_labels, test_labels = [], [], [], []
-        for (patient_id, timestamp), record, label in zip(self.mask, self.data, labels):
-            if (patient_id, timestamp) in train_mask:
-                train_data.append(record)
-                train_labels.append(label)
-            else:
-                test_data.append(record)
-                test_labels.append(label)
+        # Convert (patient_id, timestamp) tuples to concatenated strings for comparison
+        mask_arr = np.array([f"{patient_id}_{timestamp}" for patient_id, timestamp in self.mask])
+        train_mask_arr = np.array([f"{patient_id}_{timestamp}" for patient_id, timestamp in train_mask])
+        test_mask_arr = np.array([f"{patient_id}_{timestamp}" for patient_id, timestamp in test_mask])
 
-        # Convert lists back into numpy arrays
-        train_data = np.array(train_data)
-        test_data = np.array(test_data)
-        train_labels = np.array(train_labels)
+        # Check for membership in train and test sets
+        is_train = np.isin(mask_arr, train_mask_arr)
+        is_test = np.isin(mask_arr, test_mask_arr)
+
+        # Split the data and labels using boolean indexing
+        train_data = self.data[is_train]
+        test_data = self.data[is_test]
+        train_labels = labels[is_train]
+        test_labels = labels[is_test]
 
         # Create new data sources for training and testing
         train_datasource = PatientRecordDataSource(data_type=self.data_type,

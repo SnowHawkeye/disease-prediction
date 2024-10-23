@@ -101,7 +101,8 @@ def build_model(input_shape,
         'kernel_size': 3,
         'strides': 1,
         'padding': 'same',
-        'activation': 'relu'
+        'dropout_rate': 0.2,
+        'activation': 'relu',
     }
 
     defaults_inv_params = {
@@ -110,6 +111,7 @@ def build_model(input_shape,
         'kernel_size': 3,
         'stride': 1,
         'reduction_ratio': 4,
+        'dropout_rate': 0.2,
         'name': 'involution'
     }
 
@@ -130,6 +132,10 @@ def build_model(input_shape,
             name=f'conv1d_layer_{i + 1}'
         )(x)
 
+        dropout_rate = convolution_params.get('dropout_rate', None)
+        if dropout_rate is not None:
+            x = layers.Dropout(dropout_rate, name=f'conv1d_dropout_{i + 1}')(x)
+
     # Reshape the input of Involution layers to 4D
     x = layers.Reshape((-1, 1, x.shape[-1]))(x)  # Reshape to (batch_size, height, width, channels)
 
@@ -143,6 +149,10 @@ def build_model(input_shape,
             reduction_ratio=involution_params.get('reduction_ratio', defaults_inv_params['reduction_ratio']),
             name=f'involution_layer_{i + 1}'
         )(x)
+
+        dropout_rate = involution_params.get('dropout_rate', None)
+        if dropout_rate:
+            x = layers.Dropout(dropout_rate, name=f'involution_dropout_{i + 1}')(x)
 
     x = layers.Reshape((-1, x.shape[-1]))(x)  # Reshape to (batch_size, height * width, channels)
 

@@ -137,8 +137,8 @@ def label_rolling_lab_records(cfg, dataset, rolling_lab_records, paths):
 
 
 def main():
-    EXTRACTION_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_config.json"
-    PATH_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_paths.json"
+    EXTRACTION_CONFIG_FILEPATH = "config/34-prediction-performance/ckd/ckd_B24m_G3m_P5y/ckd_B24m_G3m_P5y_config.json"
+    PATH_CONFIG_FILEPATH = "config/34-prediction-performance/ckd/ckd_B24m_G3m_P5y/ckd_B24m_G3m_P5y_paths.json"
     MIMIC_DATASET_CONFIG_FILEPATH = "config/mimic_dataset.mipha.json"
 
     extract_data(

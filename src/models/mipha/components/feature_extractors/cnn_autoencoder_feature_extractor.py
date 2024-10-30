@@ -121,6 +121,7 @@ def create_autoencoder(
     decoded = decoder(encoded)
     autoencoder = models.Model(autoencoder_input, decoded, name="autoencoder")
     autoencoder.compile(loss=loss, optimizer=optimizer)
+    autoencoder.summary()
 
     return autoencoder, encoder, decoder
 

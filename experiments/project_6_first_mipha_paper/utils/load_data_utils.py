@@ -1,11 +1,13 @@
+import os
 from os import path
 
 from sklearn.impute import SimpleImputer
 
-from models.mipha.data_sources.mimic.demographics_datasource import DemographicsDataSource
-from models.mipha.data_sources.mimic.patient_record_datasource import PatientRecordDataSource
-from models.mipha.data_sources.mimic.record_to_matrix_conversion import create_mask_from_records, create_label_matrix
-from src.features.mimic.extract_lab_records import load_pickle
+from src.models.mipha.data_sources.mimic.demographics_datasource import DemographicsDataSource
+from src.models.mipha.data_sources.mimic.patient_record_datasource import PatientRecordDataSource
+from src.models.mipha.data_sources.mimic.record_to_matrix_conversion import create_mask_from_records, \
+    create_label_matrix
+from src.features.mimic.extract_lab_records import save_pickle, load_pickle
 
 
 def make_simple_imputer(strategy="mean"):
@@ -20,7 +22,7 @@ demographics_records_file = "demographics_records.pkl"
 labels_file = "labeled_lab_records.pkl"
 
 
-def load_data_sources(data_root, test_size=0.2, random_seed=None):
+def make_data_sources(data_root, test_size=0.2, random_seed=None, imputer="auto"):
     print("Loading records...")
     demographics_records, ecg_records, lab_records, labeled_records = load_records(data_root)
 
@@ -32,10 +34,10 @@ def load_data_sources(data_root, test_size=0.2, random_seed=None):
 
     print("Creating laboratory data sources and splitting train and test sets...")
     lab_data_source_train, lab_data_source_test, labels_train, labels_test, mask_train, mask_test \
-        = make_lab_data_sources(lab_records, labels, random_seed, test_size, mask)
+        = make_lab_data_sources(lab_records, labels, random_seed, test_size, mask, imputer)
 
     print("Creating ECG data sources...")
-    ecg_data_source_train, ecg_data_source_test = make_ecg_data_sources(ecg_records, mask_test, mask_train)
+    ecg_data_source_train, ecg_data_source_test = make_ecg_data_sources(ecg_records, mask_test, mask_train, imputer)
 
     print("Creating 2D demographics data sources...")
     demographics_2d_data_source_train, demographics_2d_data_source_test \
@@ -64,7 +66,10 @@ def load_records(data_root):
     return demographics_records, ecg_records, lab_records, labeled_records
 
 
-def make_lab_data_sources(lab_records, labels, random_seed, test_size, mask):
+def make_lab_data_sources(lab_records, labels, random_seed, test_size, mask, imputer="auto"):
+    if imputer == "auto":
+        imputer = make_simple_imputer()
+
     lab_data_source = PatientRecordDataSource(
         data_type="laboratory",
         name="lab_data_source",
@@ -73,7 +78,7 @@ def make_lab_data_sources(lab_records, labels, random_seed, test_size, mask):
     )
 
     print("Imputing data...")
-    lab_data_source.impute_data(make_simple_imputer())
+    lab_data_source.impute_data(imputer)
 
     print("Splitting training and test set...")
     lab_data_source_train, lab_data_source_test, labels_train, labels_test = lab_data_source.split_train_test(
@@ -88,21 +93,24 @@ def make_lab_data_sources(lab_records, labels, random_seed, test_size, mask):
     return lab_data_source_train, lab_data_source_test, labels_train, labels_test, mask_train, mask_test
 
 
-def make_ecg_data_sources(ecg_records, mask_test, mask_train):
+def make_ecg_data_sources(ecg_records, mask_test, mask_train, imputer="auto"):
+    if imputer == "auto":
+        imputer = make_simple_imputer()
+
     ecg_data_source_train = PatientRecordDataSource(
         data_type="ecg",
         name="ecg_data_source_train",
         data=ecg_records,
         mask=mask_train
     )
-    ecg_data_source_train.impute_data(make_simple_imputer())
+    ecg_data_source_train.impute_data(imputer)
     ecg_data_source_test = PatientRecordDataSource(
         data_type="ecg",
         name="ecg_data_source_test",
         data=ecg_records,
         mask=mask_test
     )
-    ecg_data_source_test.impute_data(make_simple_imputer())
+    ecg_data_source_test.impute_data(imputer)
     print(f"Created ECG data sources for train and test "
           f"with shapes: {ecg_data_source_train.data.shape}, {ecg_data_source_test.data.shape})")
 
@@ -148,3 +156,31 @@ def make_demographics_data_sources_3d(demographics_records, mask_test, mask_trai
     print(f"Created demographics (3D) data sources for train and test "
           f"with shapes: {demographics_data_source_3d_train.data.shape}, {demographics_data_source_3d_test.data.shape})")
     return demographics_data_source_3d_test, demographics_data_source_3d_train
+
+
+def load_data_sources(data_root, save_to=None, random_seed=None, imputer="auto"):
+    print("Loading data sources...")
+    if not os.path.exists(save_to) or save_to is None:
+        print("No pre-processed data sources have been found at. Loading data sources from root...")
+        data_sources = make_data_sources(data_root=data_root, test_size=0.2, random_seed=random_seed, imputer=imputer)
+
+        print("Saving data sources...")
+        save_pickle(data_sources, save_to)
+
+    else:  # if the datasource setup has already been saved
+        print("Pre-processed data sources have been found. Loading data sources from pickle...")
+        data_sources = load_pickle(save_to)
+    return data_sources
+
+
+def setup_data_sources(data_sources, kept_data_sources):
+    data_sources_train = []
+    data_sources_test = []
+    for kept_datasource in kept_data_sources:
+        data_train, data_test = data_sources[kept_datasource]
+        data_sources_train.append(data_train)
+        data_sources_test.append(data_test)
+
+    labels_train, labels_test = data_sources["labels"]
+
+    return data_sources_train, data_sources_test, labels_train, labels_test

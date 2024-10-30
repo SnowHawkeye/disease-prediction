@@ -4,7 +4,7 @@ from imblearn.over_sampling import RandomOverSampler
 from mipha.framework import MiphaPredictor
 from sklearn.preprocessing import StandardScaler
 
-from experiments.project_6_first_mipha_paper.utils.load_data_utils import load_data_sources
+from experiments.project_6_first_mipha_paper.utils.load_data_utils import make_data_sources
 from models.mipha.components.aggregators.horizontal_stack_aggregator import HorizontalStackAggregator
 from models.mipha.components.evaluators.classification_evaluator import ClassificationEvaluator
 from models.mipha.components.feature_extractors.cnn_autoencoder_feature_extractor import CnnAutoencoderFeatureExtractor
@@ -54,7 +54,7 @@ def main(arguments):
 
 
 def setup_datasources(data_root):
-    data_sources = load_data_sources(data_root=data_root, test_size=0.2, random_seed=RANDOM_SEED)
+    data_sources = make_data_sources(data_root=data_root, test_size=0.2, random_seed=RANDOM_SEED)
 
     lab_datasource_train, lab_datasource_test = data_sources["lab_data_sources"]
     ecg_datasource_train, ecg_datasource_test = data_sources["ecg_data_sources"]

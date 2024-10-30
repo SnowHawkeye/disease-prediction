@@ -2,7 +2,7 @@ import argparse
 
 from mipha.framework import MiphaPredictor
 
-from experiments.project_6_first_mipha_paper.utils.load_data_utils import load_data_sources
+from experiments.project_6_first_mipha_paper.utils.load_data_utils import make_data_sources
 from models.mipha.components.aggregators.horizontal_stack_aggregator import HorizontalStackAggregator
 from models.mipha.components.evaluators.classification_evaluator import ClassificationEvaluator
 
@@ -40,7 +40,7 @@ def main(arguments):
 
 
 def setup_datasources(data_root):
-    data_sources = load_data_sources(data_root=data_root, test_size=0.2, random_seed=39)
+    data_sources = make_data_sources(data_root=data_root, test_size=0.2, random_seed=39)
 
     data_sources_train = [...]
     data_sources_test = [...]

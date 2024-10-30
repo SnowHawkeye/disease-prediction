@@ -1,0 +1,65 @@
+[{
+  "icd_code": "5856",
+  "occurrence_count": "8885",
+  "long_title": "End stage renal disease"
+}, {
+  "icd_code": "40391",
+  "occurrence_count": "7981",
+  "long_title": "Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage V or end stage renal disease"
+}, {
+  "icd_code": "N186",
+  "occurrence_count": "5131",
+  "long_title": "End stage renal disease"
+}, {
+  "icd_code": "I120",
+  "occurrence_count": "3153",
+  "long_title": "Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease"
+}, {
+  "icd_code": "5854",
+  "occurrence_count": "2838",
+  "long_title": "Chronic kidney disease, Stage IV (severe)"
+}, {
+  "icd_code": "N184",
+  "occurrence_count": "2076",
+  "long_title": "Chronic kidney disease, stage 4 (severe)"
+}, {
+  "icd_code": "I132",
+  "occurrence_count": "1844",
+  "long_title": "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease"
+}, {
+  "icd_code": "5855",
+  "occurrence_count": "682",
+  "long_title": "Chronic kidney disease, Stage V"
+}, {
+  "icd_code": "N185",
+  "occurrence_count": "585",
+  "long_title": "Chronic kidney disease, stage 5"
+}, {
+  "icd_code": "40311",
+  "occurrence_count": "279",
+  "long_title": "Hypertensive chronic kidney disease, benign, with chronic kidney disease stage V or end stage renal disease"
+}, {
+  "icd_code": "40301",
+  "occurrence_count": "245",
+  "long_title": "Hypertensive chronic kidney disease, malignant, with chronic kidney disease stage V or end stage renal disease"
+}, {
+  "icd_code": "40493",
+  "occurrence_count": "105",
+  "long_title": "Hypertensive heart and chronic kidney disease, unspecified, with heart failure and chronic kidney disease stage V or end stage renal disease"
+}, {
+  "icd_code": "I1311",
+  "occurrence_count": "32",
+  "long_title": "Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease"
+}, {
+  "icd_code": "40492",
+  "occurrence_count": "17",
+  "long_title": "Hypertensive heart and chronic kidney disease, unspecified, without heart failure and with chronic kidney disease stage V or end stage renal disease"
+}, {
+  "icd_code": "40403",
+  "occurrence_count": "3",
+  "long_title": "Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage V or end stage renal disease"
+}, {
+  "icd_code": "40413",
+  "occurrence_count": "3",
+  "long_title": "Hypertensive heart and chronic kidney disease, benign, with heart failure and chronic kidney disease stage V or end stage renal disease"
+}]

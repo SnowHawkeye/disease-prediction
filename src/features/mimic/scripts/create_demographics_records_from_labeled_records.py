@@ -63,8 +63,8 @@ def make_demographic_records(observation_dates, patient_ids, patients):
 
 
 def main():
-    EXTRACTION_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_config.json"
-    PATH_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_paths.json"
+    EXTRACTION_CONFIG_FILEPATH = "config/34-prediction-performance/most_common_analyses/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_config.json"
+    PATH_CONFIG_FILEPATH = "config/34-prediction-performance/most_common_analyses/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_paths.json"
     MIMIC_DATASET_CONFIG_FILEPATH = "config/mimic_dataset.mipha.json"
 
     create_demographics_records_from_labeled_records(

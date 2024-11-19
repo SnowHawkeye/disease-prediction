@@ -1,0 +1,9 @@
+{
+    "lab_records": "data/34-prediction-performance/categorized_analyses/lab/immunology_inflammation/common/lab_records_immunology_inflammation.pkl",
+    "filtered_analyses": "data/34-prediction-performance/categorized_analyses/lab/immunology_inflammation/common/filtered_analyses_immunology_inflammation.pkl",
+    "filtered_lab_records": "data/34-prediction-performance/categorized_analyses/lab/immunology_inflammation/common/filtered_lab_records_immunology_inflammation.pkl",
+    "rolling_lab_records": "data/34-prediction-performance/categorized_analyses/lab/immunology_inflammation/B24m_G3m_P2y/rolling_lab_records_immunology_inflammation_B24m_G3m_P2y.pkl",
+    "rolling_ecg_records": "data/34-prediction-performance/categorized_analyses/ecg/B24m_G3m_P2y/rolling_ecg_records_B24m_G3m_P2y.pkl",
+    "demographics_records": "data/34-prediction-performance/categorized_analyses/demographics/B24m_G3m_P2y/demographics_records_B24m_G3m_P2y.pkl",
+    "labeled_lab_records": "data/34-prediction-performance/categorized_analyses/labels/ckd/B24m_G3m_P2y/labeled_lab_records_ckd_B24m_G3m_P2y.pkl"
+}

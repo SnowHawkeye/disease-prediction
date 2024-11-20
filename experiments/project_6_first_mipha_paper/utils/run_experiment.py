@@ -20,7 +20,7 @@ def run_experiment(
     if fit_parameters is None:
         fit_parameters = {}
 
-    data_sources = load_data_sources(arguments.data_root, save_data_to, random_seed=random_seed, imputer=imputer)
+    data_sources = load_data_sources(arguments, save_data_to, random_seed=random_seed, imputer=imputer)
     data_sources_train, data_sources_test, labels_train, labels_test = setup_data_sources(
         data_sources=data_sources,
         kept_data_sources=kept_data_sources
@@ -64,7 +64,10 @@ def parse_arguments():
     # Set up argument parser
     parser = argparse.ArgumentParser(description="Load data sources for model training and testing.")
     # Add argument for data_root
-    parser.add_argument('--data_root', type=str, required=True, help='Path to the root directory of the data')
+    parser.add_argument('--lab_records_file', type=str, required=True, help='Path to the lab records')
+    parser.add_argument('--ecg_records_file', type=str, required=True, help='Path to the ecg records')
+    parser.add_argument('--demographics_records_file', type=str, required=True, help='Path to the demographics records')
+    parser.add_argument('--labels_file', type=str, required=True, help='Path to the labels')
     parser.add_argument('--save_model', type=str, required=False, help='Path to save the trained model')
     parser.add_argument('--save_results', type=str, required=False, help='Path to save the classification results')
     # Parse the arguments

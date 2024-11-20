@@ -1,30 +1,21 @@
 import os
-from os import path
 
 from sklearn.impute import SimpleImputer
 
+from src.features.mimic.extract_lab_records import save_pickle, load_pickle
 from src.models.mipha.data_sources.mimic.demographics_datasource import DemographicsDataSource
 from src.models.mipha.data_sources.mimic.patient_record_datasource import PatientRecordDataSource
 from src.models.mipha.data_sources.mimic.record_to_matrix_conversion import create_mask_from_records, \
     create_label_matrix
-from src.features.mimic.extract_lab_records import save_pickle, load_pickle
 
 
 def make_simple_imputer(strategy="mean"):
     return SimpleImputer(keep_empty_features=True, strategy=strategy)
 
 
-# hardcoded file names should not be a problem for this experiment since data is generated to follow this pattern
-# might want to change in the future
-lab_records_file = "rolling_lab_records.pkl"
-ecg_records_file = "rolling_ecg_records.pkl"
-demographics_records_file = "demographics_records.pkl"
-labels_file = "labeled_lab_records.pkl"
-
-
-def make_data_sources(data_root, test_size=0.2, random_seed=None, imputer="auto"):
+def make_data_sources(paths, test_size=0.2, random_seed=None, imputer="auto"):
     print("Loading records...")
-    demographics_records, ecg_records, lab_records, labeled_records = load_records(data_root)
+    demographics_records, ecg_records, lab_records, labeled_records = load_records(paths)
 
     print("Creating mask...")
     mask = create_mask_from_records(labeled_records)  # mapping of patient IDs and timestamps for learning matrices
@@ -58,11 +49,11 @@ def make_data_sources(data_root, test_size=0.2, random_seed=None, imputer="auto"
     }
 
 
-def load_records(data_root):
-    lab_records = load_pickle(path.join(data_root, lab_records_file))
-    ecg_records = load_pickle(path.join(data_root, ecg_records_file))
-    demographics_records = load_pickle(path.join(data_root, demographics_records_file))
-    labeled_records = load_pickle(path.join(data_root, labels_file))
+def load_records(paths):
+    lab_records = load_pickle(paths.lab_records_file)
+    ecg_records = load_pickle(paths.ecg_records_file)
+    demographics_records = load_pickle(paths.demographics_records_file)
+    labeled_records = load_pickle(paths.labels_file)
     return demographics_records, ecg_records, lab_records, labeled_records
 
 
@@ -158,11 +149,11 @@ def make_demographics_data_sources_3d(demographics_records, mask_test, mask_trai
     return demographics_data_source_3d_test, demographics_data_source_3d_train
 
 
-def load_data_sources(data_root, save_to=None, random_seed=None, imputer="auto"):
+def load_data_sources(paths, save_to=None, random_seed=None, imputer="auto"):
     print("Loading data sources...")
     if not os.path.exists(save_to) or save_to is None:
-        print("No pre-processed data sources have been found at. Loading data sources from root...")
-        data_sources = make_data_sources(data_root=data_root, test_size=0.2, random_seed=random_seed, imputer=imputer)
+        print(f"No pre-processed data sources have been found at {save_to}. Loading data sources from files...")
+        data_sources = make_data_sources(paths=paths, test_size=0.2, random_seed=random_seed, imputer=imputer)
 
         print("Saving data sources...")
         save_pickle(data_sources, save_to)

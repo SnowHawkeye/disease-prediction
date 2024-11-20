@@ -9,30 +9,27 @@ from models.mipha.components.evaluators.classification_evaluator import Classifi
 from models.mipha.components.feature_extractors.pass_through_feature_extractor import PassThroughFeatureExtractor
 from models.mipha.components.kernels.transformers_kernel import TransformersKernel
 
-from sklearn.experimental import enable_iterative_imputer
-from sklearn.impute import IterativeImputer
-
 """
 Experiment with autoencoder feature extraction.
 
-Data: t2d_B24m_G3m_P1y
-Model summary: 3D data, Transformers, RandomOverSampler, IterativeImputer
+Data: ckd_B24m_G3m_P1y
+Model summary: 3D data, Transformers, RandomOverSampler
 Observations: 
 """
 
 RANDOM_SEED = 39
-data_path_iterative_imputation = "../out/data_iterative_imputation.pickle"
+data_path = "../out/data_ckd.pickle"
 
 
 def main(arguments):
     run_experiment(
         arguments=arguments,
         setup_components_func=setup_components,
-        fit_parameters={"epochs": 3, "batch_size": 64},
+        fit_parameters={"epochs": 10, "batch_size": 32, "validation_split": 0.1},
         kept_data_sources=["lab_data_sources", "ecg_data_sources", "demographics_data_sources_3d"],
-        save_data_to=data_path_iterative_imputation,
+        save_data_to=data_path,
         random_seed=RANDOM_SEED,
-        imputer=IterativeImputer(random_state=RANDOM_SEED, keep_empty_features=True),
+        imputer="auto",
     )
 
 

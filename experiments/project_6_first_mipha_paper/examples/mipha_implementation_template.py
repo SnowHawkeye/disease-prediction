@@ -40,7 +40,7 @@ def main(arguments):
 
 
 def setup_datasources(data_root):
-    data_sources = make_data_sources(data_root=data_root, test_size=0.2, random_seed=39)
+    data_sources = make_data_sources(arguments=data_root, test_size=0.2, random_seed=39)
 
     data_sources_train = [...]
     data_sources_test = [...]

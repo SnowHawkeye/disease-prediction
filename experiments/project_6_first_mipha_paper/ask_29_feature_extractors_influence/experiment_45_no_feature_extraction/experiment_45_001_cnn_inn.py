@@ -69,7 +69,7 @@ def main(arguments):
 
 def setup_datasources(data_root):
     print("Loading data sources...")
-    data_sources = make_data_sources(data_root=data_root, test_size=0.2, random_seed=RANDOM_SEED)
+    data_sources = make_data_sources(arguments=data_root, test_size=0.2, random_seed=RANDOM_SEED)
 
     lab_datasource_train, lab_datasource_test = data_sources["lab_data_sources"]
     ecg_datasource_train, ecg_datasource_test = data_sources["ecg_data_sources"]

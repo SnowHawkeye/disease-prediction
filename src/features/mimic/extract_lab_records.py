@@ -2,6 +2,7 @@ import _pickle as pickle
 import os
 import tempfile
 import zipfile
+from pathlib import Path
 
 import numpy as np
 from tqdm import tqdm
@@ -61,6 +62,48 @@ def filter_lab_records(patient_lab_records, analyses_ids):
     return filtered_dict
 
 
+def find_config_files(base_dir, first_group=None):
+    """
+    Recursively searches for pairs of config and path config files at the lowest level of the directory structure.
+
+    :param base_dir: Base directory to start the search.
+    :param first_group: (Optional) Category to prioritize in sorting. If None, categories are sorted alphabetically.
+    :return: List of tuples containing the config and path config file paths.
+    """
+
+    def extract_category(path_string):
+        return path_string.split("\\")[-2]  # Extract the second-to-last component of the path
+
+    config_pairs = []
+
+    for root, dirs, files in os.walk(base_dir):
+        # Check for config and path config files
+        config_file = None
+        path_config_file = None
+        for file in files:
+            if file.endswith("_config.json"):
+                config_file = os.path.join(root, file)
+            elif file.endswith("_paths.json"):
+                path_config_file = os.path.join(root, file)
+
+        # If both are found in the same directory, add them as a pair
+        if config_file and path_config_file:
+            config_pairs.append((config_file, path_config_file))
+
+    # Sorting with optional prioritization
+    if first_group:
+        sorted_config_pairs = sorted(
+            config_pairs,
+            key=lambda pair: (extract_category(pair[0]) != first_group, extract_category(pair[0]))
+        )
+    else:
+        sorted_config_pairs = sorted(
+            config_pairs,
+            key=lambda pair: extract_category(pair[0])
+        )
+
+    return sorted_config_pairs
+
 def save_pickle(dataframes, filename):
     """
     :param dataframes: provided as a dictionary where keys are patient IDs
@@ -70,6 +113,17 @@ def save_pickle(dataframes, filename):
     with open(filename, "wb") as handle:
         pickle.dump(dataframes, handle)
     print(f"Data successfully saved to {filename}")
+
+
+def save_to_file(obj, filepath):
+    """
+    Save object to file. If the given parent directory doesn't exist, create it.
+    :param obj: The object to save.
+    :param filepath: The path to save to.
+    """
+    parent_dir = Path(filepath).parent  # Extract the parent directory
+    parent_dir.mkdir(parents=True, exist_ok=True)  # Create the parent directory if it doesn't exist
+    save_pickle(obj, filepath)
 
 
 def load_pickle(filename):

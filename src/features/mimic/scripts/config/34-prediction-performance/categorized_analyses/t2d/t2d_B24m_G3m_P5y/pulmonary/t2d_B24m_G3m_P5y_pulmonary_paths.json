@@ -1,0 +1,9 @@
+{
+    "lab_records": "data/34-prediction-performance/categorized_analyses/lab/pulmonary/common/lab_records_pulmonary.pkl",
+    "filtered_analyses": "data/34-prediction-performance/categorized_analyses/lab/pulmonary/common/filtered_analyses_pulmonary.pkl",
+    "filtered_lab_records": "data/34-prediction-performance/categorized_analyses/lab/pulmonary/common/filtered_lab_records_pulmonary.pkl",
+    "rolling_lab_records": "data/34-prediction-performance/categorized_analyses/lab/pulmonary/B24m_G3m_P5y/rolling_lab_records_pulmonary_B24m_G3m_P5y.pkl",
+    "rolling_ecg_records": "data/34-prediction-performance/categorized_analyses/ecg/B24m_G3m_P5y/rolling_ecg_records_B24m_G3m_P5y.pkl",
+    "demographics_records": "data/34-prediction-performance/categorized_analyses/demographics/B24m_G3m_P5y/demographics_records_B24m_G3m_P5y.pkl",
+    "labeled_lab_records": "data/34-prediction-performance/categorized_analyses/labels/t2d/B24m_G3m_P5y/labeled_lab_records_t2d_B24m_G3m_P5y.pkl"
+}

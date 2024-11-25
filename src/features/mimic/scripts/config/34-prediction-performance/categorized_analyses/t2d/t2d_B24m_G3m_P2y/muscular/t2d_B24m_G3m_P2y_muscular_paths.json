@@ -1,0 +1,9 @@
+{
+    "lab_records": "data/34-prediction-performance/categorized_analyses/lab/muscular/common/lab_records_muscular.pkl",
+    "filtered_analyses": "data/34-prediction-performance/categorized_analyses/lab/muscular/common/filtered_analyses_muscular.pkl",
+    "filtered_lab_records": "data/34-prediction-performance/categorized_analyses/lab/muscular/common/filtered_lab_records_muscular.pkl",
+    "rolling_lab_records": "data/34-prediction-performance/categorized_analyses/lab/muscular/B24m_G3m_P2y/rolling_lab_records_muscular_B24m_G3m_P2y.pkl",
+    "rolling_ecg_records": "data/34-prediction-performance/categorized_analyses/ecg/B24m_G3m_P2y/rolling_ecg_records_B24m_G3m_P2y.pkl",
+    "demographics_records": "data/34-prediction-performance/categorized_analyses/demographics/B24m_G3m_P2y/demographics_records_B24m_G3m_P2y.pkl",
+    "labeled_lab_records": "data/34-prediction-performance/categorized_analyses/labels/t2d/B24m_G3m_P2y/labeled_lab_records_t2d_B24m_G3m_P2y.pkl"
+}

@@ -1,0 +1,9 @@
+{
+    "lab_records": "data/34-prediction-performance/categorized_analyses/lab/tumor_marker/common/lab_records_tumor_marker.pkl",
+    "filtered_analyses": "data/34-prediction-performance/categorized_analyses/lab/tumor_marker/common/filtered_analyses_tumor_marker.pkl",
+    "filtered_lab_records": "data/34-prediction-performance/categorized_analyses/lab/tumor_marker/common/filtered_lab_records_tumor_marker.pkl",
+    "rolling_lab_records": "data/34-prediction-performance/categorized_analyses/lab/tumor_marker/B24m_G3m_P3m/rolling_lab_records_tumor_marker_B24m_G3m_P3m.pkl",
+    "rolling_ecg_records": "data/34-prediction-performance/categorized_analyses/ecg/B24m_G3m_P3m/rolling_ecg_records_B24m_G3m_P3m.pkl",
+    "demographics_records": "data/34-prediction-performance/categorized_analyses/demographics/B24m_G3m_P3m/demographics_records_B24m_G3m_P3m.pkl",
+    "labeled_lab_records": "data/34-prediction-performance/categorized_analyses/labels/ckd/B24m_G3m_P3m/labeled_lab_records_ckd_B24m_G3m_P3m.pkl"
+}

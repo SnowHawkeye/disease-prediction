@@ -1,0 +1,36 @@
+{
+    "selected_analyses_ids": [
+        50861,
+        50878,
+        50885,
+        50863,
+        51464,
+        51514,
+        50883,
+        50884,
+        50927
+    ],
+    "positive_diagnoses": [
+        "5856",
+        "40391",
+        "N186",
+        "I120",
+        "5854",
+        "N184",
+        "I132",
+        "5855",
+        "N185",
+        "40311",
+        "40301",
+        "40493",
+        "I1311",
+        "40492",
+        "40403",
+        "40413"
+    ],
+    "lab_records_frequency": "h",
+    "backward_window_time_unit": "month",
+    "backward_window_value": 24,
+    "gap_days": 90,
+    "prediction_window_days": 730
+}

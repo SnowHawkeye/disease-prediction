@@ -1,17 +1,26 @@
+import os
+
 import pandas as pd
 from tqdm import tqdm
 
 from datasets.mimic_dataset import MimicDataset
-from features.mimic.extract_lab_records import load_pickle, save_pickle
+from features.mimic.extract_lab_records import load_pickle, save_to_file, find_config_files
 from features.mimic.process_records import make_rolling_records
 from features.mimic.scripts.data_extraction_config import Config
 
 
 def create_ecg_features_records_from_labeled_records(extraction_config_file_path, paths_config_filepath,
-                                                     dataset_config_file_path):
+                                                     dataset_config_file_path, overwrite=False):
     # Load config
     with Config(extraction_config_file_path) as cfg:
         with Config(paths_config_filepath) as paths:
+            if os.path.exists(paths.rolling_ecg_records):
+                if not overwrite:
+                    print(f"Existing file found at {paths.rolling_ecg_records}. Set overwrite to True to recompute.")
+                    return
+                else:
+                    print(f"Overwriting existing file at {paths.rolling_ecg_records}.")
+
             print("(1/5) Loading MIMIC dataset...")
             dataset = MimicDataset.from_config_file(dataset_config_file_path)
 
@@ -52,21 +61,31 @@ def create_ecg_features_records_from_labeled_records(extraction_config_file_path
 
             if paths.rolling_ecg_records is not None:
                 print(f"Saving rolling ecg records to {paths.rolling_ecg_records}")
-                save_pickle(rolling_ecg_records, paths.rolling_ecg_records)
-
-    return rolling_ecg_records
+                save_to_file(rolling_ecg_records, paths.rolling_ecg_records)
 
 
 def main():
-    EXTRACTION_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_config.json"
-    PATH_CONFIG_FILEPATH = "config/34-prediction-performance/t2d/t2d_B24m_G3m_P5y/t2d_B24m_G3m_P5y_paths.json"
+    # Filepaths
+    BASE_DIR = "config/34-prediction-performance/categorized_analyses"
     MIMIC_DATASET_CONFIG_FILEPATH = "config/mimic_dataset.mipha.json"
 
-    create_ecg_features_records_from_labeled_records(
-        extraction_config_file_path=EXTRACTION_CONFIG_FILEPATH,
-        paths_config_filepath=PATH_CONFIG_FILEPATH,
-        dataset_config_file_path=MIMIC_DATASET_CONFIG_FILEPATH,
-    )
+    # Find all config pairs
+    # labels will be generated from the first group, so we use the one with the most analyses for safety
+    config_pairs = find_config_files(BASE_DIR, first_group="hematology")
+
+    # Display the total number of extractions
+    total_pairs = len(config_pairs)
+    print(f"Found {total_pairs} config pairs. Starting extraction...\n")
+
+    # Extract data for each config pair
+    for index, (config_file, path_config_file) in enumerate(config_pairs, start=1):
+        print(f"Running extraction {index}/{total_pairs}")
+        create_ecg_features_records_from_labeled_records(
+            extraction_config_file_path=config_file,
+            paths_config_filepath=path_config_file,
+            dataset_config_file_path=MIMIC_DATASET_CONFIG_FILEPATH,
+        )
+    print("\nAll extractions completed!")
 
 
 if __name__ == '__main__':

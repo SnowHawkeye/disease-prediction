@@ -1,9 +1,0 @@
-{
-  "lab_records": "data/34-prediction-performance/most_common_analyses/lab_records.pkl",
-  "filtered_analyses": "data/34-prediction-performance/most_common_analyses/filtered_analyses.pkl",
-  "filtered_lab_records": "data/34-prediction-performance/most_common_analyses/filtered_lab_records.pkl",
-  "rolling_lab_records": "data/34-prediction-performance/most_common_analyses/B24m_G3m_P1y/rolling_lab_records.pkl",
-  "labeled_lab_records": "data/34-prediction-performance/ckd/ckd_B24m_G3m_P1y/labeled_lab_records.pkl",
-  "rolling_ecg_records": "data/34-prediction-performance/most_common_analyses/B24m_G3m_P1y/rolling_ecg_records.pkl",
-  "demographics_records": "data/34-prediction-performance/most_common_analyses/B24m_G3m_P1y/demographics_records.pkl"
-}

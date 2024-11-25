@@ -1,0 +1,9 @@
+{
+    "lab_records": "data/34-prediction-performance/categorized_analyses/lab/reproduction/common/lab_records_reproduction.pkl",
+    "filtered_analyses": "data/34-prediction-performance/categorized_analyses/lab/reproduction/common/filtered_analyses_reproduction.pkl",
+    "filtered_lab_records": "data/34-prediction-performance/categorized_analyses/lab/reproduction/common/filtered_lab_records_reproduction.pkl",
+    "rolling_lab_records": "data/34-prediction-performance/categorized_analyses/lab/reproduction/B24m_G3m_P3m/rolling_lab_records_reproduction_B24m_G3m_P3m.pkl",
+    "rolling_ecg_records": "data/34-prediction-performance/categorized_analyses/ecg/B24m_G3m_P3m/rolling_ecg_records_B24m_G3m_P3m.pkl",
+    "demographics_records": "data/34-prediction-performance/categorized_analyses/demographics/B24m_G3m_P3m/demographics_records_B24m_G3m_P3m.pkl",
+    "labeled_lab_records": "data/34-prediction-performance/categorized_analyses/labels/ckd/B24m_G3m_P3m/labeled_lab_records_ckd_B24m_G3m_P3m.pkl"
+}

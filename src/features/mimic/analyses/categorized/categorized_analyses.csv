@@ -1,0 +1,916 @@
+label,itemid,event_count,category_fr,category_en
+Hematocrit,51221,3325700,Hématologie,hematology
+Creatinine,50912,3282278,Rénale,renal
+Platelet Count,51265,3216656,Hématologie,hematology
+Urea Nitrogen,51006,3189474,Rénale,renal
+Hemoglobin,51222,3188835,Hématologie,hematology
+White Blood Cells,51301,3171798,Hématologie,hematology
+MCHC,51249,3167190,Hématologie,hematology
+Red Blood Cells,51279,3167075,Hématologie,hematology
+MCV,51250,3167074,Hématologie,hematology
+MCH,51248,3167073,Hématologie,hematology
+RDW,51277,3166860,Hématologie,hematology
+Potassium,50971,3150261,Rénale,renal
+Sodium,50983,3119778,Rénale,renal
+Chloride,50902,3083705,Rénale,renal
+Bicarbonate,50882,2972827,Métabolique,metabolic
+Anion Gap,50868,2965452,Métabolique,metabolic
+Glucose,50931,2749562,Métabolique,metabolic
+"Calcium, Total",50893,2190816,Métabolique,metabolic
+Magnesium,50960,2154209,Métabolique,metabolic
+Phosphate,50970,2066052,Métabolique,metabolic
+H,50934,1457350,,
+L,51678,1457335,,
+I,50947,1457326,,
+INR(PT),51237,1399650,Hématologie,hematology
+PT,51274,1398998,Hématologie,hematology
+Estimated GFR (MDRD equation),50920,1373686,Rénale,renal
+RDW-SD,52172,1365729,Hématologie,hematology
+Alanine Aminotransferase (ALT),50861,1348729,Hépatologie,hepatology
+Asparate Aminotransferase (AST),50878,1321132,Hépatologie,hepatology
+PTT,51275,1261627,Hématologie,hematology
+Lymphocytes,51244,1241592,Hématologie,hematology
+Neutrophils,51256,1241592,Hématologie,hematology
+Monocytes,51254,1241591,Hématologie,hematology
+Basophils,51146,1241587,Hématologie,hematology
+Eosinophils,51200,1241587,Hématologie,hematology
+"Bilirubin, Total",50885,1174903,Hépatologie,hepatology
+Alkaline Phosphatase,50863,1171421,Hépatologie,hepatology
+Albumin,50862,749944,Nutrition,nutrition
+Specific Gravity,51498,682923,Hématologie,hematology
+Leukocytes,51486,682923,Hématologie,hematology
+Urine Appearance,51506,682923,Infectiologie,infectiology
+Urine Color,51508,682923,Infectiologie,infectiology
+pH,51491,682923,Métabolique,metabolic
+Blood,51466,682919,Hématologie,hematology
+Glucose,51478,682918,Métabolique,metabolic
+Protein,51492,682918,Nutrition,nutrition
+Bilirubin,51464,682917,Hépatologie,hepatology
+Ketone,51484,682917,Métabolique,metabolic
+Urobilinogen,51514,682916,Hépatologie,hepatology
+Nitrite,51487,682916,Infectiologie,infectiology
+Length of Urine Collection,51087,639463,Infectiologie,infectiology
+Specimen Type,52033,618512,Métabolique,metabolic
+pH,50820,564412,Métabolique,metabolic
+Absolute Neutrophil Count,52075,541658,Hématologie,hematology
+Absolute Eosinophil Count,52073,518314,Hématologie,hematology
+Absolute Monocyte Count,52074,518273,Hématologie,hematology
+Absolute Basophil Count,52069,518272,Hématologie,hematology
+Absolute Lymphocyte Count,51133,518272,Hématologie,hematology
+pO2,50821,511938,Métabolique,metabolic
+Base Excess,50802,511831,Métabolique,metabolic
+Calculated Total CO2,50804,511828,Métabolique,metabolic
+pCO2,50818,511713,Métabolique,metabolic
+Lactate,50813,506778,Métabolique,metabolic
+RBC,51493,480935,Hématologie,hematology
+WBC,51516,480935,Hématologie,hematology
+Bacteria,51463,480934,Infectiologie,infectiology
+Yeast,51519,480932,Infectiologie,infectiology
+Epithelial Cells,51476,480932,Infectiologie,infectiology
+Lactate Dehydrogenase (LD),50954,473446,Métabolique,metabolic
+Immature Granulocytes,52135,415010,Hématologie,hematology
+Troponin T,51003,359000,Cardiologie,cardiology
+Urine Mucous,51512,317765,Infectiologie,infectiology
+Thyroid Stimulating Hormone,50993,316395,Endocrinien,endocrine
+Green Top Hold (plasma),50933,303560,,
+Free Calcium,50808,281355,Rénale,renal
+Creatine Kinase (CK),50910,280892,Musculaire,muscular
+Blue Top Hold,50887,274679,,
+Platelet Smear,51266,251500,,
+"Cholesterol, Total",50907,250248,Métabolique,metabolic
+Triglycerides,51000,250001,Métabolique,metabolic
+"Potassium, Whole Blood",50822,247306,Rénale,renal
+"Cholesterol, HDL",50904,244256,Métabolique,metabolic
+Cholesterol Ratio (Total/HDL),50903,243329,Métabolique,metabolic
+Anisocytosis,51137,233319,Hématologie,hematology
+Poikilocytosis,51267,233194,Hématologie,hematology
+Lipase,50956,229600,Nutrition,nutrition
+Macrocytes,51246,228920,Hématologie,hematology
+Light Green Top Hold,50955,228422,,
+Polychromasia,51268,227292,Hématologie,hematology
+Microcytes,51252,226410,Hématologie,hematology
+"Creatine Kinase, MB Isoenzyme",50911,226097,Cardiologie,cardiology
+Hypochromia,51233,225467,Hématologie,hematology
+% Hemoglobin A1c,50852,223327,Métabolique,metabolic
+"Cholesterol, LDL, Calculated",50905,222310,Métabolique,metabolic
+Bands,51144,215373,,
+Glucose,50809,211004,Métabolique,metabolic
+Metamyelocytes,51251,199315,Hématologie,hematology
+Myelocytes,51255,197969,Hématologie,hematology
+Atypical Lymphocytes,51143,196602,Hématologie,hematology
+eAG,51613,193437,,
+"Creatinine, Urine",51082,186319,Rénale,renal
+Oxygen Saturation,50817,176225,Hématologie,hematology
+Red Top Hold,50979,174612,,
+"Protein, Total",50976,159912,Métabolique,metabolic
+Uhold,51103,153299,,
+Intubated,50812,151764,,
+Ferritin,50924,138297,Métabolique,metabolic
+Uric Acid,51007,134539,Rénale,renal
+"Urine tube, held",51107,128553,,
+Globulin,50930,126574,,
+C-Reactive Protein,50889,119742,Infectiologie,infectiology
+Iron,50952,117310,Métabolique,metabolic
+Ovalocytes,51260,116339,,
+"Sodium, Whole Blood",50824,112368,Métabolique,metabolic
+"Hematocrit, Calculated",50810,111637,Métabolique,metabolic
+Hemoglobin,50811,111633,Hématologie,hematology
+"Fibrinogen, Functional",51214,110761,Hématologie,hematology
+Hyaline Casts,51482,105458,,
+Transferrin,50998,104976,Hématologie,hematology
+"Iron Binding Capacity, Total",50953,104902,Hématologie,hematology
+Vitamin B12,51010,103324,Métabolique,metabolic
+Temperature,50825,102109,,
+"Thyroxine (T4), Free",50995,101521,Endocrinien,endocrine
+Vancomycin,51009,99177,Infectiologie,infectiology
+tacroFK,50986,97095,,
+Granulocyte Count,51218,94141,Hématologie,hematology
+"Bilirubin, Direct",50883,91016,Hépatologie,hepatology
+"Total Protein, Urine",51102,89889,Rénale,renal
+Ethanol,50922,88720,Toxicologie,toxicology
+"Bilirubin, Indirect",50884,86393,Hépatologie,hepatology
+Acetaminophen,50856,86207,Infectiologie,infectiology
+Salicylate,50981,84571,Toxicologie,toxicology
+"Chloride, Whole Blood",50806,84527,,
+Tricyclic Antidepressant Screen,50999,83598,Toxicologie,toxicology
+Amylase,50867,82615,Nutrition,nutrition
+EDTA Hold,50919,81219,,
+"HCG, Urine, Qualitative",51085,81160,Reproduction,reproduction
+"Opiate Screen, Urine",51092,79811,Toxicologie,toxicology
+"Cocaine, Urine",51079,79659,Toxicologie,toxicology
+"Benzodiazepine Screen, Urine",51075,79078,Toxicologie,toxicology
+"Amphetamine Screen, Urine",51071,78907,Toxicologie,toxicology
+"Methadone, Urine",51090,78746,Toxicologie,toxicology
+25-OH Vitamin D,50853,78341,Nutrition,nutrition
+"Barbiturate Screen, Urine",51074,78236,Toxicologie,toxicology
+Protein/Creatinine Ratio,51099,77457,Métabolique,metabolic
+Teardrop Cells,51296,72077,,
+Benzodiazepine Screen,50880,69583,Toxicologie,toxicology
+Barbiturate Screen,50879,69484,Toxicologie,toxicology
+Oxygen,50816,68851,,
+Nucleated Red Cells,51257,67979,Hématologie,hematology
+NTproBNP,50963,66944,Cardiologie,cardiology
+"Sodium, Urine",51100,66828,Rénale,renal
+Transitional Epithelial Cells,51501,63150,,
+Hepatitis B Surface Antigen,50941,62204,Infectiologie,infectiology
+Hepatitis C Virus Antibody,50943,61429,Infectiologie,infectiology
+Sedimentation Rate,51288,60481,Immunologie inflammation,immunology_inflammation
+HIV Screen,53153,58925,Infectiologie,infectiology
+Schistocytes,51287,58203,Infectiologie,infectiology
+Prostate Specific Antigen,50974,58166,Marqueur tumoral,tumor_marker
+"Albumin, Urine",51069,56977,Rénale,renal
+PEEP,50819,56859,,
+Ventilator,50828,56657,,
+"Albumin/Creatinine, Urine",51070,54939,Rénale,renal
+Ventilation Rate,50827,53687,,
+Folate,50925,53116,Nutrition,nutrition
+Hepatitis B Surface Antibody,50940,53098,Infectiologie,infectiology
+"Osmolality, Urine",51093,50210,Rénale,renal
+Parathyroid Hormone,50965,49107,Endocrinien,endocrine
+Tidal Volume,50826,48627,,
+"Reticulocyte Count, Automated",51283,47375,Hématologie,hematology
+Immunoglobulin G,50950,46293,,
+Haptoglobin,50935,43315,,
+Protein Electrophoresis,50975,42784,Métabolique,metabolic
+Immunoglobulin A,50949,42412,Hématologie,hematology
+"Osmolality, Measured",50964,40304,,
+"Potassium, Urine",51097,40277,Rénale,renal
+Carcinoembyronic Antigen (CEA),50900,39971,Marqueur tumoral,tumor_marker
+"Cholesterol, LDL, Measured",50906,39282,Métabolique,metabolic
+"Chloride, Urine",51078,38812,Rénale,renal
+Hepatitis B Virus Core Antibody,50942,38770,Infectiologie,infectiology
+Immunoglobulin M,50951,36609,Hématologie,hematology
+Human Chorionic Gonadotropin,50946,35218,Endocrinien,endocrine
+"Urea Nitrogen, Urine",51104,34033,Rénale,renal
+Echinocytes,52111,33483,,
+Amorphous Crystals,51462,33137,,
+Oxycodone,51989,32844,Toxicologie,toxicology
+Alpha-Fetoprotein,50864,29980,Marqueur tumoral,tumor_marker
+STX2,51733,28385,Hématologie,hematology
+"CD3 Cells, Percent",51176,27409,Hématologie,hematology
+STX3,51734,27145,,
+UTX4,52007,27058,,
+"CD4 Cells, Percent",51180,26904,Hématologie,hematology
+"CD8 Cells, Percent",51194,26894,Hématologie,hematology
+UTX1,52004,26884,,
+UTX3,52006,26874,,
+UTX5,52008,26846,,
+UTX7,52010,26730,,
+STX1,51732,26683,,
+STX6,51737,26454,,
+Anti-Nuclear Antibody,50873,26396,Immunologie inflammation,immunology_inflammation
+UTX2,52005,26355,,
+Absolute CD4 Count,51131,26181,Hématologie,hematology
+"Lymphocytes, Percent",51245,26180,Hématologie,hematology
+WBC Count,51300,26180,Hématologie,hematology
+Absolute CD3 Count,51130,26180,Hématologie,hematology
+CD4/CD8 Ratio,51181,26180,Hématologie,hematology
+Absolute Lymphocyte Count,52769,26180,Hématologie,hematology
+Absolute CD8 Count,51132,26180,Hématologie,hematology
+UTX6,52009,25929,,
+Cortisol,50909,25547,Métabolique,metabolic
+ARCH-1,51564,25312,,
+CK-MB Index,50908,25044,Cardiologie,cardiology
+Blasts,51148,24453,,
+Problem Specimen,51706,24398,,
+"Reticulocyte Count, Absolute",51282,23422,Hématologie,hematology
+"Calculated Bicarbonate, Whole Blood",50803,23250,,
+D-Dimer,50915,22329,,
+Phenytoin,50967,22324,,
+HPE1,51657,22174,,
+RBC Morphology,52171,21732,,
+HPE7,51663,21502,,
+Thyroxine (T4),50994,21336,Endocrinien,endocrine
+Assist/Control,52023,21201,,
+Target Cells,51294,20056,,
+Cyclosporin,50914,19851,,
+"Prot. Electrophoresis, Urine",51098,19442,,
+Triiodothyronine (T3),51001,19294,,
+HPE2,51658,18619,,
+WBC Clumps,51518,18138,,
+Influenza A by PCR,51865,18007,Infectiologie,infectiology
+Influenza B by PCR,51873,18007,Infectiologie,infectiology
+Hepatitis A Virus Antibody,50937,17596,Infectiologie,infectiology
+Monocytes,52272,17292,Hématologie,hematology
+Polys,52281,17292,,
+Lymphs,52264,17292,,
+"Total Nucleated Cells, CSF",52286,17283,,
+Testosterone,50988,17272,Reproduction,reproduction
+"RBC, CSF",52285,17181,,
+Spherocytes,51292,15943,,
+Voided Specimen,51752,15777,,
+Gamma Glutamyltransferase,50927,15637,Hépatologie,hepatology
+HPE3,51659,15517,,
+"Tissue Transglutaminase Ab, IgA",50996,15444,,
+Calcium Oxalate Crystals,51469,15150,Rénale,renal
+Granular Casts,51479,14413,,
+Free Kappa,51625,14141,,
+Free Lambda,51627,14127,,
+Free Kappa/Free Lambda Ratio,51626,14054,,
+Elliptocytes,51197,13934,,
+H/O Smear,51219,13894,,
+CA-125,50892,13694,,
+Basophilic Stippling,51145,13450,Hématologie,hematology
+"Total Protein, CSF",51802,12848,Métabolique,metabolic
+Required O2,50823,12577,,
+Alveolar-arterial Gradient,50801,12558,,
+"Glucose, CSF",51790,12519,,
+STX5,51736,12131,,
+STX4,51735,12127,,
+Acanthocytes,51134,11821,,
+C4,50891,11817,,
+Valproic Acid,51008,11682,Toxicologie,toxicology
+Digoxin,50917,11632,,
+"Total Nucleated Cells, Ascites",52065,11604,Fluides corporels,body_fluids
+Lymphocytes,51116,11604,Hématologie,hematology
+Monocytes,51120,11604,Hématologie,hematology
+Polys,51125,11604,,
+"RBC, Ascites",51127,11380,Fluides corporels,body_fluids
+C3,50890,11262,,
+Rapamycin,50978,10991,,
+Marijuana,51089,10792,Toxicologie,toxicology
+Rheumatoid Factor,50980,10572,Immunologie inflammation,immunology_inflammation
+Urine Volume,51108,10567,,
+pH,51094,10442,,
+Cancer Antigen 27.29,50898,9883,Marqueur tumoral,tumor_marker
+Other Cells,51259,9695,,
+Prolactin,50973,9690,Endocrinien,endocrine
+Macrophage,51117,9689,Hématologie,hematology
+Promyelocytes,51269,9684,,
+O2 Flow,50815,9320,,
+D-Dimer,51196,9298,,
+Immunofixation,50948,9269,,
+Chlamydia trachomatis,51846,8760,Infectiologie,infectiology
+Neisseria gonorrhoeae,51879,8757,Infectiologie,infectiology
+PAN1,51903,8753,,
+Follicle Stimulating Hormone,50926,8738,Reproduction,reproduction
+24 hr Creatinine,51067,8704,Rénale,renal
+Beta-2 Microglobulin,50881,8100,,
+Calculated TBG,50895,7950,,
+Uptake Ratio,51005,7926,,
+Mesothelial Cell,51118,7919,,
+Calculated Thyroxine (T4) Index,50896,7876,Endocrinien,endocrine
+"Total Nucleated Cells, Pleural",52391,7622,Pulmonaire,pulmonary
+Lymphocytes,51446,7621,Hématologie,hematology
+Monos,51450,7621,,
+Polys,51455,7621,,
+"Anti-Nuclear Antibody, Titer",50874,7604,Immunologie inflammation,immunology_inflammation
+"Lactate Dehydrogenase, Pleural",51054,7391,Pulmonaire,pulmonary
+"Total Protein, Pleural",51059,7387,Hépatique rénale,hepatic_renal
+Double Stranded DNA,50918,7300,,
+"Total Protein, Ascites",50849,7286,Fluides corporels,body_fluids
+Lithium,50957,7247,Toxicologie,toxicology
+PAN1,52018,7226,,
+Chlamydia trachomatis,51972,7213,Infectiologie,infectiology
+Neisseria gonorrhoeae,51986,7212,Infectiologie,infectiology
+"RBC, Pleural",51457,7056,Pulmonaire,pulmonary
+Gray Top Hold (plasma),50932,7050,,
+Sex Hormone Binding Globulin,50982,7036,,
+Bite Cells,51147,7026,,
+Renal Epithelial Cells,51497,6983,,
+"Glucose, Pleural",51053,6853,Pulmonaire,pulmonary
+Ammonia,50866,6826,Métabolique,metabolic
+Eosinophils,51474,6720,Hématologie,hematology
+Calculated Free Testosterone,50894,6661,,
+Anti-Neutrophil Cytoplasmic Antibody,50872,6617,Immunologie inflammation,immunology_inflammation
+Anti-Thyroglobulin Antibodies,50877,6605,Immunologie inflammation,immunology_inflammation
+Cytomegalovirus Viral Load,51598,6555,Infectiologie,infectiology
+Anti-Smooth Muscle Antibody,50876,6437,Immunologie inflammation,immunology_inflammation
+"Immunofixation, Urine",51086,6299,,
+HPE4,51660,6164,,
+"Total Nucleated Cells, Joint",52312,6119,,
+Lymphocytes,51375,6116,Hématologie,hematology
+Monocytes,51379,6116,Hématologie,hematology
+Polys,51382,6116,,
+"Albumin, Ascites",50835,6012,Fluides corporels,body_fluids
+Anti-Mitochondrial Antibody,50871,5920,Immunologie inflammation,immunology_inflammation
+Large Platelets,51240,5911,Hématologie,hematology
+Voided Specimen,52036,5699,,
+Methotrexate,50961,5682,Toxicologie,toxicology
+Carboxyhemoglobin,50805,5643,Cardiologie,cardiology
+Luteinizing Hormone,50958,5605,Endocrinien,endocrine
+Macrophages,51447,5536,Hématologie,hematology
+"Joint Crystals, Number",51373,5430,,
+Fragmented Cells,51216,5400,,
+"RBC, Joint Fluid",51383,5380,Fluides corporels,body_fluids
+pH,50831,5314,,
+Hemogloblin S,51227,5298,Hématologie,hematology
+Hemogloblin A,51226,5298,Hématologie,hematology
+Hemoglobin C,51224,5298,Hématologie,hematology
+Immunophenotyping,51424,5240,,
+Hepatitis A Virus IgM Antibody,50938,5070,Infectiologie,infectiology
+Urine Specimen Type,51513,4986,Infectiologie,infectiology
+Thyroid Peroxidase Antibodies,50992,4970,Immunologie inflammation,immunology_inflammation
+Methemoglobin,50814,4833,,
+"Glucose, Ascites",50842,4797,Fluides corporels,body_fluids
+Lymphocytes,51427,4778,Hématologie,hematology
+Monos,51431,4778,,
+Polys,51436,4778,,
+Immunophenotyping,51338,4723,,
+Thyroglobulin,50991,4675,,
+wbcp,52220,4651,,
+"Albumin, Pleural",51046,4593,Pulmonaire,pulmonary
+"Calcium, Urine",51077,4493,Rénale,renal
+Inpatient Hematology/Oncology Smear,51236,4488,,
+XUCU,52425,4474,,
+"Cholesterol, Pleural",51051,4470,Pulmonaire,pulmonary
+Lupus Anticoagulant,51243,4439,Immunologie inflammation,immunology_inflammation
+Blood Parasite Smear,51150,4349,Infectiologie,infectiology
+Fibrin Degradation Products,51213,4345,,
+"Creatinine, Whole Blood",52024,4327,Rénale,renal
+Hepatitis C Viral Load,51651,4321,Infectiologie,infectiology
+Mesothelial Cells,51448,4252,,
+Howell-Jolly Bodies,51231,3966,,
+24 hr Protein,51068,3892,Hépatique rénale,hepatic_renal
+Heparin,51228,3816,,
+HIV 1 Viral Load,51654,3782,Infectiologie,infectiology
+Estimated GFR (MDRD equation),52026,3720,Rénale,renal
+"Hepatitis B Core Antibody, IgM",50939,3639,Infectiologie,infectiology
+"Lactate Dehydrogenase, Ascites",50843,3551,Fluides corporels,body_fluids
+Voided Specimen,52014,3535,,
+Treponema pallidum (Syphilis) Ab,51748,3442,Infectiologie,infectiology
+Macrophage,52266,3440,Hématologie,hematology
+Treponema pallidum (syphilis) value,51749,3422,Infectiologie,infectiology
+Hemoglobin F,51225,3328,Hématologie,hematology
+Macrophage,51428,3298,Hématologie,hematology
+"Amylase, Ascites",50836,3268,Fluides corporels,body_fluids
+"Reticulocyte Count, Manual",51284,3242,Hématologie,hematology
+Phenobarbital,50966,3237,Toxicologie,toxicology
+Estradiol,50921,3180,Endocrinien,endocrine
+Hemoglobin A2,51223,3167,Métabolique,metabolic
+Hepatitis B Viral Load,51648,3129,Infectiologie,infectiology
+Gentamicin,50929,3077,Toxicologie,toxicology
+Voided Specimen,52195,3047,,
+CD45,51411,3037,,
+Other,51453,3032,,
+Pappenheimer Bodies,51261,3023,,
+"Phosphate, Urine",51095,3017,Rénale,renal
+Wright Giemsa,51342,2987,,
+Carbamazepine,50899,2947,Toxicologie,toxicology
+CD19,51398,2939,,
+UTX9,52012,2935,,
+Macrophage,51376,2927,Hématologie,hematology
+C. diff PCR,51933,2902,,
+"Blood, Occult",51460,2860,,
+Immunophenotyping,51234,2703,,
+Other,51123,2637,,
+CDT027,51956,2598,,
+"Bicarbonate, Urine",51076,2590,Rénale,renal
+Lambda,51426,2567,,
+Kappa,51425,2567,,
+Quantitative G6PD,51276,2557,Métabolique,metabolic
+Anat Path Hold,51839,2538,,
+Anticardiolipin Antibody IgG,51138,2506,Immunologie inflammation,immunology_inflammation
+Anticardiolipin Antibody IgM,51139,2506,Immunologie inflammation,immunology_inflammation
+"Heparin, LMW",51229,2371,,
+Eosinophils,51444,2339,Hématologie,hematology
+Uric Acid Crystals,51505,2310,,
+Factor VIII,51206,2309,Hématologie,hematology
+Homocysteine,50945,2299,,
+Pencil Cells,51262,2294,,
+Trichomonas vaginalis,51899,2276,Infectiologie,infectiology
+PAN2,51904,2271,,
+"Lactate Dehydrogenase, CSF",51795,2260,,
+UCU2,52427,2191,,
+Cryoglobulin,50913,2182,,
+"Total Nucleated Cells, Other",52369,2168,,
+Envelope Cells,51198,2109,,
+"Testosterone, Free",50989,2099,,
+Antithrombin,51140,2094,Hématologie,hematology
+"Bilirubin, Total, Ascites",50838,2043,Fluides corporels,body_fluids
+CD45,51325,2029,,
+24 hr Calcium,51066,2011,Rénale,renal
+"Creatinine, Ascites",50841,1989,Fluides corporels,body_fluids
+Thrombin,51297,1932,,
+HPE6,51662,1932,,
+DHEA-Sulfate,50916,1876,,
+Tobramycin,50997,1867,Toxicologie,toxicology
+"Amylase, Pleural",51047,1865,Pulmonaire,pulmonary
+CD5,51412,1862,,
+"RBC, Other Fluid",51438,1860,Fluides corporels,body_fluids
+CD3,51404,1830,,
+CD10,51388,1811,,
+CD20,51400,1807,,
+Other,52278,1798,,
+Plasma Cells,51263,1784,,
+RFXUCU,52424,1746,,
+Eosinophils,51114,1722,Hématologie,hematology
+Other Cell,51434,1679,,
+"Triglycerides, Pleural",51060,1587,Pulmonaire,pulmonary
+Eosinophils,51419,1577,Hématologie,hematology
+"Uric Acid, Urine",51105,1576,,
+CD19,51313,1571,,
+"Protein C, Functional",51271,1569,,
+Acetone,50857,1567,Métabolique,metabolic
+"Miscellaneous, Pleural",51056,1543,Pulmonaire,pulmonary
+RFXLDLM,51722,1538,,
+Eosinophils,52256,1519,Hématologie,hematology
+CD3,51319,1494,,
+"Magnesium, Urine",51088,1477,,
+Norovirus Genogroup I,51945,1467,Infectiologie,infectiology
+Norovirus Genogroup II,51946,1467,Infectiologie,infectiology
+HLA-DR,51337,1463,,
+CD10,52955,1462,,
+"Protein S, Functional",51273,1448,,
+HLA-DR,51423,1430,,
+CD20,51315,1423,,
+FMC-7,51420,1400,,
+CD23,51402,1396,,
+Kappa,51340,1394,,
+Lambda,51341,1394,,
+CD5,51326,1390,,
+Serum Viscosity,51289,1363,,
+Anti-DGP (IgA/IgG),50869,1357,Immunologie inflammation,immunology_inflammation
+Fentanyl,51980,1356,Toxicologie,toxicology
+UTX10,52020,1356,,
+CD45,51183,1353,,
+"Amylase, Body Fluid",51026,1307,Fluides corporels,body_fluids
+CD19,51164,1305,,
+"Joint Crystals, Shape",51374,1277,,
+"Joint Crystals, Comment",51371,1277,,
+"Joint Crystals, Birefringence",51370,1277,,
+"Joint Crystals, Location",51372,1277,,
+"Creatinine, Pleural",51052,1274,Rénale,renal
+FetalFN,51033,1262,,
+CD20,51168,1259,,
+CD10,51152,1257,,
+CD3 Absolute Count,51175,1256,Hématologie,hematology
+CD3 %,51174,1256,,
+Iron Stain,52992,1255,,
+"Strep A, Rapid Antigen",51894,1254,Infectiologie,infectiology
+Lambda,51239,1246,,
+CD5,51184,1246,,
+Kappa,51238,1246,,
+PAN3,51772,1232,,
+HLA-DR,51230,1228,,
+HPE8,51664,1220,,
+"proBNP, Pleural",51921,1204,Pulmonaire,pulmonary
+Triple Phosphate Crystals,51503,1193,,
+"G6PD, Qualitative",52123,1189,,
+CD19 Absolute Count,51166,1134,Hématologie,hematology
+CD20 Absolute Count,51170,1134,Hématologie,hematology
+CD20 %,51169,1134,,
+CD19 %,51165,1134,,
+Von Willebrand Factor Antigen,51299,1098,Hématologie,hematology
+Von Willebrand Factor Activity,51298,1094,Hématologie,hematology
+Mesothelial cells,51429,1093,,
+CD16/56 Absolute Count,51162,1090,Hématologie,hematology
+CD16/56%,51163,1090,,
+Lyme C6 Ab,51688,1065,Infectiologie,infectiology
+Lyme G and M Value,51689,1061,Infectiologie,infectiology
+FMC-7,51335,1058,,
+CD23,51317,1058,,
+Eosinophils,51368,1036,Hématologie,hematology
+FMC-7,51215,1033,,
+VZV IgG Ab Value,51754,1024,Infectiologie,infectiology
+VZV IgG Ab,51753,1023,Infectiologie,infectiology
+CD7,51416,1020,,
+CD23,51172,1019,,
+CD2,51399,1014,,
+RUBIgGV,51769,984,Infectiologie,infectiology
+Rubella IgG Ab,51724,980,Infectiologie,infectiology
+CD34,51406,971,,
+Cellular Cast,51471,944,,
+PAN2,52019,941,,
+Trichomonas vaginalis,51996,940,Infectiologie,infectiology
+"Hematocrit, Pleural",51445,939,Pulmonaire,pulmonary
+CD7,51192,925,,
+CD2,51167,916,,
+CD34,51321,913,,
+HPE5,51661,906,,
+Staph aureus PCR,51893,905,Infectiologie,infectiology
+MRSA PCR,51877,905,,
+Inhibitor Screen,51235,882,,
+Other,51381,878,,
+CMV IgG Ab Value,51587,876,Infectiologie,infectiology
+CMV IgG Ab,51586,874,Infectiologie,infectiology
+CD7,51332,858,,
+CA 19-9,51579,851,,
+Atypical Lymphocytes,52221,831,Hématologie,hematology
+CD2,51314,830,,
+CD13,51307,819,,
+UCU1,52426,817,,
+EE1,51762,806,,
+EE6,51768,804,,
+Sickle Cells,51291,790,,
+"PEP, CSF",51798,787,,
+Sperm,51499,771,,
+"Hematocrit, Joint Fluid",51369,758,Fluides corporels,body_fluids
+CMV Interpretation,51590,749,Infectiologie,infectiology
+CMV IgM Ab,51588,749,Infectiologie,infectiology
+NonSquamous Epithelial Cell,51489,712,,
+"Phenytoin, Free",50968,711,Toxicologie,toxicology
+"Glucose, Body Fluid",51034,708,Fluides corporels,body_fluids
+EE2,51763,700,,
+"Miscellaneous, Body Fluid",51038,696,Fluides corporels,body_fluids
+CD117,51305,695,,
+"Total Protein, Body Fluid",51043,693,Fluides corporels,body_fluids
+MacroOvalocytes,51247,693,,
+Sickle Cell Preparation,51290,686,,
+"Phenytoin, Percent Free",50969,678,,
+Epstein-Barr Virus VCA IgG Ab,51619,667,Infectiologie,infectiology
+Epstein-Barr Virus  EBNA IgG Ab,51614,667,Infectiologie,infectiology
+Epstein-Barr Virus Interpretation,51618,667,Infectiologie,infectiology
+Epstein-Barr Virus VCA IgM Ab,51620,667,Infectiologie,infectiology
+CD15,51310,667,,
+Epstein-Barr Virus EBNA IgG Ab,51615,664,Infectiologie,infectiology
+Epstein-Barr Virus IgM Ab Value,51617,663,Infectiologie,infectiology
+Epstein-Barr Virus IgG Ab Value,51616,663,Infectiologie,infectiology
+Voided Specimen,52419,662,,
+Hemosiderin,51481,661,,
+Immunophenotyping,52262,656,,
+Plasma,51124,641,,
+"Creatinine, Serum",51081,625,Rénale,renal
+Creatinine Clearance,51080,625,Rénale,renal
+Urine Creatinine,51106,625,Rénale,renal
+Total Collection Time,51101,625,,
+"Urine Volume, Total",51109,625,,
+CD33,51320,619,,
+Rubeola IgG Ab Value,51726,616,Infectiologie,infectiology
+Rubeola IgG Ab,51725,615,Infectiologie,infectiology
+"LD, Body Fluid",51035,614,Fluides corporels,body_fluids
+"Albumin, Body Fluid",51025,613,Fluides corporels,body_fluids
+WBC Casts,51517,595,,
+Hypersegmented Neutrophils,51232,590,,
+Leukocytes,51985,563,Hématologie,hematology
+Bilirubin,51966,563,Hépatologie,hepatology
+Protein,51992,563,Métabolique,metabolic
+Ketone,51984,563,Métabolique,metabolic
+Glucose,51981,563,Métabolique,metabolic
+Blood,51967,563,,
+Nitrite,51987,563,,
+Urobilinogen,52002,563,,
+pH,52730,563,,
+CD14,51309,563,,
+Specific Gravity,51994,563,,
+Amikacin,50865,541,Toxicologie,toxicology
+Mumps IgG Ab Value,51694,537,Infectiologie,infectiology
+Mumps IgG Ab,51693,536,Infectiologie,infectiology
+Toxoplasma IgG Ab,51741,531,Infectiologie,infectiology
+Toxoplasma Interpretation,51745,531,Infectiologie,infectiology
+EE7,51764,529,,
+Centromere,50901,525,,
+Toxoplasma IgG Ab Value,51742,520,Infectiologie,infectiology
+Absolute Hemoglobin,50855,518,Hématologie,hematology
+Absolute A1c,50854,518,Métabolique,metabolic
+Plasma Cells,51454,514,,
+Bands,52223,512,,
+Eosinophil Count,51199,506,Hématologie,hematology
+"Miscellaneous, CSF",51796,500,,
+CD4,51323,495,Hématologie,hematology
+C Diff Toxin Antigen Assay,51934,485,Immunologie inflammation,immunology_inflammation
+Porphobilinogen Screen,51096,483,,
+CD15/56,52087,479,,
+Beta Hydroxybutyrate,51567,475,,
+Basophils,51442,458,Hématologie,hematology
+CD8,51334,452,,
+dRVVT - Screen,52109,447,,
+"Hematocrit, Other Fluid",51422,445,Fluides corporels,body_fluids
+K (GREEN),51677,436,,
+Atypical Lymphocytes,51110,433,,
+Factor VII,51205,428,Hématologie,hematology
+Arachadonic Acid,51142,427,,
+"Triglycerides, Ascites",50850,421,Fluides corporels,body_fluids
+ADP,51135,419,,
+CD64,51331,419,,
+CD56,51328,417,,
+"Creatinine, Body Fluid",51032,415,Fluides corporels,body_fluids
+Collagen,51195,413,,
+"Myoglobin, Urine",51091,410,,
+CD11c,51306,406,,
+Hematocrit,51638,402,Hématologie,hematology
+"Hemoglobin, Calculated",51645,402,Hématologie,hematology
+Glucose,52569,402,Métabolique,metabolic
+Sodium,52623,402,Rénale,renal
+Potassium,52610,402,Rénale,renal
+"Bilirubin, Total, Body Fluid",51028,396,Fluides corporels,body_fluids
+"Urine Casts, Other",51507,390,Rénale,renal
+Atypical Lymphocytes,51440,385,Hématologie,hematology
+Fetal Hemoglobin,51212,384,Hématologie,hematology
+"Urine Crystals, Other",51510,384,Rénale,renal
+Creatinine,52546,377,Rénale,renal
+Urea Nitrogen,52647,369,Rénale,renal
+Chloride,52535,369,Rénale,renal
+Free Calcium,51624,368,Rénale,renal
+Anion Gap,52500,367,,
+Total CO2,51739,367,,
+Voided Specimen,51901,358,,
+Voided Specimen,51953,354,,
+H. pylori IgG Ab,51666,348,Infectiologie,infectiology
+Basophils,51112,334,Hématologie,hematology
+CD56,51188,333,,
+Urine Comments,51509,331,,
+CD41,51324,330,,
+"Hematocrit, Ascites",51115,328,Fluides corporels,body_fluids
+SCT - Screen,52179,327,,
+Platelet Clumps,51264,322,,
+LUC,51242,318,,
+Mesothelial Cells,51377,314,,
+H. pylori IgG Ab Value,51667,310,Infectiologie,infectiology
+CD71,51333,306,,
+Blue Top Hold Frozen,50888,306,,
+CDT027,51954,296,,
+Basophils,52225,295,Hématologie,hematology
+Glyco A,51336,293,,
+Factor IX,51203,291,Hématologie,hematology
+CD34,51178,279,,
+Factor XI,51209,271,Hématologie,hematology
+Waxy Casts,51515,271,,
+Factor V,51204,268,Hématologie,hematology
+Bands,51111,268,,
+"Influenza A, Rapid Antigen",51869,262,Infectiologie,infectiology
+"Influenza B, Rapid Antigen",51874,262,Infectiologie,infectiology
+CD13,51156,256,,
+HIV 1 Ab Confirmation,51653,248,Infectiologie,infectiology
+HIV 2 Ab Confirmation,51655,248,Infectiologie,infectiology
+HIT-Ab Numerical Result,52132,248,,
+HIT-Ab Interpreted Result,52131,248,,
+CD11c,51155,248,,
+"HCG, Urine, Qualitative",52720,245,Reproduction,reproduction
+"Strep A, Rapid Antigen",51895,243,Infectiologie,infectiology
+"Sodium, Stool",51065,229,Rénale,renal
+EE3,51765,229,,
+"Potassium, Stool",51064,227,Rénale,renal
+Factor X,51208,224,Hématologie,hematology
+"Osmolality, Stool",51063,224,,
+CD117,51154,222,,
+High-Sensitivity CRP,51652,221,Immunologie inflammation,immunology_inflammation
+CD4,51408,220,,
+White Blood Cells,51755,218,Hématologie,hematology
+CD15,51159,218,,
+CD33,51177,214,,
+CD8,51418,214,,
+CD14,51158,212,,
+Bands,51366,208,,
+Influenza B by PCR,51872,207,Infectiologie,infectiology
+Influenza A by PCR,51864,207,Infectiologie,infectiology
+Factor II,51202,202,Hématologie,hematology
+CD55,51187,200,,
+CD59,51190,200,,
+Heinz Body Prep,51220,195,,
+CD64,51191,193,,
+Plasma,52279,189,,
+CD5 Absolute Count,51186,188,Hématologie,hematology
+CD5 %,51185,188,,
+Basophils,51387,187,Hématologie,hematology
+Factor VIII Inhibitor,51207,184,Hématologie,hematology
+Non-squamous Epithelial Cells,51488,184,,
+CD71,51193,183,,
+Bands,51441,183,,
+Glyco A,51217,179,,
+CD41,51182,179,,
+Bands,51386,176,,
+NRBC,52276,175,,
+"Bicarbonate, Other Fluid",51027,173,Fluides corporels,body_fluids
+"Protein S, Antigen",51272,173,,
+"Bilirubin, Total, Pleural",51049,170,Hépatologie,hepatology
+Basophils,51367,167,Hématologie,hematology
+Ethylene Glycol,51621,164,,
+Troponin I,52642,163,Cardiologie,cardiology
+"Glucose, Joint Fluid",51022,162,Fluides corporels,body_fluids
+Lining Cell,52358,158,,
+Nucleated RBC,51122,155,,
+CD57,51189,150,,
+Trichomonas,51502,149,Infectiologie,infectiology
+Anti-Parietal Cell Antibody,50875,146,Immunologie inflammation,immunology_inflammation
+Lining Cell,52301,146,,
+Epinepherine,51201,146,,
+Triglycer,51044,140,,
+CD16/56,51312,138,,
+Atypical Lymphocytes,51385,138,,
+Young Cells,51302,137,,
+Toxoplasma IgM Ab,51743,135,Infectiologie,infectiology
+NRBC,51452,133,,
+"Glucose, Urine",51084,133,Métabolique,metabolic
+Atypical Lymphocytes,51365,131,Hématologie,hematology
+"Protein C, Antigen",51270,131,,
+Ristocetin,51286,128,,
+Toxoplasma IgM Ab Value,51744,127,Infectiologie,infectiology
+"Total Protein, Joint Fluid",51024,125,Fluides corporels,body_fluids
+Metamyelocytes,52270,116,Hématologie,hematology
+"Amylase, Urine",51072,116,Hépatique rénale,hepatic_renal
+"Influenza B, Rapid Antigen",51875,115,Infectiologie,infectiology
+"Influenza A, Rapid Antigen",51870,115,Infectiologie,infectiology
+dRVVT - Normalized Ratio,52108,115,,
+dRVVT - Confirmation,52107,115,,
+"Amylase/Creatinine Ratio, Urine",51073,114,Rénale,renal
+Stomatocyte,52181,114,,
+"Anti-Gliadin Antibody, IgA",50870,112,Immunologie inflammation,immunology_inflammation
+"Hematocrit, CSF",52257,109,Hématologie,hematology
+"Ethanol, Urine",51083,108,Toxicologie,toxicology
+CD16,51161,102,,
+Theophylline,50990,98,Toxicologie,toxicology
+Broad Casts,51467,98,,
+CD13,51392,96,,
+"Lipase, Ascites",50844,95,Fluides corporels,body_fluids
+RBC Casts,51494,92,,
+EE5,51767,91,,
+"Chloride, Stool",51062,91,,
+Blasts,52227,89,,
+CD38,51179,87,,
+NRBC,51433,84,,
+Lactate,53154,83,,
+Bilirubin Crystals,51465,81,Hépatologie,hepatology
+Factor XIII,51211,80,Hématologie,hematology
+Reflex Confirmatory Hepatitis C Viral Load,51713,80,,
+CD25,51173,80,,
+CD16/56,51397,79,,
+Mesothelial cells,52268,78,,
+Urine Fat Bodies,51511,72,,
+NRBC,51380,68,,
+CD22,51171,67,,
+Bleeding Time,51149,66,,
+CD56,51413,64,,
+Voided Specimen,53127,63,,
+CD103,51153,62,,
+Rouleaux,52176,61,,
+Factor XII,51210,60,Hématologie,hematology
+CD117,51390,60,,
+CD25,51318,60,,
+TdT,52335,56,,
+Plasma,51435,55,,
+CD15,51395,55,,
+"Lipase, Body Fluid",51036,53,Fluides corporels,body_fluids
+Promyelocytes,52283,53,,
+Calcium Phosphate Crystals,51470,52,Rénale,renal
+Myelocytes,52274,52,,
+"Urea Nitrogen, Body Fluid",51045,51,Fluides corporels,body_fluids
+"Monospot, Rapid Antigen",51692,51,,
+Voided Specimen,52043,50,,
+CD33,51405,50,,
+ANCA Titer,53144,49,,
+"Sodium, Ascites",50848,48,Fluides corporels,body_fluids
+Leukocyte Alkaline Phosphatase,51241,48,,
+"Cholesterol, Ascites",50840,47,Fluides corporels,body_fluids
+"Bicarbonate, Stool",51061,47,,
+CD38,51322,46,,
+CD4/CD8 Ratio,51409,46,,
+TdT,51295,46,,
+SCT - Confirmation,52177,46,,
+SCT - Normalized Ratio,52178,46,,
+CD38,51407,46,,
+Lining Cell,52263,45,,
+CD14,51394,41,,
+Hemoglobin Other,52129,41,,
+CD22,51316,41,,
+"LD, Joint Fluid",51023,40,Fluides corporels,body_fluids
+CD138,51393,40,,
+"Sodium, Body Fluid",51042,39,Fluides corporels,body_fluids
+D-Dimer,52551,39,,
+INR(PT),51675,38,,
+"Miscellaneous, Ascites",50845,36,Fluides corporels,body_fluids
+<Albumin>,51776,36,Hépatique rénale,hepatic_renal
+Surfactant/Albumin,51897,36,Hépatique rénale,hepatic_renal
+"Potassium, Ascites",50847,35,Fluides corporels,body_fluids
+"Potassium, Body Fluid",51041,35,Fluides corporels,body_fluids
+Monocyte Count,51253,35,,
+CD57,51329,35,,
+Voided Specimen,51806,34,,
+CD103,51304,34,,
+RBC Clumps,51495,33,,
+"Chloride, Ascites",50839,32,Fluides corporels,body_fluids
+CD64,51415,32,,
+"Bicarbonate, Ascites",50837,31,Fluides corporels,body_fluids
+"Chloride, Body Fluid",51030,30,Fluides corporels,body_fluids
+Epithelial Casts,51475,30,,
+Oval Fat Body,51490,30,,
+Macro Prolactin,50959,29,,
+CD11c,51391,29,,
+Promyelocytes,51456,28,,
+Reflex HIV Confirmation,51714,27,,
+CD16,51311,27,,
+Ammonium Biurate,51461,25,Métabolique,metabolic
+Metamyelocytes,51449,25,,
+Procainamide,50972,24,,
+N-Acetylprocainamide (NAPA),50962,24,,
+CD25,51403,22,,
+Metamyelocytes,51430,22,,
+"Urea Nitrogen, Ascites",50851,21,Fluides corporels,body_fluids
+Metamyelocytes,51119,18,,
+Cholesterol Crystals,51472,16,,
+CD22,51401,16,,
+Voided Specimen,51924,16,,
+CD57,51414,15,,
+CD16,51396,15,,
+CD138,51308,15,,
+Promyelocytes,51126,15,,
+Plasma,52307,15,,
+CD71,51417,15,,
+CD41,51410,15,,
+"Cholesterol, Body Fluid",51031,14,Fluides corporels,body_fluids
+Calcium Carbonate Crystals,51468,14,Rénale,renal
+Myelocytes,51451,14,,
+Metamyelocytes,51378,14,,
+Hematocrit,51480,14,,
+Glyco A,51421,14,,
+HIV 1 Viral Load,51791,14,,
+TdT,52373,13,,
+Cysteine Crystals,51473,13,,
+Myelocytes,51121,12,,
+CD138,51157,12,,
+Myelocytes,51432,11,,
+"Calcium, Body Fluid",51029,10,Fluides corporels,body_fluids
+"Osmolality, Body Fluid",51039,10,Fluides corporels,body_fluids
+"Phosphate, Body Fluid",51040,10,Fluides corporels,body_fluids
+Promyelocytes,51437,10,,
+Promyelocytes,52311,10,,
+Blasts,51443,10,,
+HPE9,51665,10,,
+CD103,51389,10,,
+Free Fat,51477,10,,
+"Albumin, Joint Fluid",51019,9,Fluides corporels,body_fluids
+CD56 Absolute Count,52093,9,Hématologie,hematology
+"Lipase, Pleural",51055,9,Pulmonaire,pulmonary
+Voided Specimen,51827,9,,
+CD56 %,52092,9,,
+"Magnesium, Body Fluid",51037,8,Fluides corporels,body_fluids
+Tyrosine Crystals,51504,8,,
+Sulfonamides,51500,8,,
+Myelocytes,52305,8,,
+"Osmolality, Ascites",50846,7,Fluides corporels,body_fluids
+"Amylase, Joint Fluid",51020,6,Fluides corporels,body_fluids
+TCR Alpha-Beta,52184,6,Marqueur tumoral,tumor_marker
+Osmotic Fragility,51258,6,,
+CD55,51327,6,,
+CD 1a,52319,6,,
+TCR Gamma-Delta,52185,6,,
+"Potassium, Pleural",51057,5,Pulmonaire,pulmonary
+"Sodium, Pleural",51058,5,Pulmonaire,pulmonary
+Red Blood Cell Fragments,51278,5,,
+CD59,51330,5,,
+Leucine Crystals,51485,5,,
+Voided Specimen,52370,5,,
+"Reducing Substances, Urine",51496,5,,
+Reptilase Time,51280,5,,
+"Bilirubin, Total, CSF",51783,4,Hépatologie,hepatology
+TCR Alpha-Beta,52331,4,Marqueur tumoral,tumor_marker
+TCR Gamma-Delta,52332,4,,
+Reptilase Time Control,51281,4,,
+Hyphenated Yeast,51483,4,,
+"Creatinine, Joint Fluid",51021,3,Fluides corporels,body_fluids
+"Bicarbonate, Pleural",51048,3,Pulmonaire,pulmonary
+Young,51129,3,,
+Voided Specimen,52287,3,,
+Voided Specimen,52406,3,,
+CD 1a,52088,3,,
+Young,52288,3,,
+Blasts,51113,3,,
+"pO2, Body Fluid",50832,2,Fluides corporels,body_fluids
+"pCO2, Body Fluid",50830,2,Fluides corporels,body_fluids
+"Chloride, Pleural",51050,2,Pulmonaire,pulmonary
+CD 1a,52341,2,,
+Hypersegmented Neutrophils,52355,2,,
+Fatty Casts,52410,2,,
+Blasts,52339,2,,
+"Uric Acid, Joint Fluid",51826,1,Fluides corporels,body_fluids
+Factor IX Inhibitor,52113,1,Hématologie,hematology
+"Albumin, Stool",51927,1,Hépatique rénale,hepatic_renal
+"Chloride, CSF",51784,1,,
+Hyperseg,52055,1,,
+Voided Specimen,52066,1,,
+P50 of Hemoglobin,52032,1,,
+Voided Specimen,52313,1,,
+Young Cells,51459,1,,
+Young,52371,1,,
+Blasts,52294,1,,
+Voided Specimen,52392,1,,

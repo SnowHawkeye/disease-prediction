@@ -3,36 +3,39 @@ from keras.src.losses import BinaryFocalCrossentropy
 from keras.src.optimizers import Adam
 from sklearn.preprocessing import StandardScaler
 
-from experiments.project_6_first_mipha_paper.utils.run_experiment import run_experiment, parse_arguments
+from experiments.project_6_first_mipha_paper.ask_29_feature_extractors_influence.constants import ALL_LAB_CATEGORIES, \
+    PROCESSED_DATA_PATH, RANDOM_SEED, DATA_ROOT
+from experiments.project_6_first_mipha_paper.utils.run_experiment import run_experiment
 from models.mipha.components.aggregators.horizontal_stack_aggregator import HorizontalStackAggregator
 from models.mipha.components.evaluators.classification_evaluator import ClassificationEvaluator
 from models.mipha.components.feature_extractors.pass_through_feature_extractor import PassThroughFeatureExtractor
 from models.mipha.components.kernels.transformers_kernel import TransformersKernel
 
-from sklearn.experimental import enable_iterative_imputer
-from sklearn.impute import IterativeImputer
-
 """
 Experiment with autoencoder feature extraction.
 
 Data: t2d_B24m_G3m_P1y
-Model summary: 3D data, Transformers, RandomOverSampler, IterativeImputer
+Model summary: 3D data, Transformers, RandomOverSampler
 Observations: 
 """
 
-RANDOM_SEED = 39
-data_path_iterative_imputation = "../out/data_iterative_imputation.pickle"
 
-
-def main(arguments):
+def main():
     run_experiment(
-        arguments=arguments,
+        data_root=DATA_ROOT,
+        bgp_string="B24m_G3m_P1y",
+        lab_categories=["body_fluids"],
+        disease_identifier="t2d",
         setup_components_func=setup_components,
-        fit_parameters={"epochs": 3, "batch_size": 64},
-        kept_data_sources=["lab_data_sources", "ecg_data_sources", "demographics_data_sources_3d"],
-        save_data_to=data_path_iterative_imputation,
+        fit_parameters={"epochs": 10, "batch_size": 32, "validation_split": 0.1},
+        kept_data_sources=[
+            "body_fluids",
+            #"ecg",
+            #"demographics_3d"
+        ],
+        save_data_to=PROCESSED_DATA_PATH,
         random_seed=RANDOM_SEED,
-        imputer=IterativeImputer(random_state=RANDOM_SEED, keep_empty_features=True),
+        imputer="auto",
     )
 
 
@@ -92,5 +95,4 @@ def setup_components(data_sources_train, data_sources_test, labels_train, labels
 
 
 if __name__ == "__main__":
-    args = parse_arguments()
-    main(args)
+    main()

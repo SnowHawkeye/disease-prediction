@@ -54,7 +54,8 @@ def create_learning_matrix(patient_records, mask, fill_value=np.NaN):
 
     if sample_shape is None:
         raise ValueError(
-            "Could not determine the shape of the data. Check that the patient_records contain valid entries."
+            "Could not determine the shape of the data. Check that the patient_records contain valid entries. "
+            "This may happen if the patient records and the mask have no overlapping keys."
         )
 
     for patient_id, timestamp in tqdm(mask, desc="Creating learning matrix"):

@@ -16,20 +16,19 @@ from models.mipha.components.kernels.transformers_kernel import TransformersKern
 
 """
 Experiment summary:
-    - first attempt at using several categories for laboratory data
+    - similar to 58_001 for CKD
 
-Data: t2d_B24m_G3m_P1y
+Data: ckd_B24m_G3m_P1y
 
 Model summary: 
     - 3D data, Transformers, RandomOverSampler
     - somewhat small model to avoid overfitting
-    
+
 Observations:
-    - results are sadly similar to predictions with the most common analyses
-    - generalization on the minority class seems difficult
+    - very low precision
 """
 
-processed_data_path = "../out/data_t2d_B24m_G3m_P1y.pkl"
+processed_data_path = "../out/data_ckd_B24m_G3m_P1y.pkl"
 
 experiment_name = Path(os.path.basename(__file__)).stem
 results_file = os.path.join("results", experiment_name + ".json")
@@ -44,15 +43,15 @@ def main():
         setup_components_func=setup_components,
         fit_parameters={"epochs": 3, "batch_size": 64, "validation_split": 0.1},
         kept_data_sources=[
-            "metabolic",
-            "endocrine",
             "renal",
-            "nutrition",
+            "hepatic_renal",
+            "metabolic",
             "cardiology",
+            "nutrition",
+            "infectiology",
             "immunology_inflammation"
         ],
         save_data_to=processed_data_path,
-        save_results=results_file,
         random_seed=RANDOM_SEED,
         imputer="auto",
     )

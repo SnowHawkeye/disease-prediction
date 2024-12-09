@@ -48,6 +48,7 @@ class DataProcessingKernel(MachineLearningModel):
                  of the data (2D or 3D).
         :rtype: tuple
         """
+        print(f"[{self.component_name}] Processing train data... (shapes: x {x_train.shape}, y {y_train.shape})")
 
         # Copy input data to avoid modifying original
         _x_train = x_train.copy()
@@ -58,6 +59,7 @@ class DataProcessingKernel(MachineLearningModel):
             x = self.imputer.fit_transform(x) if self.imputer is not None else x
             x, y = self.resampler.fit_resample(x, y) if self.resampler is not None else (x, y)
             x = self.scaler.fit_transform(x) if self.scaler is not None else x
+            print("")
             return x, y
 
         # Function to handle 3D data processing
@@ -78,6 +80,8 @@ class DataProcessingKernel(MachineLearningModel):
 
         self._x_train = _x_train
         self._y_train = _y_train
+
+        print(f"[{self.component_name}] Train data processed (shapes: x {_x_train.shape}, y {_y_train.shape})")
         return _x_train, _y_train
 
     def process_test_data(self, x_test):
@@ -93,6 +97,7 @@ class DataProcessingKernel(MachineLearningModel):
         :rtype: ndarray or DataFrame
         """
 
+        print(f"[{self.component_name}] Processing test data... (shape: x {x_test.shape})")
         # Copy input data to avoid modifying original
         _x_test = x_test.copy()
 
@@ -118,4 +123,6 @@ class DataProcessingKernel(MachineLearningModel):
             AttributeError(f'Unsupported dimension: {dimension}')
 
         self._x_test = _x_test
+
+        print(f"[{self.component_name}]Test data processed (shape: x {_x_test.shape})")
         return _x_test

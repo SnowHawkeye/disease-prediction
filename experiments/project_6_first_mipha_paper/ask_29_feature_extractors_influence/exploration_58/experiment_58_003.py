@@ -2,8 +2,6 @@ import os
 from pathlib import Path
 
 from imblearn.over_sampling import RandomOverSampler
-from keras.src.losses import BinaryFocalCrossentropy
-from keras.src.optimizers import Adam
 from sklearn.preprocessing import StandardScaler
 
 from experiments.project_6_first_mipha_paper.ask_29_feature_extractors_influence.constants import ALL_LAB_CATEGORIES, \
@@ -12,28 +10,27 @@ from experiments.project_6_first_mipha_paper.utils.run_experiment import run_exp
 from models.mipha.components.aggregators.horizontal_stack_aggregator import HorizontalStackAggregator
 from models.mipha.components.evaluators.classification_evaluator import ClassificationEvaluator
 from models.mipha.components.feature_extractors.pass_through_feature_extractor import PassThroughFeatureExtractor
-from models.mipha.components.kernels.transformers_kernel import TransformersKernel
+from models.mipha.components.kernels.cnn_inn_kernel import CnnInnKernel
 
 """
 Experiment summary:
-    - first attempt at using several categories for laboratory data
+    - similar to 58_002
+    - using CNN model
+    - oversampling down to 0.5
 
-Data: t2d_B24m_G3m_P1y
+Data: ckd_B24m_G3m_P1y
 
 Model summary: 
     - 3D data, Transformers, RandomOverSampler
     - somewhat small model to avoid overfitting
-    
+
 Observations:
-    - results are sadly similar to predictions with the most common analyses
-    - generalization on the minority class seems difficult
+    - Lowering the oversampling seems to have made things even worse
 """
 
-processed_data_path = "../out/data_t2d_B24m_G3m_P1y.pkl"
-
+processed_data_path = "../out/data_ckd_B24m_G3m_P1y.pkl"
 experiment_name = Path(os.path.basename(__file__)).stem
 results_file = os.path.join("results", experiment_name + ".json")
-
 
 def main():
     run_experiment(
@@ -42,17 +39,17 @@ def main():
         lab_categories=ALL_LAB_CATEGORIES,
         disease_identifier="t2d",
         setup_components_func=setup_components,
-        fit_parameters={"epochs": 3, "batch_size": 64, "validation_split": 0.1},
+        fit_parameters={"epochs": 10, "batch_size": 64, "validation_split": 0.1},
         kept_data_sources=[
-            "metabolic",
-            "endocrine",
             "renal",
-            "nutrition",
+            "hepatic_renal",
+            "metabolic",
             "cardiology",
+            "nutrition",
+            "infectiology",
             "immunology_inflammation"
         ],
         save_data_to=processed_data_path,
-        save_results=results_file,
         random_seed=RANDOM_SEED,
         imputer="auto",
     )
@@ -84,22 +81,19 @@ def setup_components(data_sources_train, data_sources_test, labels_train, labels
 
     aggregator = HorizontalStackAggregator()
 
-    model = TransformersKernel(
+    model = CnnInnKernel(
         input_shape=model_input_shape,
         num_classes=2,
-        head_size=32,
-        num_heads=2,
-        ff_dim=64,
-        num_transformer_blocks=2,
-        mlp_units=[64],
-        dropout=0.3,
-        mlp_dropout=0.3,
-        loss=BinaryFocalCrossentropy(gamma=2., alpha=0.25),
-        optimizer=Adam(learning_rate=1e-3),
-        metrics=["AUC", "Recall", "Precision"],
+        num_convolution_layers=3,
+        num_involution_layers=3,
+        convolution_params=None,  # default params
+        involution_params=None,  # default params
+        loss=None,  # default params
+        optimizer='adam',
+        metrics=None,  # default params
         component_name=None,  # default params
         imputer=None,  # imputation is already done when data sources are loaded
-        resampler=RandomOverSampler(random_state=RANDOM_SEED, sampling_strategy=1.0),
+        resampler=RandomOverSampler(random_state=RANDOM_SEED, sampling_strategy=0.5),
         scaler=StandardScaler(),
     )
 
